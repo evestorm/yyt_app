@@ -1,0 +1,168 @@
+// 主容器
+.todaybook-list {
+}
+
+// 顶部筛选
+.nav {
+	.dateSelect {
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+
+		.toLeft,
+		.toRight {
+			display: flex;
+			.yyt-small-img {
+				width: 30rpx;
+				height: 16rpx;
+			}
+		}
+		.toLeft {
+			margin-right: 20rpx;
+			transform: rotate(90deg);
+		}
+		.toRight {
+			margin-left: 20rpx;
+			transform: rotate(270deg);
+		}
+	}
+}
+
+// 概览（总收入、桌数）
+.overview {
+	background: white;
+	background-clip: content-box;
+	padding: 10rpx 0;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	min-height: 88rpx;
+	flex-wrap: wrap;
+
+	color: #404040;
+	.text-red {
+		color: #ff0000;
+	}
+	.item {
+		text-align: center;
+		display: flex;
+		align-items: center;
+	}
+}
+
+// 订单状态tab
+.tab-info-wrapper {
+	.cu-item {
+		font-size: 32rpx;
+	}
+}
+
+// 关单操作
+.tools-wrapper {
+	background: white;
+	background-clip: content-box;
+	padding: 10rpx 0 0;
+
+	.cu-btn {
+		background-color: rgba(246, 246, 246, 1);
+		color: #0183ff;
+		margin: 10px 0;
+		padding: 0 10px;
+		width: 30%;
+	}
+}
+
+// 列表容器
+.list-wrapper {
+	background-color: #f2f2f2;
+}
+.table-join {
+	height: 40rpx;
+	line-height: 40rpx;
+	max-width: 55%;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.order-new-book {
+	background-color: #fef7f2;
+	position: relative;
+	&:after {
+		font-family: "iconfont" !important;
+		font-size: 120rpx;
+		font-style: normal;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		content: "\e61b";
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		color: #fff1e7;
+	}
+}
+.msg-status{
+	// height: 40rpx;
+	// color: #fff;
+	// background-color: #2ccb96;
+	// line-height: 1;
+	// padding:8rpx 12rpx;
+	// border-radius: 14rpx;
+	// border-bottom-left-radius: 0;
+	image{
+		width: 128rpx;
+		height: 30rpx;
+	}
+	.icon{
+		font-size: 16rpx;
+	}
+	.text{
+		font-size: 16rpx;
+	}
+}
+
+/* 气泡 */
+.more-wrapper {
+	position: relative;
+	z-index: 11;
+
+	.bubble-list {
+		min-width: 200rpx;
+		position: absolute;
+		right: 0;
+		top: 80rpx;
+		margin: 0 0 0 0;
+		padding: 6rpx 0 6rpx 0;
+		background: #fff;
+		border-radius: 6rpx;
+		box-shadow: 0px 0px 5px #e8e8e8;
+		// &:after {
+		// 	content: '';
+		// 	position: absolute;
+		// 	bottom: -14rpx;
+		// 	left: 50%;
+		// 	margin-left: -8rpx;
+		// 	width: 0;
+		// 	height: 0;
+		// 	border-style: solid;
+		// 	border-width: 0 12rpx 14rpx 12rpx;
+		// 	border-color: transparent transparent #fff transparent;
+		// }
+		.bubble-item {
+			font-size: 22rpx;
+			font-weight: 400;
+			margin: 0 20rpx;
+			text-align: center;
+			line-height: 2.4em;
+			border-bottom: 1rpx solid rgba(241, 241, 241, 0.62);
+			&:last-of-type {
+				border-bottom: none;
+			}
+		}
+	}
+}

@@ -1,0 +1,83 @@
+.table-title {
+	font-size: 32rpx;
+	color: #262626;
+	// border-bottom: 1px solid #f2f2f2;
+}
+.bottom-table {
+	box-sizing: content-box;
+	border-top: 1px solid #f2f2f2;
+	.bottom-left {
+		width: 25%;
+		float: left;
+		text-align: center;
+		border-left: 1px solid #f2f2f2;
+		// box-shadow: 4px 0 10px -2px #eee;
+		.title {
+			color: #999;
+			font-size: 26rpx;
+			height: 100rpx;
+			line-height: 100rpx;
+			border-bottom: 1px solid #f2f2f2;
+			border-right: 1px solid #f2f2f2;
+		}
+		.name {
+			color: #262626;
+			font-size: 28rpx;
+			height: 100rpx;
+			line-height: 100rpx;
+			border-bottom: 1px solid #f2f2f2;
+			word-break: keep-all; /* 不换行 */
+			white-space: nowrap; /* 不换行 */
+			overflow-x: scroll;
+			border-right: 1px solid #f2f2f2;
+		}
+	}
+	.bottom-right {
+		width: 75%;
+		float: left;
+		.bot-info {
+			min-width: 100%;
+			display: flex;
+			flex-direction: column;
+			.right-flex {
+				display: flex;
+				height: 100rpx;
+				line-height: 100rpx;
+				.title {
+					color: #999;
+					font-size: 26rpx;
+				}
+				.info-sec {
+					color: #262626;
+					font-size: 28rpx;
+				}
+				.cell {
+					// width: 14%;
+					min-width: 200rpx;
+					/*定义项目的放大比例，如果值为1，则所有的项目将等分剩余的空间*/
+					/*因为当前是水平方向布局，所以等分的是剩余的width*/
+					flex-grow: 1;
+					display: flex;
+					/*水平居中、垂直居中*/
+					justify-content: center;
+					align-items: center;
+					/*换行*/
+					word-break: break-all;
+					word-wrap: break-word;
+					white-space: nowrap;
+					line-height: 100rpx;
+					border-bottom: 1px solid #f2f2f2;
+					border-right: 1px solid #f2f2f2;
+					&:empty {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}

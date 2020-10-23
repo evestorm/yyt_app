@@ -1,0 +1,152 @@
+view {
+	line-height: 1 !important;
+}
+.none {
+	display: none;
+}
+.task-report {
+	padding-top: 20rpx;
+	height: calc(100vh - 44px);
+	display: flex;
+	flex-direction: column;
+	.report {
+		flex-shrink: 0;
+		flex: 1 0 auto;
+	}
+	// ===========================================头部任务概况============================================
+	.report-top {
+		background: #fff;
+		padding: 30rpx;
+		.top-title {
+			color: #262626;
+			font-size: 32rpx;
+			font-weight: bold;
+		}
+		.top-info {
+			display: flex;
+			& > view {
+				width: 50%;
+				text-align: center;
+			}
+			.title {
+				color: #595959;
+				font-size: 22rpx;
+				margin: 48rpx 0 19rpx;
+			}
+			.num {
+				color: #0183ff;
+				font-size: 40rpx;
+			}
+		}
+	}
+	// ===========================================中部数量信息============================================
+	.report-mid {
+		background: #fff;
+		padding: 30rpx 0;
+		margin: 8rpx 0 12rpx;
+		display: flex;
+		align-items: center;
+		justify-content: space-around;
+		text-align: center;
+		.mid-title {
+			color: #595959;
+			font-size: 22rpx;
+			margin-bottom: 19rpx;
+		}
+		.num {
+			color: #0183ff;
+			font-size: 40rpx;
+		}
+		.err {
+			color: #f00 !important;
+		}
+		.warn {
+			color: #ffae00 !important;
+		}
+	}
+	// ===========================================底部客户经理数据详情============================================
+	.report-bottom {
+		background: #fff;
+		// padding: 30rpx;
+		.bot-title {
+			color: #262626;
+			font-size: 32rpx;
+			font-weight: bold;
+			// padding-top: 30rpx;
+			// padding-left: 30rpx;
+			padding: 30rpx 30rpx 20rpx 30rpx;
+			border-bottom: 1px solid #f2f2f2;
+		}
+		.bottom-table {
+			.bottom-left {
+				width: 25%;
+				float: left;
+				text-align: center;
+				.title {
+					color: #999;
+					font-size: 26rpx;
+					padding: 28rpx 20rpx 25rpx 40rpx;
+					border-bottom: 1px solid #f2f2f2;
+				}
+				.name {
+					color: #262626;
+					font-size: 28rpx;
+					padding: 36rpx 20rpx 36rpx 40rpx;
+					border-bottom: 1px solid #f2f2f2;
+				}
+			}
+			.bottom-right {
+				width: 75%;
+				float: left;
+				.bot-info {
+					width: 1200rpx;
+					display: flex;
+					flex-direction: column;
+					.right-flex {
+						width: 100%;
+						display: flex;
+						border-bottom: 1px solid #f2f2f2;
+						.title {
+							color: #999;
+							font-size: 26rpx;
+							margin: 28rpx 0 28rpx;
+						}
+						.info-sec {
+							color: #262626;
+							font-size: 28rpx;
+							margin: 36rpx 0;
+						}
+						.cell {
+							width: 14%;
+							/*定义项目的放大比例，如果值为1，则所有的项目将等分剩余的空间*/
+							/*因为当前是水平方向布局，所以等分的是剩余的width*/
+							flex-grow: 1;
+							display: flex;
+							/*水平居中、垂直居中*/
+							justify-content: center;
+							align-items: center;
+							/*换行*/
+							word-break: break-all;
+							word-wrap: break-word;
+							white-space: normal;
+						}
+					}
+				}
+			}
+			&:after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+		}
+	}
+	// 底部logo
+	.logoPic {
+		flex-shrink: 0;
+		margin: 30rpx 216rpx 21rpx;
+		.bot-logo {
+			width: 316rpx;
+			height: 40rpx;
+		}
+	}
+}

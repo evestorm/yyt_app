@@ -1,0 +1,339 @@
+/* 页面容器 */
+.edit-customer-label {
+	position: relative;
+	width: 100%;
+	height: calc(100vh - 44px);
+	left: 0;
+	bottom: 0;
+	overflow: hidden;
+	background-color: #f5f5f5;
+	padding: 20rpx 0;
+	display: flex;
+	flex-direction: column;
+	overflow: scroll;
+}
+.content {
+	flex-shrink: 0;
+	flex: 1 0 auto;
+}
+// 关联客户区域
+.customer-info-top {
+	/*height: 1.48rem;*/
+	height: auto;
+	background: #fff;
+	// border-radius: 10rpx;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20rpx 16rpx;
+
+	// 左边客户
+	.customer-info-top-l {
+		display: flex;
+		align-items: center;
+		// flex: 2;
+		justify-content: flex-start;
+
+		.customer-info-top-l-pic-area {
+			position: relative;
+			width: 120rpx;
+			height: 120rpx;
+			margin-right: 28rpx;
+
+			.sales-person-name-pic {
+				width: 100%;
+				height: 40rpx;
+				position: absolute;
+				bottom: 0;
+				background-image: url("https://pic.cwyyt.cn/upload/yytApp/images/bgMask.png");
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				text-align: center;
+				line-height: 40rpx;
+
+				span {
+					font-size: 14rpx;
+					color: #fff;
+				}
+			}
+		}
+
+		.customer-info-top-l-area {
+			display: flex;
+		}
+
+		.customer-name {
+			display: flex;
+			flex-direction: column;
+
+			span {
+				line-height: 1;
+				&:first-child {
+					font-size: 36rpx;
+					color: #0d0d0d;
+					font-weight: bold;
+					padding-bottom: 22rpx;
+				}
+				&:last-child {
+					font-size: 22rpx;
+					color: #999;
+				}
+			}
+		}
+
+		.customer-pic {
+			width: 120rpx;
+			height: 120rpx;
+			border-radius: 50%;
+			margin-right: 32rpx;
+		}
+	}
+
+	// 中间连接
+	.contact-area {
+		margin: auto 70rpx;
+		.contact-pic {
+			width: 52rpx;
+			height: 52rpx;
+		}
+	}
+
+	// 右边客户经理
+	.customer-info-top-r {
+		display: flex;
+		// flex: 2;
+		align-items: center;
+		justify-content: flex-end;
+		.customer-info-top-r-pic-area {
+			position: relative;
+			width: 100rpx;
+			height: 100rpx;
+			margin-right: 28rpx;
+			// .customer-pic {
+			//     width: 100rpx;
+			//     height: 100rpx;
+			//     border-radius: 50%;
+			//     margin-right: 28rpx;
+			// }
+
+			.sales-person-name-pic {
+				width: 100%;
+				height: 40rpx;
+				position: absolute;
+				bottom: 0;
+				background-image: url("https://pic.cwyyt.cn/upload/yytApp/images/bgMask.png");
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				text-align: center;
+				line-height: 40rpx;
+
+				span {
+					font-size: 14rpx;
+					color: #fff;
+				}
+			}
+		}
+
+		.sales-person-name {
+			display: flex;
+			flex-direction: column;
+
+			span {
+				line-height: 1;
+				&:first-child {
+					font-size: 36rpx;
+					color: #0d0d0d;
+					font-weight: bold;
+					padding-bottom: 22rpx;
+				}
+				&:last-child {
+					font-size: 22rpx;
+					color: #999;
+				}
+			}
+		}
+
+		.sales-person-pic {
+			width: 100rpx;
+			height: 100rpx;
+			border-radius: 50%;
+			margin-left: 28rpx;
+		}
+	}
+}
+
+/*客户标签*/
+.tag-list {
+	padding: 30rpx;
+	background-color: #fff;
+	margin: 10rpx 0;
+	// border-radius: 10rpx;
+	&:first-child {
+		margin: 6rpx 0 16rpx;
+	}
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	.tag-list-top {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.tag-list-top-l {
+			display: flex;
+			flex: 2;
+			align-items: center;
+			justify-content: space-between;
+			.add-img {
+				width: 36rpx;
+				height: 36rpx;
+			}
+			.title {
+				font-size: 32rpx;
+				color: #0d0d0d;
+				font-weight: bold;
+			}
+
+			.add-tag-icon {
+				font-size: 46rpx;
+				color: #9a9a9a;
+			}
+		}
+
+		.tag-list-top-r {
+			display: flex;
+			align-items: center;
+
+			.img {
+				width: 32rpx;
+				height: 32rpx;
+				margin-right: 14rpx;
+			}
+
+			span {
+				font-size: 22rpx;
+				color: #999;
+				display: inline-block;
+				margin-top: 8rpx;
+			}
+		}
+	}
+
+	.tag-list-info {
+		margin-top: 30rpx;
+
+		.tag-list-item {
+			display: inline-block;
+			font-size: 24rpx;
+			color: #0183ff;
+			padding: 2rpx 19rpx;
+			border: 1rpx solid #0183ff;
+			border-radius: 8rpx;
+			margin-right: 40rpx;
+			margin-bottom: 40rpx;
+			position: relative;
+
+			.del-pic {
+				width: 30rpx;
+				height: 30rpx;
+				position: absolute;
+				right: -7px;
+				top: -7px;
+				display: none;
+			}
+		}
+
+		.tab-item-active {
+			background-color: #0183ff;
+			color: #fff !important;
+
+			.del-pic {
+				display: block;
+			}
+		}
+	}
+}
+
+.customer-info-footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 132rpx;
+
+	.btn {
+		width: 42%;
+		height: 86rpx;
+		line-height: 86rpx;
+		font-size: 28rpx;
+		&.label-cancel {
+			color: #0183ff;
+			border: 1px solid rgba(1, 131, 255, 1);
+		}
+
+		&.label-save {
+			background-color: rgba(1, 131, 255, 1);
+			border: 1px solid rgba(1, 131, 255, 1);
+			color: #fff;
+		}
+	}
+}
+//底部弹窗
+.cancel-popup {
+	padding-top: 30rpx;
+
+	.cancel-popup-title {
+		text-align: center;
+		font-size: 36rpx;
+		color: #0d0d0d;
+		font-weight: bold;
+	}
+	.cancel-popup-mid {
+		display: flex;
+		padding: 70rpx 0;
+		.uni-input-placeholder {
+			color: #999;
+		}
+		.mid-text {
+			font-size: 28rpx;
+			color: #595959;
+		}
+		.mid-input {
+			width: 75%;
+			text-align: center;
+			font-size: 28rpx;
+			border-bottom: 1px solid #f2f2f2;
+			margin: 0 5rpx;
+		}
+	}
+	.bot {
+		display: flex;
+		border-radius: 8rpx;
+		border: 1px solid #0183ff;
+		text-align: center;
+		margin: 0 -26rpx -28rpx;
+		.btn {
+			width: 50%;
+			height: 88rpx;
+			font-size: 32rpx;
+			line-height: 88rpx;
+			font-weight: bold;
+		}
+		.qx {
+			color: #0183ff;
+		}
+		.qd {
+			background: #0183ff;
+			color: #fff;
+		}
+	}
+}
+// 底部logo
+.logoPic {
+	flex-shrink: 0;
+	margin: 40rpx 216rpx 40rpx;
+	.bot-logo {
+		width: 316rpx;
+		height: 40rpx;
+	}
+}

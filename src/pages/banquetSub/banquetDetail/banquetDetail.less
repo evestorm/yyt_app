@@ -1,0 +1,772 @@
+// 客户基本信息
+.customer-basic-info {
+	box-sizing: border-box;
+	background: white;
+	margin-top: 20rpx;
+	justify-content: space-between;
+	padding: 30rpx;
+	.avatar-wrapper-left {
+	}
+	.other-info-wrapper-right {
+		flex: 1;
+		max-width: 75%;
+		.top {
+			justify-content: space-between;
+			align-items: flex-start;
+			.banquet-title {
+				// width: 50%;
+				flex: 1;
+				font-size: 32rpx;
+				font-family: PingFang SC;
+				font-weight: bold;
+				color: rgba(13, 13, 13, 1);
+				// overflow: hidden;
+				// text-overflow: ellipsis;
+				// white-space: nowrap;
+			}
+			.banquet-date-wrapper {
+				.img {
+					width: 24rpx;
+					height: 20rpx;
+				}
+				.date {
+					font-size: 30rpx;
+					font-family: PingFang SC;
+					color: rgba(64, 64, 64, 1);
+					margin-left: 10rpx;
+				}
+			}
+		}
+		.center {
+			margin-top: 10rpx;
+			font-size: 30rpx;
+			font-family: PingFang SC;
+			color: rgba(64, 64, 64, 1);
+		}
+		.bottom {
+			align-items: flex-start;
+			.img {
+				margin-top: 12rpx;
+				width: 24rpx;
+				height: 20rpx;
+			}
+			.company {
+				margin-left: 10rpx;
+			}
+		}
+	}
+}
+
+// 宴会主体
+.banquet-main-wrapper {
+	box-sizing: border-box;
+	position: relative;
+	padding-bottom: 20rpx;
+	// 宴会信息/宴会执行动作执行区
+	.action-wrapper {
+		position: absolute;
+		left: 0;
+		top: 0;
+		right: 0;
+		display: flex;
+		flex-direction: column;
+		padding-top: 20rpx;
+		// background: #f1f1f1;
+		z-index: 1;
+		&.fixed {
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+		}
+		.btn-wrapper {
+			margin: 0 30rpx;
+		}
+
+		// 宴会信息顶部tab切换
+		.banquet-info-tab {
+			margin-top: 20rpx;
+			box-shadow: 0px 2px 4px #f1f1f1;
+			.cu-item {
+				box-sizing: border-box;
+				width: 25%;
+				margin: 0;
+				text-align: center;
+				// 短横线的放进了 common.css 中
+			}
+		}
+
+		// 宴会执行filter
+		.banquet-exec-filter {
+			margin-top: 20rpx;
+			box-shadow: 0px 2px 4px #f1f1f1;
+
+			.cu-item {
+				flex: 1;
+			}
+		}
+	}
+	// 宴会信息板块
+	.banquet-info-wrapper {
+		margin-top: 10rpx;
+
+		// 宴会相关
+		.banquet-relevant {
+			margin-top: 10rpx;
+			background: white;
+			box-shadow: 0px 2px 2px #f1f1f1;
+
+			// 宴会服务成员
+			.members-of-the-service {
+				// scroll-view
+				.member-avatar-content {
+					// 单个成员item
+					.member-avatar-item {
+						margin: 0 10rpx;
+						width: 120rpx;
+						display: inline-flex;
+						flex-direction: column;
+						align-items: center;
+						&:first-of-type {
+							margin-left: 0;
+						}
+						&:last-of-type {
+							margin-right: 0;
+						}
+
+						.avatar-name-wrapper {
+							width: 100%;
+							text-align: center;
+							overflow: hidden;
+							text-overflow: ellipsis;
+							white-space: nowrap;
+							.img {
+								width: 22rpx;
+								height: 22rpx;
+							}
+							.name {
+								margin-left: 10rpx;
+								font-size: 24rpx;
+							}
+						}
+					}
+				}
+			}
+
+			// 预订单
+			.booking-info {
+			}
+		}
+
+		// 客户档案
+		.account-profile {
+			margin-top: 10rpx;
+			// 至少有一个档案的页面
+			.profile-list {
+				// 档案卡片
+				.card {
+					margin-top: 10rpx;
+					box-sizing: border-box;
+					background: white;
+					box-shadow: 0px 2px 2px #f1f1f1;
+				}
+			}
+			// 没有档案的提示，在最底部
+			// ...
+
+			// 客户档案底部按钮
+			.profile-fixed-bottom {
+				// 解决iOS下底部按钮跟随滚动问题
+				-webkit-transform: translateZ(0);
+				position: fixed;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				height: 50px;
+				box-shadow: 0 -2px 2px #f1f1f1;
+				background: white;
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
+
+				.btn {
+					width: 40%;
+				}
+			}
+		}
+
+		// 宴会套餐
+		.dinner-meal {
+			background: white;
+			margin-top: 10rpx;
+			box-shadow: 0px 2px 2px #f1f1f1;
+		}
+
+		// 服务项目
+		.service-project {
+			background: white;
+			margin-top: 10rpx;
+
+			.card-proj {
+				margin-top: 10rpx;
+				padding: 20rpx;
+				box-sizing: border-box;
+				background: white;
+				box-shadow: inset 0px -4px 4px #f9f9f9;
+
+				// 项目标题
+				// & > .title {
+				// 	font-size: 30rpx;
+				// 	font-family: PingFang SC;
+				// 	font-weight: bold;
+				// 	color: rgba(38, 38, 38, 1);
+				// 	margin-bottom: 20rpx;
+				// }
+				.title-wrapper {
+					display: flex;
+					justify-content: space-between;
+					.title {
+						font-size: 30rpx;
+						font-family: PingFang SC;
+						font-weight: bold;
+						color: rgba(38, 38, 38, 1);
+						margin-bottom: 20rpx;
+					}
+					.btn {
+						font-size: 28rpx;
+						font-family: PingFang SC;
+						color: rgba(76, 173, 254, 1);
+						&.wait {
+							color: rgba(153, 153, 153, 1);
+						}
+					}
+				}
+
+				// 评价等级wrapper
+				.rate-wrapper {
+
+					.title {
+						font-size: 28rpx;
+						font-family: PingFang SC;
+						color: rgba(89, 89, 89, 1);
+					}
+					.tip {
+						font-size: 28rpx;
+						font-family: PingFang SC;
+						color: rgba(153, 153, 153, 1);
+					}
+					.rate-control {
+						display: inline-block;
+					}
+					.content {
+						font-size: 28rpx;
+						font-family: PingFang SC;
+						color: rgba(38, 38, 38, 1);
+						margin-left: 20rpx;
+					}
+
+					// 评分wrapper
+					.score-wrapper {
+						line-height: 2.5;
+					}
+					// 评价wrapper
+					.evaluate-wrapper {
+						line-height: 2.5;
+						margin-bottom: 20rpx;
+					}
+				}
+
+				// 回复wrapper
+				.reply-wrapper {
+					border-top: 1rpx solid #e1e1e1;
+					// 标题 带按钮
+					.title-wrapper {
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						margin: 20rpx 0;
+
+						.title {
+							font-size: 28rpx;
+							font-family: PingFang SC;
+							color: rgba(89, 89, 89, 1);
+						}
+
+						.btn {
+							color: #0183ff;
+							font-size: 28rpx;
+							font-family: PingFang SC;
+							color: rgba(1, 131, 255, 1);
+						}
+					}
+					// 我的回复
+					.content {
+						font-size: 28rpx;
+						font-family: PingFang SC;
+						color: rgba(38, 38, 38, 1);
+						margin-left: 20rpx;
+
+						// 没回复时的placeholder
+						.tip {
+							font-size: 22rpx;
+							font-family: PingFang SC;
+							color: #999999;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// 宴会执行板块
+	.banquet-exec-wrapper {
+		box-sizing: border-box;
+		position: relative;
+		padding-top: 108rpx;
+		margin-top: 10rpx;
+
+		// 顶部项目tab
+		.proj-tools-fixed {
+			overflow: hidden;
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			height: 108rpx;
+			display: flex;
+			justify-content: space-between;
+			box-shadow: 0 4rpx 4rpx 0 #e1e1e1;
+
+			// colorui tab的scroll-view
+			.proj-tab {
+				// width: 90%;
+				.cu-item {
+					height: 108rpx;
+					display: inline-flex;
+					flex-direction: column;
+					justify-content: center;
+					align-items: center;
+
+					.title {
+						position: relative;
+						font-size: 32rpx;
+						font-family: PingFang SC;
+						font-weight: bold;
+
+						.dot {
+							position: absolute;
+							top: 0rpx;
+							right: 0rpx;
+							width: 10rpx;
+							height: 10rpx;
+							border-radius: 5rpx;
+						}
+					}
+					.number {
+						font-size: 22rpx;
+						font-family: PingFang SC;
+					}
+				}
+			}
+
+			// 添加项目按钮
+			.add-proj-wrapper {
+				width: 10%;
+				height: 108rpx;
+				box-shadow: -2px 0px 3px 0px #e1e1e1;
+				& > text {
+					transform: rotate(90deg);
+				}
+			}
+		}
+
+		// 项目划分任务列表数据
+		.proj-list {
+			// 单个任务
+			.item {
+				background: white;
+				box-shadow: inset 0px 1px 2px 0px #e1e1e1;
+				box-sizing: border-box;
+				padding: 20rpx;
+				// 第一行
+				.task-title-wrapper {
+					justify-content: space-between;
+					align-items: center;
+
+					.customer-checkbox {
+						transform: scale(0.6);
+						// transform-origin: center;
+					}
+					// 任务标题
+					.title {
+						margin-right: auto;
+						font-size: 28rpx;
+						font-family: PingFang SC;
+						color: rgba(38, 38, 38, 1);
+						flex: 2;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+					}
+					// 执行人
+					.name {
+						font-size: 24rpx;
+						font-family: PingFang SC;
+						color: rgba(153, 153, 153, 1);
+						flex: 1;
+						overflow: hidden;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+						text-align: right;
+					}
+				}
+				// 第二行
+				.other-info-wrapper {
+					width: 80%;
+					align-items: center;
+					justify-content: flex-start;
+					margin-left: 20rpx;
+
+					// 时间
+					.date {
+						border-radius: 6rpx;
+						font-size: 22rpx;
+						font-family: PingFang SC;
+						color: rgba(255, 255, 255, 1);
+						padding: 0 10rpx;
+					}
+					.img {
+						width: 20rpx;
+						height: 16rpx;
+					}
+					// 签名
+					.signature-wrapper {
+						.signature {
+							margin-left: 10rpx;
+							width: 67rpx;
+							height: 19rpx;
+						}
+					}
+				}
+				// 第三行 备注
+				.notes-wrapper {
+					align-items: flex-start;
+					margin-left: 20rpx;
+					.img {
+						margin-top: 10rpx;
+						width: 24rpx;
+						height: 24rpx;
+					}
+					.notes {
+						flex: 1;
+						font-size: 24rpx;
+						font-family: PingFang SC;
+						color: rgba(89, 89, 89, 1);
+						margin-left: 10rpx;
+					}
+				}
+				// 完成行
+				.done-wrapper {
+					justify-content: flex-start;
+					align-items: center;
+
+					.dot {
+						width: 10rpx;
+						height: 10rpx;
+						border-radius: 5rpx;
+					}
+					.date {
+						margin-left: 10rpx;
+						font-size: 22rpx;
+						font-family: PingFang SC;
+						color: rgba(153, 153, 153, 1);
+					}
+					.name {
+						margin-left: 20rpx;
+						font-size: 24rpx;
+						font-family: PingFang SC;
+						color: rgba(89, 89, 89, 1);
+					}
+					.desc {
+						margin-left: 20rpx;
+						font-size: 24rpx;
+						font-family: PingFang SC;
+						color: rgba(89, 89, 89, 1);
+					}
+				}
+			}
+
+			// 客户档案底部按钮
+			.task-bottom {
+				height: 90rpx;
+				box-shadow: 0px 1px 2px 0px #e1e1e1, inset 0px 1px 2px 0px #e1e1e1;
+				background: white;
+				display: flex;
+				align-items: center;
+				justify-content: space-around;
+
+				.yyt-list-item {
+					padding: 0;
+				}
+			}
+		}
+
+		// 时间划分任务列表数据
+		.date-list {
+			// 任务外的壳儿
+			.item-wrapper {
+				// 时间表头
+				&:first-child .date-wrapper{
+					margin-top:0;
+				}
+				.date-wrapper {
+					justify-content: flex-start;
+					align-items: center;
+					background:#FCFCFC;
+					padding: 14rpx 30rpx 0;
+					margin: 10rpx 0 2rpx;
+
+					.date {
+						font-size: 30rpx;
+						font-family: PingFang SC;
+						font-weight: bold;
+						color: rgba(13, 13, 13, 1);
+					}
+
+					.desc {
+						font-size: 24rpx;
+						font-family: PingFang SC;
+						color: rgba(153, 153, 153, 1);
+
+						text {
+							color: #ff5758;
+						}
+					}
+				}
+				// 每个任务
+				.item {
+					background: white;
+					box-shadow: inset 0px 1px 2px 0px #e1e1e1;
+					box-sizing: border-box;
+					padding: 20rpx;
+
+					// 第一行
+					.task-title-wrapper {
+						justify-content: space-between;
+						align-items: center;
+
+						.customer-checkbox {
+							transform: scale(0.6);
+							// transform-origin: center;
+						}
+						// 任务标题
+						.title {
+							margin-right: auto;
+							font-size: 28rpx;
+							font-family: PingFang SC;
+							color: rgba(38, 38, 38, 1);
+							flex: 2;
+							overflow: hidden;
+							text-overflow: ellipsis;
+							white-space: nowrap;
+						}
+						// 执行人
+						.name {
+							font-size: 24rpx;
+							font-family: PingFang SC;
+							color: rgba(153, 153, 153, 1);
+							flex: 1;
+							overflow: hidden;
+							text-overflow: ellipsis;
+							white-space: nowrap;
+							text-align: right;
+						}
+					}
+					// 第二行
+					.other-info-wrapper {
+						width: 80%;
+						align-items: center;
+						justify-content: flex-start;
+						margin-left: 20rpx;
+
+						// 时间
+						.project-name {
+							font-size: 24rpx;
+							font-family: PingFang SC;
+							color: rgba(64, 64, 64, 1);
+						}
+						.img {
+							width: 20rpx;
+							height: 16rpx;
+						}
+						// 签名
+						.signature-wrapper {
+							.signature {
+								margin-left: 10rpx;
+								width: 67rpx;
+								height: 19rpx;
+							}
+						}
+					}
+					// 第三行 备注
+					.notes-wrapper {
+						align-items: flex-start;
+						margin-left: 20rpx;
+						.img {
+							margin-top: 10rpx;
+							width: 24rpx;
+							height: 24rpx;
+						}
+						.notes {
+							flex: 1;
+							font-size: 24rpx;
+							font-family: PingFang SC;
+							color: rgba(89, 89, 89, 1);
+							margin-left: 10rpx;
+						}
+					}
+					// 完成行
+					.done-wrapper {
+						justify-content: flex-start;
+						align-items: center;
+
+						.dot {
+							width: 10rpx;
+							height: 10rpx;
+							border-radius: 5rpx;
+						}
+						.date {
+							margin-left: 10rpx;
+							font-size: 22rpx;
+							font-family: PingFang SC;
+							color: rgba(153, 153, 153, 1);
+						}
+						.name {
+							margin-left: 20rpx;
+							font-size: 24rpx;
+							font-family: PingFang SC;
+							color: rgba(89, 89, 89, 1);
+						}
+						.desc {
+							margin-left: 20rpx;
+							font-size: 24rpx;
+							font-family: PingFang SC;
+							color: rgba(89, 89, 89, 1);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+// 去掉 color-ui 默认给按钮添加的点击动画
+.cu-btn.button-hover {
+	transform: translate(0, 0);
+}
+
+// 子版块
+.overview-title {
+	background: #f2f2f2;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20rpx;
+	& > view {
+		display: flex;
+		flex-wrap: nowrap;
+	}
+}
+.overview-subTitle {
+	display: flex;
+	flex-wrap: nowrap;
+	& > .overview-stripe {
+		margin-right: 18rpx;
+		width: 4rpx;
+		height: 24rpx;
+		background: #0183ff;
+		align-self: center;
+	}
+	& > view {
+		font-weight: bold;
+		font-size: 34rpx;
+		color: #262626;
+	}
+}
+// 三角箭头左侧提示
+.info-wrapper {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	align-items: center;
+	.overview-dot {
+		background: #ff0000;
+		width: 10rpx;
+		height: 10rpx;
+		border-radius: 5rpx;
+		overflow: hidden;
+		margin-right: 10rpx;
+	}
+}
+
+// 没有档案的提示页面
+.empty {
+	min-height: 200px;
+	justify-content: center;
+	align-items: center;
+
+	.tip-wrapper {
+		align-items: center;
+
+		.img {
+			width: 50rpx;
+			height: 50rpx;
+		}
+		.tip {
+			margin-left: 5px;
+			font-size: 28rpx;
+			font-family: PingFang SC;
+			color: #404040;
+		}
+	}
+
+	.btn {
+		margin-top: 20px;
+		width: 50%;
+	}
+}
+
+.forbidden-scroll {
+	overflow: hidden;
+	height: 100vh;
+}
+
+// --------------------- 新增css --------------------
+
+// 让整个容器为flex，分为上下两块内容
+.container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	overflow: hidden;
+	flex-wrap: nowrap;
+}
+
+// 给页面整个下半部分设置样式
+.banquet-main-wrapper {
+	height: 0;
+	flex: 1;
+	// 上面两个属性才能让其不超出设置了flex的父容器高度
+	
+	// 宴会信息下所有tab板块高度100%，不自适应
+	.banquet-info-wrapper, .banquet-exec-wrapper {
+		height: 100%;
+	}
+}
+
+.yyt-list-item {
+	.sw-input {
+		font-size: 28rpx;
+		color: #262626;
+	}
+}

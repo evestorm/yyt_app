@@ -1,0 +1,640 @@
+.bookNow-root,
+.bookNow-container,
+.bookNow-list {
+	height: 100%;
+}
+.bookNow-root view {
+	line-height: 1;
+}
+.left {
+	font-size: 28rpx;
+	margin-left: 14rpx;
+	cursor: pointer;
+}
+.right {
+	margin-right: 30rpx;
+	color: #0185fe;
+	cursor: pointer;
+}
+.bookNow-container {
+	display: flex;
+}
+// 左侧列表
+.bookNow-list {
+	position: fixed;
+	flex-basis: 145rpx;
+	flex-wrap: wrap;
+	min-height: 100rpx;
+	text-align: center;
+	view {
+		font-size: 24rpx;
+	}
+	& > .table-list {
+		height: calc(100% - 220rpx);
+	}
+	& > .bookNow-list-bot {
+		margin: 20rpx auto;
+		padding: 20rpx;
+		width: 90rpx;
+		height: 90rpx;
+		background: #9ac3ff;
+		border-radius: 100%;
+		box-sizing: border-box;
+		box-shadow: #c0c0c0 0 0 10rpx 2rpx;
+		& > view {
+			font-size: 22rpx;
+			color: #4c4c4c;
+			line-height: 30rpx;
+			& > text {
+				color: #ee1d1d;
+			}
+		}
+	}
+}
+.bookNow-item {
+	padding: 20rpx 0rpx 20rpx 20rpx;
+	display: flex;
+	cursor: pointer;
+	color: #737373;
+	& > view:first-child {
+		width: 100rpx;
+	}
+	& > .cuIcon-check {
+		position: relative;
+		width: 32rpx;
+		font-size: 32rpx;
+		color: #0183ff;
+	}
+	& > .cuIcon-check:before {
+		content: '';
+	}
+	&.bookNow-selItem > .cuIcon-check:before {
+		content: '\e645';
+		position: absolute;
+		left: 0;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	&.bookNow-selItem {
+		background: #fff;
+		color: #1a1a1a;
+	}
+}
+.bookNow-orderItem {
+	position: relative;
+	padding: 20rpx 20rpx 20rpx 10rpx;
+	display: flex;
+	cursor: pointer;
+	border: 2rpx solid #e6e6e6;
+	border-right: none;
+	width: 135rpx;
+	&.bookNow-reserve {
+		background: #3285ff;
+		color: #fff;
+		& > .bookNow-dot-box view {
+			background: #fff;
+		}
+	}
+	&.bookNow-purchase {
+		background: #57ff6c;
+		color: #333;
+		& > .bookNow-dot-box view {
+			background: #333;
+		}
+	}
+	&.bookNow-arrive {
+		background: #14c5cb;
+		color: #fff;
+		& > .bookNow-dot-box view {
+			background: #fff;
+		}
+	}
+	&.bookNow-audit {
+		background: #acd7e7;
+		color: #333;
+		& > .bookNow-dot-box view {
+			background: #333;
+		}
+	}
+	&.bookNow-close {
+		background: #989898;
+		color: #fff;
+		& > .bookNow-dot-box view {
+			background: #fff;
+		}
+	}
+	&.bookNow-orderSel {
+		width: 150rpx;
+	}
+	& > .bookNow-dot-box {
+		position: absolute;
+		right: 6rpx;
+		top: 0;
+		padding: 6rpx 0;
+		display: flex;
+		flex-direction: column;
+		align-content: center;
+		& > view {
+			margin-bottom: 6rpx;
+			width: 10rpx;
+			height: 10rpx;
+			border-radius: 100%;
+		}
+	}
+}
+// 表单列表
+.bookNow-box {
+	margin-left: 155rpx;
+	padding: 10rpx 44rpx 40rpx 5rpx;
+	flex-grow: 1;
+	min-height: 100rpx;
+	// 公共
+	& > .bookNow-com {
+		background: #fff;
+		border-radius: 10rpx;
+		margin-bottom: 16rpx;
+		padding: 45rpx 35rpx 15rpx 30rpx;
+		& > view {
+			position: relative;
+			margin-top: 55rpx;
+			display: flex;
+			align-content: center;
+		}
+		& > view:first-child {
+			margin-top: 0;
+		}
+		.place-class {
+			padding-bottom: 3px;
+			font-size: 24rpx;
+			text-align: center;
+		}
+		.bookNow-status {
+			position: absolute;
+			top: 3rpx;
+			right: 0;
+			display: flex;
+			flex-wrap: nowrap;
+			text {
+				margin-top: 5rpx;
+				margin-right: 5rpx;
+				font-size: 22rpx;
+				color: #3285ff;
+			}
+			image {
+				width: 18rpx;
+				height: 30rpx;
+			}
+		}
+	}
+	// 顶部
+	& > .bookNow-basis {
+		height: 288rpx;
+		.cuIcon-search {
+			position: absolute;
+			top: 0;
+			right: 20rpx;
+			z-index: 5;
+			color: #9a9a9a;
+		}
+	}
+	// 中部
+	& > .bookNow-detail {
+		.bookNow-label {
+			flex-basis: 120rpx;
+		}
+		.cuIcon-right {
+			position: absolute;
+			top: 0;
+			right: 10rpx;
+			z-index: 5;
+			color: #9a9a9a;
+		}
+		checkbox-group {
+			width: 0;
+			height: 0;
+		}
+		checkbox {
+			position: absolute;
+			top: -18rpx;
+			right: 0;
+			transform: scale(0.6);
+		}
+		textarea {
+			padding: 20rpx;
+			width: 430rpx;
+			height: 120rpx;
+			font-size: 28rpx;
+			border: 2rpx solid #e6e6e6;
+			border-radius: 8rpx;
+		}
+	}
+	// 底部
+	// 底部选择桌台
+	& > .bookNow-tableSel {
+		padding: 40rpx 0 30rpx 30rpx;
+		// margin-bottom: 140rpx;
+		.bookNow-tableSel-top {
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 34rpx;
+			font-size: 26rpx;
+			color: #4d4d4d;
+			.plus-css {
+				position: relative;
+				margin-right: 40rpx;
+				width: 28rpx;
+				height: 28rpx;
+				&:before,
+				&:after {
+					content: '';
+					position: absolute;
+					background: #9a9a9a;
+				}
+				&:before {
+					top: 0;
+					left: 50%;
+					transform: translateX(-50%);
+					height: 28rpx;
+					width: 4rpx;
+				}
+				&:after {
+					top: 50%;
+					left: 0;
+					transform: translateY(-50%);
+					width: 28rpx;
+					height: 4rpx;
+				}
+			}
+		}
+		.bookNow-tableSel-list {
+			display: flex;
+			flex-wrap: wrap;
+			view {
+				display: inline-block;
+			}
+			.bookNow-tableSel-item {
+				position: relative;
+				margin-right: 30rpx;
+				margin-bottom: 30rpx;
+				padding: 15rpx;
+				background: #0183ff;
+				font-size: 24rpx;
+				color: #fff;
+				& > .cuIcon-close {
+					position: absolute;
+					top: 0;
+					right: 0;
+					transform: translate(50%, -50%);
+					width: 30rpx;
+					height: 30rpx;
+					line-height: 30rpx;
+					color: #fff;
+					text-align: center;
+					background: rgb(238, 29, 29);
+					border-radius: 100%;
+				}
+			}
+		}
+	}
+}
+// 表单公共样式
+.cuIcon-back {
+	font-size: 34rpx;
+	cursor: pointer;
+}
+.bookNow-require {
+	margin-right: 5rpx;
+	font-size: 34rpx;
+	color: #ee1d1d;
+	vertical-align: middle;
+}
+.bookNow-label {
+	flex-wrap: nowrap;
+	margin-right: 10rpx;
+	font-size: 26rpx;
+	color: #4d4d4d;
+}
+.bookNow-input,
+picker,
+.bookNow-scroll,
+.plus-minus > view {
+	flex-grow: 1;
+	font-size: 28rpx;
+	color: #1a1a1a;
+	border-bottom: 2rpx solid #f2f2f2;
+	text-align: center;
+}
+.bookNow-input {
+	height: 36rpx;
+	line-height: 36rpx;
+	input {
+		margin-bottom: -4rpx;
+		font-size: 28rpx;
+	}
+	&.active {
+		color: #007aff;
+		text-decoration: underline;
+	}
+}
+picker {
+	padding-bottom: 6px;
+}
+.bookNow-scroll {
+	margin-top: -10rpx;
+	padding-left: 40rpx;
+	width: 370rpx;
+	height: 50rpx;
+	white-space: nowrap;
+	& view {
+		display: inline-block;
+		margin-right: 30rpx;
+		padding: 6rpx 20rpx;
+		border: 2rpx solid #0185fe;
+		border-radius: 50rpx;
+		font-size: 24rpx;
+		background: #fff;
+		color: #0185fe;
+	}
+	& view.bookNow-scroll-sel {
+		background: #0185fe;
+		color: #fff;
+	}
+}
+.plus-minus {
+	view {
+		display: flex;
+		justify-content: center;
+		line-height: 36rpx;
+		font-size: 34rpx;
+		color: #4d4d4d;
+	}
+	.minus {
+		margin: auto 0;
+		display: inline-block;
+		width: 18rpx;
+		height: 3rpx;
+		background: #4d4d4d;
+	}
+	input {
+		flex-grow: 0;
+		width: 100rpx;
+	}
+}
+// 桌台选择面板
+.tablePanel-container {
+	width: 100%;
+	background: #fff;
+	border-top-left-radius: 10rpx;
+	border-top-right-radius: 10rpx;
+}
+.tablePanel-head {
+	margin-bottom: 20rpx;
+	padding-bottom: 30rpx;
+	font-size: 30rpx;
+	font-weight: bold;
+	color: #1a1a1a;
+	text-align: center;
+}
+.tablePanel-mid {
+	display: flex;
+	margin-bottom: 40rpx;
+	.tablePanel-area {
+		margin-right: 30rpx;
+		margin-left: -30rpx;
+		width: 200rpx;
+		flex-basis: 200rpx;
+		height: 500rpx;
+		text-align: center;
+		view {
+			font-size: 24rpx;
+		}
+		.tablePanel-area-item {
+			border: 2rpx solid #e6e6e6;
+			padding: 18rpx;
+			& > view:first-child {
+				margin-bottom: 10rpx;
+			}
+			text {
+				color: #ee1d1d;
+			}
+		}
+		.tablePanel-area-item.tablePanel-area-sel {
+			background: #0183ff;
+			border-color: #0183ff;
+			color: #fff;
+			text {
+				color: rgb(220, 40, 54);
+			}
+		}
+	}
+	.tablePanel-table {
+		height: 500rpx;
+		margin-right: -30rpx;
+		.tablePanel-table-item {
+			display: inline-block;
+			margin-bottom: 16rpx;
+			margin-right: 16rpx;
+			padding: 20rpx;
+			background: #fff;
+			font-size: 24rpx;
+			color: #4d4d4d;
+			border: 2rpx solid #e6e6e6;
+		}
+		.tablePanel-table-item.tablePanel-table-sel {
+			background: #0183ff;
+			border-color: #0183ff;
+			color: #fff;
+		}
+	}
+}
+.tablePanel-bot {
+	margin: 0 -30rpx -28rpx -30rpx;
+	& > view {
+		display: inline-block;
+		padding: 30rpx 0;
+		width: 50%;
+		border: 2rpx solid #0183ff;
+		color: #0183ff;
+		text-align: center;
+		cursor: pointer;
+	}
+	& > view:first-child {
+		border-top-left-radius: 10rpx;
+		border-bottom-left-radius: 10rpx;
+	}
+	& > view:last-child {
+		border-top-right-radius: 10rpx;
+		border-bottom-right-radius: 10rpx;
+		background: #0183ff;
+		color: #fff;
+	}
+}
+// 预订页顶部订单切换
+.bookNow-custom {
+	position: fixed;
+	z-index: 10;
+	margin-top: -30rpx;
+	padding: 30rpx 0 15rpx;
+	width: 100%;
+	background: #eaf6ff;
+	white-space: nowrap;
+	& > .bookNow-personList {
+		margin: auto;
+		width: 90%;
+	}
+	& .bookNow-person {
+		position: relative;
+		display: inline-block;
+		margin-right: 40rpx;
+		margin-bottom: 20rpx;
+		font-size: 26rpx;
+		color: #323232;
+		&.bookNow-personlSel {
+			color: #0183ff;
+			&:after {
+				content: '';
+				position: absolute;
+				bottom: -6px;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 50%;
+				height: 2rpx;
+				background: #0183ff;
+			}
+		}
+	}
+}
+// 底部操作按钮
+.bookNow-orderBtn {
+	position: fixed;
+	bottom: 20rpx;
+	right: 0;
+	width: calc(100% - 160rpx);
+	display: flex;
+	flex-wrap: nowrap;
+	border-radius: 100px;
+	overflow: hidden;
+	& > view {
+		padding: 30rpx 0;
+		flex-grow: 1;
+		background: #0373fc;
+		color: #fff;
+		text-align: center;
+		border-right: 4rpx solid #f5f5f5;
+		cursor: pointer;
+	}
+	& > view:last-child {
+		border-right: none;
+	}
+}
+// 确认预订按钮
+.confirm-btn {
+	position: fixed;
+	z-index: 10;
+	bottom: 30rpx;
+	right: 30rpx;
+}
+// 编辑确认按钮
+.editBtn-container {
+	position: fixed;
+	z-index: 10;
+	bottom: 30rpx;
+	right: 30rpx;
+	display: flex;
+	flex-wrap: nowrap;
+	border-radius: 100rpx;
+	overflow: hidden;
+	& > button {
+		border-radius: 0;
+	}
+	& > button:first-child {
+		border-right: 4rpx solid #f4f5f6;
+		background: #e54d42;
+	}
+}
+
+.cuIcon-search {
+	color: #0185fe !important;
+}
+
+.phone-inline {
+	display: flex;
+	align-items: center;
+	position: relative;
+	.send-msg {
+		margin-top: 2rpx;
+		margin-right: 2rpx;
+		font-size: 22rpx;
+		color: #3285ff;
+	}
+	.go-info {
+		font-size: 24rpx;
+		color: #3285ff;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}
+.extend-view {
+	background: transparent;
+	width: 100%;
+	height: 140rpx;
+}
+.checkStatus-radio {
+	font-size: 24rpx;
+	flex: 1;
+	.uni-label-pointer {
+		width: 100%;
+		margin-top: 20rpx;
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+	label {
+		display: flex;
+		align-items: center;
+	}
+	radio {
+		transform: scale(0.5);
+	}
+}
+.poput-textarea {
+	padding: 20rpx;
+	width: 90%;
+	height: 160rpx;
+	font-size: 28rpx;
+	border: 2rpx solid #e6e6e6;
+	border-radius: 8rpx;
+	text-align: left;
+}
+.tell-tip {
+	//电话提示
+	top: 40rpx;
+	width: 400rpx;
+	color: #666;
+	background: #fff;
+	z-index: 9;
+	view {
+		border-bottom: 1px solid #eee;
+		&:last-child {
+			border-bottom: 0;
+		}
+	}
+}
+.menban {
+	//全屏蒙版
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.2);
+	z-index: 8;
+}
+.yyt-extend-area::after {
+	left: 15rpx !important;
+}
+.name{
+	&:after{
+		content: '';
+		display: block;
+		width: 16px;
+	}
+}

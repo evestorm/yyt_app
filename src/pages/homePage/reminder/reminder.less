@@ -1,0 +1,62 @@
+// 作者:杨亮
+.reminder {
+	background: #FFFFFF;
+	box-shadow: 0px 16rpx 14rpx 2rpx rgba(0, 0, 0, 0.04);
+	border-radius: 10rpx;
+	padding: 10rpx 30rpx 0 30rpx;
+}
+
+.header {
+	position: relative;
+	font-size: 34rpx;
+	font-family: PingFang SC;
+	font-weight: 400;
+	color: #333333;
+	line-height: 36rpx;
+	padding: 20rpx;
+	border-bottom: 1rpx solid #EEEEEE;
+	
+	&::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 50%;
+		display: block;
+		height: 50%;
+		width: 6rpx;
+		transform: translateY(-50%);
+		background-color: #5294FA;
+	}
+}
+
+.list {
+	.item {
+		height: 90rpx;
+		
+		.left {
+			font-size: 26rpx;
+			font-family: PingFang SC;
+			font-weight: 400;
+			color: #333333;
+			line-height: 36rpx;
+		}
+		
+		.right {
+			font-size: 26rpx;
+			font-family: PingFang SC;
+			font-weight: 400;
+			color: #777777;
+			line-height: 36rpx;
+			
+			.tip {
+				/deep/ .mark {
+					color: #F24137;
+				}
+			}
+		}
+		
+		&:not(:last-of-type) {
+			border-bottom: 1rpx solid #EEEEEE;
+		}
+	}
+}

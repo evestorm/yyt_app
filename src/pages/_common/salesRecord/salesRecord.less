@@ -1,0 +1,361 @@
+.sales-record {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	box-sizing: border-box;
+	background-color: #f5f5f5;
+}
+
+.container {
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
+	// ↓未来的顶部/底部导航栏预留高度↓
+	padding: 0px 0;
+	
+	.yyt_yyt_cardContentInfo {
+		// padding-top: 120rpx;
+		padding-top: 44px;
+		height: 100%;
+		overflow-y: auto;
+		
+		.customerFocus {
+		    height: 79rpx;
+		    border: 1px solid;
+		    border-image: linear-gradient(#01bee8, #0183ff) 10 10;
+		    display: flex;
+		    align-items: center;
+		    margin-top: 22rpx;
+		    margin-bottom: 24rpx;
+		}
+		.myfootprint {
+		    width: 50%;
+		    display: flex;
+		    align-items: center;
+			
+			.qiehPic {
+			    width: 39rpx;
+			    height: 29rpx;
+			}
+			
+			text {
+			    font-size: 32rpx;
+			    padding-left: 62rpx;
+			    padding-right: 43rpx;
+			}
+		}
+		
+		.dateSelect {
+		    width: 50%;
+		    display: flex;
+		    align-items: center;
+		    justify-content: space-between;
+		    padding-left: 26rpx;
+		    padding-right: 26rpx;
+			
+			.toLeftPic {
+			    width: 15rpx;
+			    height: 27rpx;
+			    vertical-align: middle;
+			}
+			.toRightPic {
+			    width: 15rpx;
+			    height: 27rpx;
+			}
+			.dateSelectPic {
+			    width: 35rpx;
+			    height: 36rpx;
+			}
+			.dateShow {
+			    display: flex;
+			    align-items: center;
+			}
+		}
+		
+		.dateShow text {
+		    font-size: 30rpx;
+		    line-height: 30rpx;
+		    padding-right: 30rpx;
+		}
+		
+		.customerFocusCard_top {
+		    display: flex;
+		}
+		
+		.customerFocusCard_top_left {
+		    width: 93%;
+		    /* width:5.48rpx; */
+		    /*height: 2.24rpx;*/
+		    background-color: #fff;
+		    margin-right: 8rpx;
+		    border-radius: 10rpx;
+		    display: flex;
+		    padding-bottom: 20rpx;
+		    position: relative;
+			
+			.upperRightCorner {
+			    position: absolute;
+			    top: 14rpx;
+			    right: 14rpx;
+			    font-size: 24rpx;
+			    color: #007aff;
+				
+				.gengPic {
+				    width: 38rpx;
+				    height: 38rpx;
+				}
+				.tuiPic {
+				    width: 38rpx;
+				    height: 38rpx;
+				}
+			}
+			
+			.customerFocusCard_top_left_l {
+			    display: flex;
+			    flex-direction: column;
+			    flex: 1;
+			    text-align: center;
+			    padding-right: 20rpx;
+			    padding-left: 20rpx;
+			    padding-top: 14rpx;
+				
+				.customerFocusCard_top_left_l_picArea {
+				    position: relative;
+				    width: 135rpx;
+				    height: 135rpx;
+				}
+				
+				.salesrankPic {
+				    width: 30rpx;
+				    height: 30rpx;
+				}
+				
+				.salespersonNamePic {
+				    width: 100%;
+				    height: 60rpx;
+				    position: absolute;
+				    bottom: 0;
+				    background-image: url("https://pic.cwyyt.cn/upload/yytApp/images/bgMask.png");
+				    background-repeat: no-repeat;
+				    background-size: 100% 100%;
+				    text-align: center;
+				    line-height: 60rpx;
+					
+					text {
+					    font-size: 22rpx;
+					    color: #fff;
+					}
+				}
+				
+				.salespersonPic {					
+					width: 135rpx;
+					height: 135rpx;
+					border-radius: 50%;
+					display: block;
+					
+					text {
+					    font-size: 22rpx;
+					    color: #fff;
+					}
+				}
+				
+				.salespersonInfo {
+				    display: flex;
+				    align-items: center;
+				    justify-content: center;
+				    padding-top: 12rpx;
+					
+					.salespersonName {
+					    font-size: 26rpx;
+					    color: #323232;
+					    padding-right: 15rpx;
+					}
+				}
+				
+			}
+			.customerFocusCard_top_left_r {
+			    width: 100%;
+			    padding-top: 32rpx;
+			    /* padding-bottom: 0.3rpx; */
+			    padding-right: 29rpx;
+			    display: flex;
+			    justify-content: space-between;
+			    flex-direction: column;
+				
+				.adressInfo {
+				    color: #323232;
+				    font-size: 26rpx;
+					display: flex;
+					align-items: center;
+					/*padding-top:0.2rpx;*/
+				    /*line-height: 0.3rpx;*/
+					
+					.address_company {
+					    width: 280rpx;
+					    display: inline-block;
+					    overflow: hidden;
+					    text-overflow: ellipsis;
+					    white-space: nowrap;
+					}
+					.adress_area {
+					    display: flex;
+					    align-items: center;
+						.date {
+						    padding-right: 20rpx;
+						}
+					}
+					.addressPic {
+					    width: 33rpx;
+					    height: 28rpx;
+					    margin-right: 20rpx;
+					}
+					
+					.dateWeekPic {
+					    width: 32rpx;
+					    height: 29rpx;
+					    margin-right: 20rpx;
+					}
+				}
+				
+				.customerFocusCard_top_left_r_top {
+				    height: 128rpx;
+				}
+				
+				.telphoneInfo {
+				    display: flex;
+				    align-items: center;
+					font-size: 28rpx;
+					.telphonePic {
+					    width: 33rpx;
+					    height: 31rpx;
+					    margin-right: 14rpx;
+					}
+				}
+				
+				.orderInfo {
+				    display: flex;
+				    justify-content: space-between;
+					
+					text {
+					    font-size: 26rpx;
+					    color: #323232;
+					}
+				}
+				
+				.notebookInfo {
+					.notebookPic {
+					    width: 27rpx;
+					    height: 27rpx;
+					    margin-right: 14rpx;
+					}
+				}
+				
+			}
+		}
+		
+		.customerFocusCard_top_right {
+		    display: flex;
+		    flex-direction: column;
+		    width: 133rpx;
+			
+			.customerFocusCard_top_right_t {
+			    width: 133rpx;
+			    /*height: 1.08rpx;*/
+			    /*height: 50%;*/
+			    flex: 2;
+			    display: flex;
+			    flex-direction: column;
+			    justify-content: center;
+			    align-items: center;
+			    background-color: #fff;
+			    margin-bottom: 8rpx;
+			    border-radius: 10rpx;
+				
+				&text:first-child {
+				    display: block;
+				}
+				
+				.consume {
+				    color: #ff0000;
+				}
+				
+				text {
+				    font-size: 26rpx;
+				    color: #323232;
+				}
+			}
+			
+			.customerFocusCard_top_right_b {
+			    display: flex;
+			    flex-direction: column;
+			    align-items: center;
+			    justify-content: center;
+			    flex: 3;
+			    /*height: 50%;*/
+			    /*height: 1.08rpx;*/
+			    width: 133rpx;
+			    background-color: #fff;
+			    border-radius: 10rpx;
+				
+				.followPic {
+				    width: 44rpx;
+				    height: 44rpx;
+				    margin-bottom: 15rpx;
+				}
+				
+				.kefuPic {
+				    width: 40rpx;
+				    height: 44rpx;
+				    margin-bottom: 15rpx;
+				}
+				
+				text {
+				    font-size: 26rpx;
+				    color: #332222;
+				}
+			}
+		}
+	}
+}
+
+.mui-table-view {
+    background-color: #f5f5f5;
+	position: relative;
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-left: 0;
+	list-style: none;
+	&:before {
+	    height: 0;
+	}
+	&:after {
+		height: 0;
+	}
+	
+	.mui-table-view-cell {
+		margin-bottom: 30rpx;
+		padding: 0;
+		&:after {
+			height: 0;
+		}
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.mui-content {
+	.noContent {
+	    width: 100%;
+	    height: calc(100vh - 98px);
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+		
+		text {
+			font-size: 36rpx;
+			color: #9a9a9a;
+		}
+	}
+}

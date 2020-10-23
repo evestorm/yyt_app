@@ -1,0 +1,126 @@
+// 作者:杨亮
+@comfirm: {
+	color: #65B44F;
+}
+@wait: {
+	color: #DDDDDD;
+}
+@comfirmLabel: {
+	color: white;
+	background-color: #65B44F;
+}
+@waitLabel: {
+	color: #999999;
+	background-color: #F2F2F2;
+}
+
+.task-card {
+	width: 100%;
+	background: #ffffff;
+	box-sizing: border-box;
+	padding: 30rpx;
+}
+
+.header {
+	position: relative;
+	padding-bottom: 20rpx;
+	.title,
+	.date {
+		font-size: 30rpx;
+		font-family: PingFang SC;
+		font-weight: 400;
+		color: #262626;
+		line-height: 36px;
+	}
+	.status {
+		margin-left: auto;
+		width: 108rpx;
+		height: 40rpx;
+		background: #f2f2f2;
+		border-radius: 4rpx;
+		font-size: 24rpx;
+		font-family: PingFang SC;
+		font-weight: 400;
+		color: #999999;
+		line-height: 36rpx;
+		&.comfirm {
+			@comfirmLabel();
+		}
+		&.wait {
+			@waitLabel();
+		}
+	}
+	
+	&::after {
+		content: "";
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 1rpx;
+		background: #EEEEEE;
+	}
+}
+
+.list {
+	.list-item {
+		.name {
+			
+		}
+		
+		.status-wrapper {
+			margin-left: auto;
+			.icon-yiwancheng {
+				@comfirm();
+			}
+			.icon-daiqueren {
+				@wait();
+			}
+			
+			.status-desc {
+				font-size: 24rpx;
+				font-family: PingFang SC;
+				font-weight: 400;
+				color: #999999;
+				line-height: 36px;
+				margin-left: 10rpx;
+
+				&.confirm {
+					@comfirm();
+				}
+				&.wait {
+					@wait();
+				}
+			}
+		}
+	}
+}
+
+.btn-wrapper {
+	padding: 20rpx 0;
+	.confirm-btn {
+		// width: 600rpx;
+		height: 80rpx;
+		background: #0183FF;
+		border-radius: 10rpx;
+		
+		font-size: 32rpx;
+		font-family: PingFang SC;
+		font-weight: 400;
+		color: #FFFFFF;
+		line-height: 36rpx;
+		margin: 0 5rpx;
+	}
+}
+
+.link-wrapper {
+	padding: 20rpx 0;
+	
+	.check-an-order {
+		font-size: 32rpx;
+		font-family: PingFang SC;
+		font-weight: 400;
+		color: #0183FF;
+		line-height: 36rpx;
+	}
+}

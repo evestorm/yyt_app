@@ -1,0 +1,378 @@
+page {
+	background: #fff;
+}
+
+.custom-gray {
+	color: #aaa;
+}
+
+// 整个查询记录容器
+#search-record {
+	height: 100%;
+	background-color: #fff;
+}
+
+// 头部查询框
+.search-input {
+	width: 100%;
+	padding: 0 30rpx;
+	display: flex;
+	// justify-content: space-between;
+	align-items: center;
+	margin-top: 30rpx;
+	margin-bottom: 30rpx;
+	padding-top: 2rpx;
+
+	// background:#A0D6FF;
+	.input {
+		width: 570rpx;
+		height: 72rpx;
+		border-radius: 36rpx;
+		font-size: 22rpx;
+		// line-height: 72rpx;
+		color: #666666;
+		padding: 0 30rpx;
+		background: #fff;
+		border: 1rpx solid #e8e8e8;
+	}
+
+	.search-right {
+		flex: 1;
+		text-align: center;
+	}
+
+	.cancel {
+		font-size: 28rpx;
+		color: #323232;
+		cursor: pointer;
+	}
+}
+
+// 搜索记录
+.search-record {
+	padding-left: 52rpx;
+	padding-right: 30rpx;
+	margin-bottom: 30rpx;
+
+	.search-history {
+		.header {
+		}
+
+		.content {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			margin-top: 20rpx;
+
+			.history-item {
+				padding: 0px 20rpx;
+				border-radius: 18rpx;
+				margin-right: 30rpx;
+				margin-bottom: 20rpx;
+			}
+		}
+	}
+
+	.del-history {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.tab-active {
+	background: #0373fc;
+	color: #fff !important;
+}
+
+// 通话客户
+.call-customer {
+	margin: 0 30rpx;
+
+	.customer-tab {
+		.tab-item {
+			padding: 16rpx 55rpx;
+			color: #0373fc;
+			font-size: 28rpx;
+			overflow: hidden;
+			cursor: pointer;
+		}
+
+		.tab-left {
+			border: 2rpx solid #0373fc;
+			border-right: 0;
+			border-top-left-radius: 10rpx;
+			border-bottom-left-radius: 10rpx;
+		}
+
+		.tab-right {
+			border: 2rpx solid #0373fc;
+			// border-left: 0;
+			border-top-right-radius: 10rpx;
+			border-bottom-right-radius: 10rpx;
+		}
+	}
+
+	// 通话记录 客户列表内容
+	.customer-group {
+		margin-top: 40rpx;
+		overflow: auto;
+
+		// 通话记录
+		.call-record {
+			background-color: #f6f6f6;
+			border-radius: 8rpx;
+			padding: 0 30rpx;
+			margin-bottom: 30rpx;
+
+			.title {
+				font-size: 24rpx;
+				line-height: 48rpx;
+				padding-right: 10rpx;
+			}
+
+			.name-desc {
+				width: 100rpx;
+				text-align: center;
+				font-size: 26rpx;
+				font-weight: 500;
+				color: #1a1a1a;
+				margin: 0 10rpx;
+			}
+
+			.desc {
+				font-size: 26rpx;
+				font-weight: 500;
+			}
+
+			.customer-img {
+				width: 58rpx;
+				height: 58rpx;
+				border-radius: 50%;
+				display: block;
+			}
+
+			.rank-icon {
+				width: 30rpx;
+				height: 30rpx;
+			}
+
+			.customer-top {
+				border-bottom: 1rpx solid #e6e6e6;
+				padding: 30rpx 0;
+
+				.customer-info {
+					display: flex;
+					flex-wrap: wrap;
+					justify-content: space-between;
+					align-items: flex-start;
+					font-size: 26rpx;
+
+					.customer-name {
+						display: flex;
+						justify-content: space-between;
+						align-items: flex-start;
+					}
+
+					.customer-tel {
+						margin-left: auto;
+						align-self: flex-start;
+						display: flex;
+					}
+
+					.customer-add {
+						margin-left: auto;
+						display: flex;
+
+						.add-icon {
+							font-size: 26rpx;
+							margin-right: 10rpx;
+						}
+					}
+				}
+
+				.customer-company {
+					margin-top: 20rpx;
+				}
+			}
+
+			.customer-fee {
+				.customer-habit {
+					border-bottom: 1rpx solid #e6e6e6;
+					padding: 15rpx 0 30rpx 0;
+
+					.customer-tag {
+						display: flex;
+
+						.title {
+							flex: 2;
+						}
+
+						.content {
+							display: flex;
+							flex-wrap: wrap;
+							flex: 10;
+							overflow: auto;
+
+							.tag-item {
+								border: 1px solid #0183ff;
+								border-radius: 18rpx;
+								padding: 0rpx 20rpx;
+								margin-bottom: 22rpx;
+								margin-right: 20rpx;
+							}
+						}
+					}
+
+					.customer-frequency {
+					}
+
+					.customer-consume {
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						margin-top: 20rpx;
+					}
+				}
+
+				.recent-booking {
+					padding: 28rpx 0 22rpx 0;
+					border-bottom: 1rpx solid #e6e6e6;
+
+					.booking-top {
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+					}
+
+					.booking-content {
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						margin-top: 20rpx;
+					}
+				}
+
+				.recore-handle {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					border-bottom: 1rpx solid #e6e6e6;
+					padding: 20rpx 0 20rpx 0;
+
+					.handle-item {
+						display: flex;
+						align-items: center;
+
+						.icon {
+							font-size: 40rpx;
+							margin-right: 16rpx;
+						}
+					}
+
+					.lineFlag {
+						width: 1px;
+						height: 21px;
+						background-color: #c8c7cc;
+						margin-left: 30rpx;
+					}
+				}
+			}
+
+			.customer-footer {
+				padding: 10rpx 0;
+				font-size: 22rpx;
+				color: #666666;
+
+				.date {
+					font-size: 22rpx;
+					color: #666666;
+					padding-right: 33rpx;
+				}
+			}
+		}
+	}
+}
+
+//客户列表内容
+.customer-list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1rpx solid #e6e6e6;
+	margin: 0 30rpx;
+	padding: 10rpx 0;
+
+	.rank-info {
+		display: flex;
+		flex-direction: column;
+		// flex: 1;
+		width: 210rpx;
+
+		.rank-info-top {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-start;
+			align-items: center;
+			margin-right: 10rpx;
+
+			.customer-img {
+				width: 58rpx;
+				height: 58rpx;
+				border-radius: 50%;
+				display: block;
+				margin-right: 10rpx;
+			}
+
+			.rank-icon {
+				width: 30rpx;
+				height: 30rpx;
+			}
+		}
+
+		.rank-info-bottom {
+			.customer-name {
+				width: 200rpx;
+				text-align: center;
+				font-size: 28rpx;
+				color: #1a1a1a;
+				font-weight: 500;
+			}
+		}
+	}
+
+	.compay-info {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		flex: 1;
+		height: 94rpx;
+
+		.tel {
+			flex: 0 1 auto;
+			width: 200rpx;
+			font-size: 26rpx;
+			color: #4d4d4d;
+		}
+
+		.company {
+			flex: 1;
+			font-size: 24rpx;
+			color: #4d4d4d;
+		}
+	}
+
+	.booking-handle {
+		width: 210rpx;
+		text-align: center;
+
+		.fast-book {
+			// flex: 1;
+			width: 262rpx;
+
+			.book {
+				font-size: 26rpx;
+			}
+		}
+	}
+}

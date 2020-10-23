@@ -1,0 +1,43 @@
+// 组件容器
+.yyt-tag-panel {
+	position: relative;
+	width: 100%;
+	padding: 10px;
+}
+
+// 工具栏
+.tools-wrapper {
+	display: flex;
+	justify-content: space-between;
+	.tools-title {
+		flex: 1;
+	}
+	.tools-edit {
+		flex: 1;
+	}
+}
+
+// 标签展示区域
+.tag-wrapper {
+	overflow-y: auto;
+	.tag-view {
+		position: relative;
+		display: inline-block;
+		float: left;
+		padding: 20rpx 20rpx;
+		.tag-delete {
+			position: absolute;
+			font-size: 30rpx;
+			width: 30rpx;
+			height: 30rpx;
+			line-height: 30rpx;
+			top: 6rpx;
+			right: 6rpx;
+		}
+		.tag-add {
+			width: 28px;
+			height: 28px;
+			font-size: 16px;
+		}
+	}
+}

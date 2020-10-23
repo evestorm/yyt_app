@@ -1,0 +1,82 @@
+// 作者:杨亮
+.couponVerification {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+.scancode-wrapper {
+	height: 98rpx;
+	
+	.title {
+		font-size: 30rpx;
+		font-family: PingFang SC;
+		font-weight: 400;
+		color: #333333;
+		line-height: 36rpx;
+	}
+	
+	.code-inner-wrapper {
+		width: 66%;
+		margin-left: 50rpx;
+		font-size: 28rpx;
+		font-family: PingFang SC;
+		font-weight: 400;
+		color: #333333;
+		line-height: 36rpx;
+	}
+}
+
+.card-info-wrapper {
+	.card-item {
+		font-size: 30rpx;
+		font-family: PingFang SC;
+		font-weight: 400;
+		color: #333333;
+		line-height: 36rpx;
+		
+		.title {
+			font-size: 30rpx;
+		}
+		
+		.desc {
+			font-size: 30rpx;
+			&.active {
+				color: #0183FF;
+			}
+		}
+	}
+}
+
+.btn-wrapper {
+	margin-top: 120rpx;
+	
+	.hexiao {
+		width: 630rpx;
+		height: 98rpx;
+		background: #0183FF !important;
+		border-radius: 10rpx;
+		
+		font-size: 34rpx;
+		font-family: PingFang SC;
+		font-weight: 400;
+		color: #FFFFFF;
+		line-height: 36rpx;
+		
+		&.disable {
+			background: lightgrey !important;
+			color: white;
+		}
+	}
+}
+
+.scanner-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	background: white;
+}

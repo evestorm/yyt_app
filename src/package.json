@@ -1,0 +1,21 @@
+{
+  "name": "yyt_app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {
+    "is-url": "^1.2.4",
+    "mockjs": "^1.1.0",
+    "uni-read-pages": "^1.0.5",
+    "uni-simple-router": "^1.5.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

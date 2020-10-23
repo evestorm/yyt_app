@@ -1,0 +1,149 @@
+.tips {
+	&:before {
+		content: '';
+		display: table;
+		height: 20rpx;
+	}
+	.tips-sec {
+		background: #fff;
+		padding-top: 60rpx;
+		height: 75vh;
+		position: relative;
+		.tips-title {
+			font-size: 36rpx;
+			color: #0183ff;
+			font-weight: bold;
+			text-align: center;
+			line-height: 24rpx;
+		}
+		.tip-proress {
+			position: relative;
+			width: 590rpx;
+			height: 86rpx;
+			margin: 70rpx auto 48rpx;
+			.tip-now {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				color: #0183ff;
+				font-size: 28rpx;
+				line-height: 24rpx;
+			}
+			.tip-all {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				color: #262626;
+				font-size: 28rpx;
+				line-height: 24rpx;
+			}
+		}
+		.state {
+			text-align: center;
+			.now {
+				color: #262626;
+				font-size: 30rpx;
+				line-height: 36rpx;
+			}
+			.now-name {
+				color: #0183ff;
+				font-size: 30rpx;
+				line-height: 36rpx;
+			}
+		}
+		.send-msg-list {
+			height: 46vh;
+			.send-item {
+				margin: 26rpx 0 26rpx 240rpx;
+				font-size: 26rpx;
+				line-height: 36rpx;
+				.send-img {
+					width: 24rpx;
+					height: 20rpx;
+					margin-right: 17rpx;
+				}
+				.send-text {
+					color: #262626;
+				}
+				.send-name {
+					color: #0183ff;
+				}
+			}
+		}
+		.tip-scroll {
+			color: #bfbfbf;
+			font-size: 22rpx;
+			line-height: 36rpx;
+			margin: 28rpx auto;
+			position: absolute;
+			bottom: 0;
+			left: 240rpx;
+		}
+		//发送完成后
+		.send-after {
+			padding: 100rpx 30rpx 30rpx;
+			position: relative;
+			.send-suc {
+				.suc-title {
+					color: #262626;
+					font-size: 34rpx;
+					// line-height: 36rpx;
+					font-weight: bold;
+					.send-img {
+						width: 36rpx;
+						height: 30rpx;
+						margin-right: 10rpx;
+					}
+					.blue-title {
+						color: #0183ff;
+					}
+					.red-title {
+						color: #f00;
+					}
+				}
+				.suc-content {
+					border-radius: 20rpx;
+					border: 1px solid #f6f6f6;
+					padding: 30rpx;
+					color: #595959;
+					font-size: 26rpx;
+					line-height: 36rpx;
+					margin: 22rpx 0 60rpx;
+					height: 97px;
+				}
+			}
+			.suc-btn {
+				width: 460rpx;
+				height: 70rpx;
+				text-align: center;
+				line-height: 70rpx;
+				background: #0183ff;
+				color: #fff;
+				font-size: 30rpx;
+				font-weight: bold;
+				border-radius: 35rpx;
+				margin: 0 auto;
+			}
+			.tip-scroll {
+				color: #bfbfbf;
+				font-size: 22rpx;
+				line-height: 36rpx;
+				margin: 28rpx auto;
+				position: absolute;
+				bottom: 0;
+				left: 240rpx;
+			}
+		}
+	}
+	// 底部logo
+	.logoPic {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		margin: 40rpx 216rpx 40rpx;
+		.bot-logo {
+			width: 316rpx;
+			height: 40rpx;
+		}
+	}
+}

@@ -1,0 +1,54 @@
+.filter-company {
+	padding: 20rpx 20rpx 80px !important;
+	box-sizing: border-box;
+	height: 100%;
+	margin: 0 !important;
+	
+	.main {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+		overflow: hidden;
+		.search-input {
+			height: 60rpx;
+			border-radius: 30rpx;
+			margin-bottom: 20rpx;
+		}
+		.company-list-wraper {
+			flex: 1;
+			overflow-y: auto;
+			.inner {
+				background-color: white;
+				text-align: left;
+				.item {
+					padding: 0 10rpx;
+					height: 90rpx;
+					line-height: 90rpx;
+					border-bottom: 1rpx solid #F1F1F1;
+					overflow-x: auto;
+					&.active {
+						color: #0183FF;
+					}
+				}
+			}
+		}
+	}
+}
+
+.yyt_customerInfo_footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    padding: 15px 30rpx;
+    background: #F5F5F5;
+}
+
+uni-input /deep/ .uni-input-form {
+	.uni-input-input {
+		height: 50rpx !important;
+	}
+}

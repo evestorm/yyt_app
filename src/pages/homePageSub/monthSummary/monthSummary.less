@@ -1,0 +1,245 @@
+@cart: {
+	box-sizing: border-box;
+	border-radius: 10rpx;
+	border: solid 4rpx #f4f5f6;
+	background-color: #fff;
+}
+.zuoyou {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.skyblue {
+	color: #1499b6;
+}
+.boxborder {
+	border-right: solid 2rpx #f4f5f6;
+}
+.hui {
+	color: #a8a8a8;
+}
+.flex1 {
+	flex: 1;
+}
+.monthSummary {
+	padding: 20rpx;
+	box-sizing: border-box;
+	margin-top: 64rpx;
+}
+
+uni-view {
+	line-height: 1;
+}
+//头部时间选择
+.monthtime {
+	margin: 10px 0 10px;
+	background: #fff;
+	// height:90rpx;
+	.monthtime-month {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		height: 45px;
+		width: 70%;
+		margin: auto;
+		.monthtime-month-left,
+		.monthtime-month-right {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 100rpx;
+		}
+		.monthtime-month-text {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			image {
+				width: 35rpx;
+				height: 35rpx;
+			}
+		}
+		image {
+			width: 20rpx;
+			height: 30rpx;
+		}
+	}
+	.monthtime-title {
+		width: 300rpx;
+		display: flex;
+		justify-content: space-around;
+		border-image: linear-gradient(#01bee8, #0183ff) 10 10;
+		align-items: center;
+		border-left: 2px solid;
+		box-sizing: border-box;
+		image {
+			width: 30rpx;
+			height: 20rpx;
+		}
+	}
+}
+.monthSummary-content {
+	//内容
+	position: relative;
+	.content-list {
+		display: flex;
+	}
+	.market-info {
+		// text-align: center;
+		padding: 30rpx 16rpx 30rpx 30rpx;
+		.market-img {
+			width: 100rpx;
+			height: 100rpx;
+			border-radius: 50%;
+		}
+		.market-name {
+			text-align: center;
+			font-size: 24rpx;
+			color: #999;
+			font-weight: bold;
+			margin-top: 15rpx;
+		}
+	}
+	.sel {
+		background: #fff;
+		.market-name {
+			color: #0183ff !important;
+		}
+	}
+	.monthSummary-content-right {
+		width: 80%;
+		padding: 0 30rpx;
+		background: #fff;
+		// border-radius: 20rpx;
+		position: absolute;
+		top: 0;
+		left: 20%;
+		.rate-num{
+			margin-top: 15rpx;
+		}
+		.content-list {
+			display: flex;
+			align-items: center;
+			border-bottom: 2rpx solid #f2f2f2;
+			padding: 36rpx 0;
+			.title {
+				width: 130rpx;
+				font-size: 30rpx;
+				color: #404040;
+				font-weight: bold;
+			}
+			.change-right {
+				width: 100%;
+			}
+			.list-item-change {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				text-align: center;
+				&:nth-child(2) {
+					margin-top: 32rpx;
+				}
+				.state {
+					font-size: 22rpx;
+					color: #404040;
+				}
+				.state-num {
+					font-size: 24rpx;
+					color: #0183ff;
+					margin-top: 15rpx;
+				}
+			}
+			.change {
+				width: 200rpx;
+				font-weight: bold;
+				text-align: center;
+				.title {
+					font-size: 30rpx;
+					color: #404040;
+					// margin-bottom: 30rpx;
+				}
+				.count {
+					font-size: 34rpx;
+					color: #0183ff;
+				}
+			}
+			.info {
+				font-size: 22rpx;
+				width: 100%;
+				padding-left: 20rpx;
+				.num {
+					color: #0183ff;
+					font-weight: bold;
+				}
+				.num-text {
+					color: #999;
+				}
+			}
+			.info-flex {
+				display: flex;
+				align-items: center;
+				width: 100%;
+				padding-left: 20rpx;
+				// flex-wrap: wrap;
+				.list-item {
+					// width: 37%;
+					white-space: nowrap;
+				}
+				.list-item0 {
+					min-width: 56%;
+					white-space: nowrap;
+					margin-right: 14rpx;
+				}
+				.list-item1 {
+					width: 25%;
+					// margin-right: 10rpx;
+					white-space: nowrap;
+				}
+				.list-item2 {
+					width: 75%;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					text-align: center;
+					.first-item {
+						padding-left: 20rpx;
+					}
+				}
+
+				.rmb {
+					font-size: 34rpx;
+					color: #ccc;
+				}
+				.count {
+					font-size: 34rpx;
+					color: #0183ff;
+					font-weight: bold;
+				}
+				.unit {
+					color: #b2b2b2;
+					font-size: 22rpx;
+				}
+				.people {
+					color: #b2b2b2;
+					font-size: 22rpx;
+				}
+				.state {
+					font-size: 22rpx;
+					color: #404040;
+				}
+				.state-num {
+					font-size: 24rpx;
+					color: #0183ff;
+					margin-top: 15rpx;
+				}
+			}
+		}
+	}
+}
+.d-none{
+	display: none;
+}
+/deep/ .click {
+	span {
+		text-decoration: underline;
+	}
+}

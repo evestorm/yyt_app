@@ -1,0 +1,112 @@
+.track-list {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+// 新css
+// 顶部filter容器
+.top-filter-wrapper {
+	flex-shrink: 0;
+	margin: 20rpx 0 10rpx 0;
+
+	.date-filter {
+		width: 50%;
+
+		.dateSelect {
+			display: flex;
+			/* width: 50%; */
+			justify-content: space-between;
+			width: 100%;
+			align-items: center;
+			height: 100%;
+
+			.flex1 {
+				display: flex;
+				align-items: center;
+
+				.monthtime-month-text {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					image {
+						width: 38rpx;
+						height: 36rpx;
+					}
+					text {
+						font-size: 26rpx;
+						color: rgba(38, 38, 38, 1);
+					}
+				}
+			}
+		}
+	}
+}
+
+// 标题+表格
+/* 跟踪排行 */
+.trick-wrapper {
+	flex: 1 0 auto;
+	display: flex;
+	flex-direction: column;
+	border-top: none;
+	font-size: 30rpx;
+
+	.trick-header {
+		background-color: white;
+		color: white;
+		display: flex;
+		text-align: center;
+		line-height: 100rpx;
+		height: 100rpx;
+		align-items: center;
+
+		font-size: 32rpx;
+		font-family: PingFang SC;
+		font-weight: bold;
+		color: rgba(38, 38, 38, 1);
+
+		.left {
+			width: 40%;
+			border-right: 1rpx solid #f2f2f2;
+		}
+
+		.right {
+			flex: 1;
+		}
+	}
+
+	.trick-list {
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		padding: 0 20rpx;
+
+		.item {
+			height: 100rpx;
+			line-height: 100rpx;
+			display: flex;
+			text-align: center;
+			align-content: center;
+			border-top: 1rpx solid #f2f2f2;
+			align-items: center;
+
+			.left {
+				width: 40%;
+			}
+
+			.right {
+				flex: 1;
+			}
+		}
+	}
+}
+
+.logo-bottom {
+	flex-shrink: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20rpx 0;
+	width: 100%;
+}

@@ -1,0 +1,213 @@
+.banquet-fllow {
+	background: #f2f2f2;
+	width: 100%;
+	.banquet-fllow-title {
+		font-size: 36rpx;
+		color: #0d0d0d;
+		margin: 20rpx 30rpx;
+		font-weight: bold;
+	}
+	.fllow-top-textarea-tip {
+		color: #999;
+		font-size: 22rpx;
+		position: absolute;
+		bottom: 30rpx;
+		right: 30rpx;
+	}
+	.fllow-top {
+		background: #fff;
+		padding: 30rpx;
+		position: relative;
+		border-radius: 20rpx;
+		.fllow-top-textarea {
+			width: 100%;
+			color: #262626;
+			font-size: 28rpx;
+		}
+	}
+	.top-img {
+		background: #fff;
+		padding: 46rpx 30rpx;
+		position: relative;
+		border-radius: 20rpx;
+		margin-bottom: 40rpx;
+		.top-img-tip {
+			color: #999;
+			font-size: 22rpx;
+			position: absolute;
+			right: 30rpx;
+			bottom: 46rpx;
+		}
+	}
+
+	//折叠面板
+	.fllow-card {
+		background: #fff;
+		border-radius: 20rpx;
+		margin-bottom: 40rpx;
+		.uni-collapse-cell--open[data-v-6b270250] {
+			background: #fff;
+		}
+		.uni-input-placeholder{
+			color:#999;
+		}
+		uni-picker {
+			width: 80%;
+			text-align: right;
+		}
+		.my-bq-mid {
+			margin-top: 10rpx;
+			background: #fff;
+			border-radius: 20rpx;
+			font-size: 28rpx;
+			.des {
+				text-align: right;
+				color: #262626;
+				font-size: 28rpx;
+				width: 80%;
+			}
+			.arrowRight {
+				width: 16rpx;
+				height: 28rpx;
+				margin-left: 18rpx;
+			}
+			// 去掉picker的图标
+			.cu-form-group picker::after {
+				display: none;
+			}
+			.search-company{
+				background:#f2f2f2;
+				.search-texe{
+					font-size: 32rpx;
+					font-weight: bold;
+					color: #262626;
+					padding: 30rpx 30rpx 1rpx 31rpx;
+				}
+				.search-group-company{
+					padding: 30rpx 31rpx;
+					font-size: 28rpx;
+					color: #262626;
+					border-bottom: 1rpx solid #e6e6e6;
+				}
+			}
+			.my-bq-mid1-info {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				border-bottom: 1rpx solid #f2f2f2;
+				padding: 36rpx 30rpx;
+				// .arrowRight {
+				// 	width: 16rpx;
+				// 	height: 28rpx;
+				// 	margin-left: 18rpx;
+				// }
+				.title {
+					color: #595959;
+				}
+				.des {
+					text-align: right;
+					color: #262626;
+				}
+				.text-date{
+					color: #999;
+					font-size: 22rpx;
+				}
+			}
+			.my-bq-mid1-info-remark {
+				padding: 36rpx 30rpx;
+				.title {
+					color: #595959;
+				}
+				.des {
+					color: #262626;
+					margin-left: 20rpx;
+				}
+			}
+		}
+	}
+	// 底部logo
+	.logoPic {
+		margin: 40rpx 216rpx 40rpx;
+		.bot-logo {
+			width: 316rpx;
+			height: 40rpx;
+		}
+	}
+	.modalDlg {
+		//选择桌数弹出层样式
+		.modalDlg_top {
+			display: flex;
+			align-items: center;
+			padding: 20rpx 84rpx 40rpx;
+			box-sizing: border-box;
+			.modalDlg_top_raedonly {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 96rpx;
+				z-index: 999;
+			}
+			.modalDlg_top_text {
+				font-size: 32rpx;
+				color: #323232;
+			}
+			.modalDlg_top_icon {
+				font-size: 30rpx;
+				color: #9a9a9a;
+			}
+			input {
+				border: 1rpx solid #9a9a9a;
+				border-radius: 10rpx;
+				width: 136rpx;
+				height: 45rpx;
+				line-height: 45rpx;
+				font-size: 32rpx;
+				color: #323232;
+				text-align: center;
+				margin-left: 62rpx;
+				margin-right: 34rpx;
+			}
+		}
+		.modalDlg_content {
+			width: 100%;
+			box-sizing: border-box;
+			.modalDlg_content_item {
+				width: 33.33%;
+				display: inline-block;
+				text-align: center;
+				margin-bottom: 65rpx;
+				font-size: #323232;
+				.is_checked {
+					background-color: #0183ff !important;
+					border-radius: 50%;
+					padding: 5rpx 20rpx;
+					box-sizing: border-box;
+					color: #fff !important;
+				}
+
+				.is_checked1 {
+					background-color: #0183ff !important;
+					border-radius: 50%;
+					padding: 5rpx 20rpx;
+					box-sizing: border-box;
+					color: #fff !important;
+				}
+			}
+		}
+		.modalDlg_bottom {
+			width: 80%;
+			height: 60rpx;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin: 0 58rpx;
+			box-sizing: border-box;
+			text {
+				font-size: 32rpx;
+				color: #323232;
+				display: inline-block;
+			}
+		}
+	}
+}

@@ -1,0 +1,313 @@
+//搜索框
+.search {
+	width: 100%;
+	position: fixed;
+	top: 88rpx;
+	z-index: 995;
+	background: #f2f2f2;
+}
+.search-top {
+	background-color: #fff;
+	border-radius: 50rpx;
+	width: 90%;
+	height: 60rpx;
+	margin: 30rpx;
+	padding: 10rpx 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #999;
+	font-size: 14px;
+	.search-img {
+		width: 26rpx;
+		height: 26rpx;
+		margin-right: 16rpx;
+	}
+}
+//联系人列表
+.indexes {
+	padding-top: 100rpx;
+	position: relative;
+	background-color: #f2f2f2;
+}
+.book-list {
+	// margin-top: 110rpx; //sw
+	display: flex;
+	flex-direction: column;
+	height: calc(100vh - 200rpx);
+	.book-list-item {
+		flex-shrink: 0;
+		flex: 1 0 auto;
+	}
+	.upper-case {
+		font-size: 34rpx;
+		font-weight: bold;
+		color: #262626;
+		margin: 25rpx 0 20rpx 40rpx;
+	}
+	.book-item {
+		background: #fff;
+		padding-left: 30rpx;
+		.customer-list {
+			padding: 30rpx 0;
+			border-bottom: 1rpx solid #f9f9f9;
+			display: flex;
+			align-items: center;
+			.head-img {
+				width: 100rpx;
+				height: 100rpx;
+				border-radius: 50%;
+				margin-right: 27rpx;
+			}
+			.book-info {
+				.info-top {
+					display: flex;
+					align-items: center;
+					// margin-bottom:20rpx;
+					.name {
+						font-size: 32rpx;
+						font-weight: bold;
+						color: #0d0d0d;
+						margin-right: 30rpx;
+					}
+					.leve-name {
+						margin-right: 59rpx;
+						display: flex;
+						align-items: center;
+						.leve {
+							width: 30rpx;
+							height: 30rpx;
+							border-radius: 50%;
+							margin-right: 13rpx;
+						}
+						.connect-name {
+							color: #404040;
+							font-size: 24rpx;
+						}
+					}
+					.manager {
+						display: flex;
+						align-items: center;
+						.manager-name {
+							color: #404040;
+							font-size: 24rpx;
+						}
+						.manager-img {
+							width: 20rpx;
+							height: 20rpx;
+							margin-right: 12rpx;
+						}
+					}
+				}
+				.info-bottom {
+					display: flex;
+					align-items: center;
+					.icons {
+						display: flex;
+						align-items: center;
+					}
+					.connect-phone {
+						color: #404040;
+						font-size: 30rpx;
+						margin-right: 10rpx;
+						min-width: 270rpx;
+					}
+					.message {
+						width: 50rpx;
+						height: 38rpx;
+						margin-right: 50rpx;
+					}
+					.phone {
+						width: 42rpx;
+						height: 38rpx;
+						margin-right: 50rpx;
+					}
+					.add {
+						width: 42rpx;
+						height: 42rpx;
+					}
+				}
+			}
+		}
+	}
+}
+//右侧快捷导航
+.indexBar {
+	position: fixed;
+	right: 0rpx;
+	top: 216rpx;
+	display: flex;
+	align-items: center;
+	padding-right: 10rpx;
+}
+
+.indexBar .indexBar-box {
+	height: auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.indexBar-item {
+	width: 45rpx;
+	height: 16px;
+	font-size: 22rpx;
+	color: #999;
+	text-align: right;
+	&.active {
+		color: black;
+	}
+}
+
+movable-view.indexBar-item {
+	width: 42rpx;
+	height: 42rpx;
+	z-index: 9;
+	position: relative;
+}
+
+movable-view.indexBar-item::before {
+	content: '';
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 10rpx;
+	height: 20rpx;
+	width: 4rpx;
+	background-color: #f37b1d;
+}
+//快捷导航点击显示文字
+.indexToast {
+	position: fixed;
+	top: 0;
+	right: 80upx;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.5);
+	width: 100upx;
+	height: 100upx;
+	border-radius: 10upx;
+	margin: auto;
+	color: #fff;
+	line-height: 100upx;
+	text-align: center;
+	font-size: 48upx;
+	z-index: 999;
+}
+//点击搜索框搜索后显示
+.search-res {
+	width: 100%;
+	height: calc(100vh - 88rpx);
+	background: #fff;
+	position: fixed;
+	top: 88rpx;
+	z-index: 997;
+	padding-bottom: 20rpx;
+	// background: #f2f2f2;
+	.search-flex {
+		display: flex;
+		align-items: center;
+		height: 100rpx;
+	}
+	.search-top {
+		background-color: #fff;
+		border-radius: 50rpx;
+		border: 1px solid #9999;
+		width: 78%;
+		height: 60rpx;
+		margin: 0 auto;
+		padding: 10rpx 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		input {
+			font-size: 30rpx;
+			width: 75%;
+			margin-left: 10rpx;
+			color: #262626;
+		}
+	}
+	.qx {
+		padding: 5rpx 20rpx;
+		border-radius: 20rpx;
+		background: #0183ff;
+		color: #fff;
+		margin-right: 20rpx;
+	}
+}
+.no-search-data {
+	text-align: center;
+	font-size: 32rpx;
+	color: #979797;
+}
+// 底部logo
+.logo-bottom {
+	flex-shrink: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20rpx 0;
+	width: 100%;
+}
+
+// SW: 新增
+
+// 容器
+.address-book {
+	// height: 100vh;
+	height: calc(100vh - 44px - 120rpx);
+	background-color: #f2f2f2;
+}
+.user-list {
+	margin-top: 120rpx;
+	height: calc(100vh - 44px - 120rpx);
+	// height: 100%;
+
+	.item {
+		width: 100%;
+		height: 100rpx;
+		background-color: white;
+		border-bottom: 2rpx solid black;
+	}
+}
+
+// 请求通讯录权限
+.request-auth {
+	// height: calc(100vh - 44px);
+	// position: absolute;
+	// top: 44px;
+	// left: 0;
+	// z-index: 9999;
+	// background: #f2f2f2;
+	.img-wrapper {
+		margin-top: 110rpx;
+		display: flex;
+		width: 100vw;
+		flex-direction: column;
+		align-items: center;
+		.contacts {
+			width: 290rpx;
+			height: 180rpx;
+			margin-bottom: 20rpx;
+		}
+		text {
+			font-size: 26rpx;
+			font-family: PingFang SC;
+			font-weight: 500;
+			color: rgba(4, 4, 4, 1);
+		}
+	}
+	// 按钮
+	.login-btn {
+		width: 460rpx;
+		height: 90rpx;
+	}
+	// 协议
+	.file-check {
+		display: flex;
+		justify-content: center;
+		margin-bottom: 20rpx;
+		.text-black {
+			text-decoration: underline;
+			color: #0183ff;
+		}
+	}
+}

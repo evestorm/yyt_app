@@ -1,0 +1,44 @@
+// 作者:杨亮
+.join-detail {
+	position: relative;
+	box-sizing: border-box;
+	width: 100vw;
+	height: calc(100vh - 44px);
+	overflow: hidden;
+	padding-bottom: 86rpx;
+	background-color: #F2F2F2;
+}
+
+// 主窗口
+.main-wrapper {
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+	box-sizing: border-box;
+	padding: 30rpx 30rpx 30rpx 30rpx;
+	
+	/deep/ .scroll-view-wrapper {
+		transition: all .5s ease-in-out;
+	}
+	.go-top {
+		color: white;
+		width: 60rpx;
+		height: 60rpx;
+		position: absolute;
+		right: 10rpx;
+		bottom: 20rpx;
+		background-color: rgba(0, 0, 0, .2);
+		border-radius: 50%;
+	}
+}
+
+// 底部消息发送
+.bottom-wrapper {
+	box-sizing: border-box;
+	background-color: white;
+	position: absolute;
+	width: 100vw;
+	left: 0;
+	bottom: 0;
+	padding: 20rpx;
+}

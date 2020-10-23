@@ -1,0 +1,73 @@
+// 作者:覃彬
+.editConditions {
+	.edit-condition-list {
+		padding-top: 20rpx;
+		padding-bottom: 105rpx;
+	}
+	//现有的条件
+	.selected-list {
+		margin-bottom: 16rpx;
+		.condition-title {
+			color: #0d0d0d;
+		}
+		.del-img {
+			width: 36rpx;
+			height: 36rpx;
+		}
+		.list-item {
+			border-bottom: 1rpx solid #f9f9f9;
+			padding: 36rpx 0 30rpx 20rpx;
+
+			.left-key {
+				color: #595959;
+			}
+			.right-value {
+				.desc {
+					//筛选选条件
+					.right-icon {
+						width: 16rpx;
+						height: 28rpx;
+					}
+				}
+				color: #262626;
+				.place-style {
+					font-size: 22rpx;
+					color: #999;
+				}
+				.btn {
+					border-radius: 23rpx;
+					&:last-child {
+						margin-right: 0;
+					}
+				}
+			}
+			&:last-child {
+				border: 0;
+			}
+		}
+	}
+	//底部按钮
+	.add-btn {
+		padding-top: 14rpx;
+		padding-bottom: 16rpx;
+		box-shadow: 0px 12px 8px -12px #000;
+		.add-condition {
+			width: 70%;
+			margin: 0 auto;
+			border-radius: 35rpx;
+		}
+	}
+	// 底部弹窗-选择条件
+	.wrapper {
+		.popup-title {
+			border-bottom: 1rpx solid #f9f9f9;
+			.img {
+				width: 42rpx;
+				height: 22rpx;
+			}
+		}
+		.condition-name {
+			border-bottom: 1rpx solid #f9f9f9;
+		}
+	}
+}

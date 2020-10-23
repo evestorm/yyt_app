@@ -1,0 +1,146 @@
+.add-sales-chance {
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
+	background: #f5f5f5;
+	box-sizing: border-box;
+}
+// 去掉picker的图标
+.cu-form-group {
+	.picker {
+		display: inline-block;
+		height: 100%;
+	}
+	picker::after {
+		display: none;
+	}
+}
+
+.add-item {
+	border-radius: 10rpx;
+	margin: 30rpx 30rpx 0 30rpx;
+	background-color: #fff;
+	.cu-form-group {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: transparent;
+		padding: 0;
+		margin: 0 30rpx;
+		picker {
+			padding-right: 0;
+		}
+		.title {
+			font-size: 28rpx;
+			color: #323232;
+		}
+		.desc {
+			font-size: 22rpx;
+			color: #666666;
+			text-align: right;
+			padding-right: 0;
+		}
+		.customer-tag {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			.tag-top {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				.editIcon {
+					font-size: 30rpx;
+				}
+			}
+			.tag-bottom {
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				.tag-item {
+					font-size: 28rpx;
+					border: 1rpx solid #0183ff;
+					padding: 5rpx 10rpx;
+					border-radius: 18rpx;
+					margin-right: 30rpx;
+					margin-bottom: 30rpx;
+				}
+			}
+		}
+		.change-Sex {
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			flex: 1;
+			.sex-name{
+				padding-right:10rpx;
+			}
+			.sex-icon{
+				font-size: 26rpx;
+			}
+		}
+		.set-manager {
+			display: flex;
+			justify-content: flex-end;
+			flex: 1;
+			align-items: center;
+			.picker{
+				.desc {
+					padding-right: 20rpx;
+				}
+				.icon-tools{
+					font-size: 30rpx;
+				}
+			}
+			
+		}
+		
+		.customer-level-wrapper {
+			width: 40%;
+			.customRank_icon {
+				.level-container {
+					display: flex;
+					justify-content: flex-end;
+					.img-wrapper {
+						padding: 0 20rpx;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						.level-img {
+							width: 30rpx;
+							height: 30rpx;
+							&.active {
+								border: 1px solid #00BFFF;
+								transform: scale(1.1);
+							}
+						}
+					}
+					
+				}
+			}
+		}
+	}
+	
+	// 快捷备注
+	.quick-wrapper {
+		margin: 0 30rpx;
+		padding: 20rpx 0;
+		// 标题
+		.quick-title-wrapper {
+			display: flex;
+			justify-content: space-between;
+		}
+		.quick-tag-list {
+			overflow-y: auto;
+			-webkit-overflow-scrolling:touch;
+			max-height: 250rpx;
+			display: flex;
+			flex-wrap: wrap;
+			
+			.quick-tag-item {
+				padding: 10rpx;
+			}
+		}
+	}
+}

@@ -1,0 +1,948 @@
+{
+	"pages": [{
+			"path": "pages/homePage/homePage",
+			"style": {
+				"navigationBarTitleText": "首页",
+				"navigationStyle": "custom"
+			},
+			"meta": {
+				"isBaiduCount": true
+			}
+		},
+		{
+			"path": "pages/banquet/banquet",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "宴会"
+			}
+		},
+		{
+			"path": "pages/customer/customer",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "客户",
+				"disableScroll": true,
+				"app-plus": {
+					"bounce": "none"
+				}
+			},
+			"meta": {
+				"isBaiduCount": true
+			}
+		},
+		{
+			"path": "pages/marketing/marketing",
+			"style": {
+				"navigationBarTitleText": "营销",
+				"navigationStyle": "custom",
+				"enablePullDownRefresh": true,
+				"app-plus": {
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "pages/homePageSub/reserve/reserve",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "预订",
+				"disableScroll": true,
+				"app-plus": {
+					"bounce": "none"
+				}
+			},
+			"meta": {
+				"isBaiduCount": true
+			}
+		},
+		{
+			"path": "pages/my/my",
+			"style": {
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "我的"
+			}
+		}
+	],
+	"subPackages": [{
+			"root": "pages/homePageSub",
+			"pages": [{
+					"path": "bookNow/bookNow",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "立即预订"
+					},
+					"meta": {
+						"isBaiduCount": true
+					}
+				},
+				{
+					"path": "notificationList/notificationList",
+					"style": {
+						// "navigationStyle": "custom",
+						"navigationBarTitleText": "通知"
+					}
+				},
+				{
+					"path": "cancelReason/cancelReason",
+					"style": {
+						"navigationBarTitleText": "取消原因"
+					}
+				},
+				{
+					"path": "todayChance/todayChance",
+					"style": {
+						"navigationBarTitleText": "机会"
+					}
+				},
+				{
+					"path": "customerSource/customerSource",
+					"style": {
+						"navigationBarTitleText": "客户来源"
+					}
+				},
+				{
+					"path": "bookReport/bookReport",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "预订报表"
+					},
+					"meta": {
+						"isBaiduCount": true
+					}
+				},
+				{
+					"path": "login/login",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "登陆"
+					}
+				},
+				{
+					"path": "saleTarget/saleTarget",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "完成目标"
+					},
+					"meta": {
+						"isBaiduCount": true
+					}
+				},
+				{
+					"path": "monthSummary/monthSummary",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "月统计"
+					},
+					"meta": {
+						"isBaiduCount": true
+					}
+				},
+				{
+					"path": "trackList/trackList",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "跟踪排行"
+					}
+				},
+				{
+					"path": "joinList/joinList",
+					"style": {
+						"navigationBarTitleText": "协同中心"
+					}
+				},
+				{
+					"path": "joinDetail/joinDetail",
+					"style": {
+						"navigationBarTitleText": "任务详情"
+					}
+				},
+				{
+					"path": "seeTodayBook/seeTodayBook",
+					"style": {
+						"navigationBarTitleText": "预订台"
+					}
+				}
+			]
+		},
+		{
+			"root": "pages/banquet",
+			"pages": [{
+				"path": "banquet",
+				"style": {
+					"navigationStyle": "custom",
+					"navigationBarTitleText": "宴会"
+				}
+			}]
+		},
+		{
+			"root": "pages/banquetSub",
+			"pages": [{
+					"path": "addBanquetInfo/addBanquetInfo",
+					"style": {
+						"navigationBarTitleText": "新增线索",
+						"app-plus": {
+							"bounce": "none",
+							"titleNView": {
+								"buttons": [{
+									"text": "保存",
+									"fontSize": "32rpx",
+									"fontWeight": "bold",
+									"float": "right",
+									"color": "#FFFFFF"
+								}]
+							}
+						}
+					}
+				},
+				{
+					"path": "addBanquetOrder/addBanquetOrder",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "新增宴会单"
+					}
+				},
+				{
+					"path": "digBanquetClues/digBanquetClues",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "挖掘宴会线索"
+					}
+				},
+				{
+					"path": "addProject/addProject",
+					"style": {
+						"navigationBarTitleText": "添加项目",
+						"app-plus": {
+							"bounce": "none",
+							"titleNView": {
+								"buttons": [{
+									"text": "确定",
+									"fontSize": "32rpx",
+									"fontWeight": "bold",
+									"float": "right",
+									"color": "#FFFFFF"
+								}]
+							}
+						}
+					}
+				},
+				{
+					"path": "addProjectTask/addProjectTask",
+					"style": {
+						"navigationBarTitleText": "添加任务",
+						"app-plus": {
+							"bounce": "none",
+							"titleNView": {
+								"buttons": [{
+									"text": "确定",
+									"fontSize": "32rpx",
+									"fontWeight": "bold",
+									"float": "right",
+									"color": "#FFFFFF"
+								}]
+							}
+						}
+					}
+				},
+				{
+					"path": "addRemark/addRemark",
+					"style": {
+						"navigationBarTitleText": "添加备注",
+						"app-plus": {
+							"bounce": "none",
+							"titleNView": {
+								"buttons": [{
+									"text": "保存",
+									"fontSize": "32rpx",
+									"fontWeight": "bold",
+									"float": "right",
+									"color": "#FFFFFF"
+								}]
+							}
+						}
+					}
+				},
+				{
+					"path": "addTask/addTask",
+					"style": {
+						"navigationBarTitleText": "添加任务",
+						"app-plus": {
+							"bounce": "none",
+							"titleNView": {
+								"buttons": [{
+									"text": "确定",
+									"fontSize": "32rpx",
+									"fontWeight": "bold",
+									"float": "right",
+									"color": "#FFFFFF"
+								}]
+							}
+						}
+					}
+				},
+				{
+					"path": "banquetDetail/banquetDetail",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "宴会详情"
+					},
+					"meta": {
+						"isBaiduCount": true
+					}
+				},
+				{
+					"path": "banquetFllow/banquetFllow",
+					"style": {
+						"navigationBarTitleText": "线索跟进",
+						"app-plus": {
+							"bounce": "none",
+							"titleNView": {
+								"buttons": [{
+									"text": "保存",
+									"fontSize": "32rpx",
+									"fontWeight": "bold",
+									"float": "right",
+									"color": "#FFFFFF"
+								}]
+							}
+						}
+					},
+					"meta": {
+						"isBaiduCount": true
+					}
+				},
+				{
+					"path": "banquetTheme/banquetTheme",
+					"style": {
+						"navigationBarTitleText": "宴会主题",
+						"app-plus": {
+							"bounce": "none",
+							"titleNView": {
+								"buttons": [{
+									"text": "确定",
+									"fontSize": "32rpx",
+									"fontWeight": "bold",
+									"float": "right",
+									"color": "#FFFFFF"
+								}]
+							}
+						}
+					}
+				},
+				{
+					"path": "cancelBanquet/cancelBanquet",
+					"style": {
+						"navigationBarTitleText": "取消线索",
+						"app-plus": {
+							"bounce": "none",
+							"titleNView": {
+								"buttons": [{
+									"text": "完成",
+									"fontSize": "32rpx",
+									"fontWeight": "bold",
+									"float": "right",
+									"color": "#FFFFFF"
+								}]
+							}
+						}
+					}
+				},
+				{
+					"path": "cstRecord/cstRecord",
+					"style": {
+						"navigationBarTitleText": "填写档案",
+						"app-plus": {
+							"bounce": "none",
+							"titleNView": {
+								"buttons": [{
+									"text": "提交",
+									"fontSize": "32rpx",
+									"fontWeight": "bold",
+									"float": "right",
+									"color": "#FFFFFF"
+								}]
+							}
+						}
+					}
+				},
+				{
+					"path": "cstRecordConf/cstRecordConf",
+					"style": {
+						"navigationBarTitleText": "选择档案",
+						"app-plus": {
+							"bounce": "none",
+							"titleNView": {
+								"buttons": [{
+									"text": "确定",
+									"fontSize": "32rpx",
+									"fontWeight": "bold",
+									"float": "right",
+									"color": "#FFFFFF"
+								}]
+							}
+						}
+					}
+				},
+				{
+					"path": "myBanquetInfo/myBanquetInfo",
+					"style": {
+						"navigationBarTitleText": "我的线索"
+					}
+				},
+				{
+					"path": "reply/reply",
+					"style": {
+						"navigationBarTitleText": "回复",
+						"app-plus": {
+							"bounce": "none",
+							"titleNView": {
+								"buttons": [{
+									"text": "确定",
+									"fontSize": "32rpx",
+									"fontWeight": "bold",
+									"float": "right",
+									"color": "#FFFFFF"
+								}]
+							}
+						}
+					}
+				},
+				{
+					"path": "selectFile/selectFile",
+					"style": {
+						"navigationBarTitleText": "选择档案",
+						"app-plus": {
+							"bounce": "none",
+							"titleNView": {
+								"buttons": [{
+									"text": "确定",
+									"fontSize": "32rpx",
+									"fontWeight": "bold",
+									"float": "right",
+									"color": "#FFFFFF"
+								}]
+							}
+						}
+					}
+				},
+				{
+					"path": "selExecutor/selExecutor",
+					"style": {
+						"navigationBarTitleText": "选择执行人",
+						"app-plus": {
+							"bounce": "none",
+							"titleNView": {
+								"buttons": [{
+									"text": "确定",
+									"fontSize": "32rpx",
+									"fontWeight": "bold",
+									"float": "right",
+									"color": "#FFFFFF"
+								}]
+							}
+						}
+					}
+				},
+				{
+					"path": "taskDetail/taskDetail",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "任务详情"
+					}
+				},
+				{
+					"path": "taskTip/taskTip",
+					"style": {
+						"navigationBarTitleText": "任务提示"
+					}
+				},
+				{
+					"path": "workingLog/workingLog",
+					"style": {
+						"navigationBarTitleText": "操作日志"
+					}
+				},
+				{
+					"path": "writeFile/writeFile",
+					"style": {
+						"navigationBarTitleText": "填写档案"
+					}
+				},
+				{
+					"path": "taskReport/taskReport",
+					"style": {
+						"navigationBarTitleText": "任务报表"
+					}
+				},
+				{
+					"path": "banquetReport/banquetReport",
+					"style": {
+						"navigationBarTitleText": "宴会报表"
+					}
+				},
+				{
+					"path": "orderReport/orderReport",
+					"style": {
+						"navigationBarTitleText": "线索报表"
+					}
+				},
+				{
+					"path": "banquetPlan/banquetPlan",
+					"style": {
+						"navigationBarTitleText": "宴会看板"
+					}
+				}
+			]
+		},
+		{
+			"root": "pages/_common",
+			"pages": [{
+					"path": "customInfo/customInfo",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "客户详情",
+						"app-plus": {
+							"bounce": "none"
+						},
+						"disableScroll": true
+					},
+					"meta": {
+						"isBaiduCount": true
+					}
+				},
+				{
+					"path": "addCustomerInfo/addCustomerInfo",
+					"style": {
+						"navigationBarTitleText": "新增客户",
+						"app-plus": {
+							"bounce": "none",
+							"titleNView": {
+								"buttons": [{
+									"text": "保存",
+									"fontSize": "32rpx",
+									"fontWeight": "bold",
+									"float": "right",
+									"color": "#FFFFFF"
+								}]
+							}
+						},
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "addSalesChance/addSalesChance",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "添加销售机会"
+					}
+				},
+				{
+					"path": "testComp/testComp",
+					"style": {
+						"navigationBarTitleText": "测试组件"
+					}
+				},
+				{
+					"path": "lanceTestFile/lanceTestFile",
+					"style": {
+						"navigationBarTitleText": "Lance的测试页面"
+					}
+				},
+				{
+					"path": "addSalesChanceInfo/addSalesChanceInfo",
+					"style": {
+						"navigationStyle": "custom"
+
+					}
+				},
+				// {
+				// 	"path": "setFollowList/setFollowList",
+				// 	"style": {
+				// 		"navigationStyle": "custom",
+				// 		"navigationBarTitleText": "设置跟踪清单"
+				// 	}
+				// },
+				{
+					"path": "chanceNote/chanceNote",
+					"style": {
+						"navigationBarTitleText": "机会备注"
+					}
+				},
+				{
+					"path": "editCustomerLabel/editCustomerLabel",
+					"style": {
+						"navigationBarTitleText": "编辑客户标签",
+						"app-plus": {
+							"bounce": "none",
+							"titleNView": {
+								"buttons": [{
+									"text": "保存",
+									"fontSize": "32rpx",
+									"fontWeight": "bold",
+									"float": "right",
+									"color": "#FFFFFF"
+								}]
+							}
+						}
+					}
+				},
+				{
+					"path": "webPage/webPage",
+					"style": {
+						"app-plus": {
+							"titleNView": {}
+						}
+					}
+				},
+				{
+					"path": "filterCompany/filterCompany",
+					"style": {
+						"navigationBarTitleText": "搜索单位",
+						"app-plus": {
+							"bounce": "none"
+						},
+						"enablePullDownRefresh": false,
+						"disableScroll": true
+					}
+				},
+				{
+					"path": "rankSummaryInfo/rankSummaryInfo",
+					"style": {
+						"navigationBarTitleText": "月统计信息"
+					}
+				},
+				{
+					"path": "salesRecord/salesRecord",
+					"style": {
+						"navigationBarTitleText": "跟踪消费记录",
+						"app-plus": {
+							"bounce": "none"
+						},
+						"disableScroll": true
+					}
+				},
+				{
+					"path": "searchRecord/searchRecord",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "客户搜索",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "commonList/commonList",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "通用列表页"
+					}
+				},
+				{
+					"path": "contactsReqAuthPage/contactsReqAuthPage",
+					"style": {
+						// "navigationStyle": "custom",
+						"navigationBarTitleText": "通讯录访问授权"
+					}
+				},
+				{
+					"path": "statList/statList",
+					"style": {
+						// "navigationStyle": "custom",
+						"navigationBarTitleText": "统计",
+						"app-plus": {
+							"bounce": "none"
+						},
+						"disableScroll": true
+					},
+					"meta": {
+						"isBaiduCount": true
+					}
+				}
+			]
+		},
+		{
+			"root": "pages/customerSub",
+			"pages": [{
+					"path": "sendMsg/sendMsg",
+					"style": {
+						"navigationBarTitleText": "发送短信",
+						"app-plus": {
+							"bounce": "none",
+							"titleNView": {
+								"buttons": [{
+									"text": "说明",
+									"fontSize": "28rpx",
+									"fontWeight": "bold",
+									"float": "right",
+									"color": "#FFFFFF"
+								}]
+							}
+						},
+						"navigationStyle": "custom"
+					},
+					"meta": {
+						"isBaiduCount": true
+					}
+				},
+				{
+					"path": "iOSSentSMS/iOSSentSMS",
+					"style": {
+						"navigationBarTitleText": "短信群发",
+						"app-plus": {
+							"bounce": "none"
+						}
+					},
+					"meta": {
+						"isBaiduCount": true
+					}
+				},
+				{
+					"path": "addReceive/addReceive",
+					"style": {
+						"navigationBarTitleText": "添加收件人",
+						"app-plus": {
+							"bounce": "none",
+							"titleNView": {
+								"buttons": [{
+									"text": "确定",
+									"fontSize": "32rpx",
+									"fontWeight": "bold",
+									"float": "right",
+									"color": "#FFFFFF"
+								}]
+							}
+						}
+					}
+				},
+				{
+					"path": "msgMould/msgMould",
+					"style": {
+						"navigationBarTitleText": "短信模板"
+					}
+				},
+				{
+					"path": "msgTips/msgTips",
+					"style": {
+						"navigationBarTitleText": "提示"
+					}
+				},
+				{
+					"path": "customerCommunication/customerCommunication",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "通讯录"
+					}
+				},
+				{
+					"path": "labelManagement/labelManagement",
+					"style": {
+						"navigationBarTitleText": "标签管理"
+					}
+				},
+				{
+					"path": "editLabel/editLabel",
+					"style": {
+						"navigationBarTitleText": "编辑标签",
+						"navigationStyle": "custom"
+					}
+				},
+				{
+					"path": "editConditions/editConditions",
+					"style": {
+						"navigationBarTitleText": "编辑条件",
+						"navigationStyle": "custom"
+					}
+				}
+			]
+		},
+		{
+			"root": "pages/mySub",
+			"pages": [{
+					"path": "updatePwd/updatePwd",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "修改密码"
+					}
+				},
+				{
+					"path": "SearchComment/SearchComment",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "评价查询"
+					}
+				},
+				{
+					"path": "SMSTemplet/SMSTemplet",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "短信模板",
+						"app-plus": {
+							"titleNView": {
+								"buttons": [{
+									"text": "新增",
+									"fontSize": "30rpx",
+									"fontWeight": "bold",
+									"type": "none"
+								}]
+							}
+						}
+					},
+					"meta": {
+						"isBaiduCount": true
+					}
+				},
+				{
+					"path": "downLoadQR/downLoadQR",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "下载分享码"
+					}
+				},
+				{
+					"path": "homeSetting/homeSetting",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "首页设置"
+					}
+				},
+				{
+					"path": "TempletInfo/TempletInfo",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "编辑模板"
+					}
+				},
+				{
+					"path": "editProfile/editProfile",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "个人资料"
+					}
+				},
+				{
+					"path": "forgetPwd/forgetPwd",
+					"style": {
+						"navigationBarTitleText": "忘记密码"
+					}
+				},
+				{
+					"path": "shareCodeReport/shareCodeReport",
+					"style": {
+						"navigationStyle": "custom",
+						"navigationBarTitleText": "分享码数据"
+					}
+				},
+				{
+					"path": "shareCodeDetail/shareCodeDetail",
+					"style": {
+						"navigationBarTitleText": "分享码详情"
+					}
+				}
+			]
+		},
+		{
+			"root": "pages/marketingSub",
+			"pages": [{
+				"path": "marketingOrder/marketingOrder",
+				"style": {
+					"navigationBarTitleText": "订单"
+				}
+			}, {
+				"path": "couponVerification/couponVerification",
+				"style": {
+					"navigationBarTitleText": "卡券核销",
+					"navigationStyle": "custom"
+				}
+			}, {
+				"path": "verificationRecord/verificationRecord",
+				"style": {
+					"navigationBarTitleText": "核销记录",
+					"navigationStyle": "custom",
+					"enablePullDownRefresh": true
+				}
+			}]
+		},
+		{
+			"root": "pages/template",
+			"pages": [{
+					"path": "mytemplate/mytemplate",
+					"style": {
+						"navigationBarTitleText": "模板"
+					}
+				},
+				{
+					"path": "binTemplate/binTemplate",
+					"style": {
+						"navigationBarTitleText": "彬~模板"
+					}
+				},
+				{
+					"path": "testMockData/testMockData",
+					"style": {
+						"navigationBarTitleText": "测试mock数据模板"
+					}
+				}
+			]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarBackgroundColor": "#0782ff",
+		"backgroundColor": "#F8F8F8",
+		"backgroundColorTop": "#F4F5F6",
+		"backgroundColorBottom": "#F4F5F6",
+		"mp-alipay": {
+			"titleBarColor": "#FFFFFF"
+		}
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#007AFF",
+		"borderStyle": "black",
+		"backgroundColor": "#fff",
+		"list": [{
+				"pagePath": "pages/homePage/homePage",
+				"iconPath": "static/tabbar/HomePage.png",
+				"selectedIconPath": "static/tabbar/homePagesl.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/customer/customer",
+				"iconPath": "static/tabbar/customer.png",
+				"selectedIconPath": "static/tabbar/customersl.png",
+				"text": "客户"
+			},
+			{
+				"pagePath": "pages/marketing/marketing",
+				"iconPath": "static/tabbar/marketing.png",
+				"selectedIconPath": "static/tabbar/marketingsl.png",
+				"text": "营销"
+			},
+			{
+				"pagePath": "pages/banquet/banquet",
+				"iconPath": "static/tabbar/banquet.png",
+				"selectedIconPath": "static/tabbar/banquetsl.png",
+				"text": "宴会"
+			},
+			// {
+			// 	"pagePath": "pages/reserve/reserve",
+			// 	"iconPath": "static/tabbar/ReserveUnits.png",
+			// 	"selectedIconPath": "static/tabbar/ReserveUnitssl.png",
+			// 	"text": "预订台"
+			// },
+			{
+				"pagePath": "pages/my/my",
+				"iconPath": "static/tabbar/my.png",
+				"selectedIconPath": "static/tabbar/myactive.png",
+				"text": "我的"
+			}
+		]
+	},
+	"condition": {
+		"current": 0,
+		"list": [{
+			"name": "",
+			"path": "",
+			"query": ""
+		}]
+	}
+}

@@ -1,0 +1,102 @@
+@titleStyle: {
+	font-size: 32rpx;
+	font-family: PingFang SC;
+	font-weight: bold;
+	color: rgba(13, 13, 13, 1);
+}
+
+.container {
+	// height: 100vh;
+	// box-sizing: border-box;
+	// overflow-y: auto;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+// 主体内容
+.main {
+	flex-shrink: 0;
+	background-color: white;
+	padding: 10rpx 30rpx;
+	// 指定跟踪条件
+	.follow-condition {
+		display: flex;
+		flex-direction: column;
+		.title {
+			@titleStyle();
+		}
+		.condition-list {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: flex-start;
+			padding: 30rpx 0;
+
+			.condition-item {
+				margin-right: 30rpx;
+				margin-bottom: 30rpx;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				.cu-tag {
+				}
+				.num {
+					font-size: 24rpx;
+					font-family: PingFang SC;
+					color: rgba(1, 131, 255, 1);
+				}
+			}
+		}
+	}
+	// 权重
+	.weight {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.title {
+			@titleStyle();
+		}
+	}
+	// 描述
+	.desc {
+		display: flex;
+		align-items: flex-start;
+		flex-direction: column;
+		.title {
+			@titleStyle();
+		}
+		.desc-box {
+			width: 100%;
+			box-sizing: border-box;
+			padding: 10rpx 0 20rpx 20rpx;
+			.desc-textarea {
+				border: 2rpx solid #f2f2f2;
+				border-radius: 20rpx;
+				width: 100%;
+				height: 250rpx;
+				padding: 20rpx;
+			}
+		}
+	}
+}
+
+// 提交
+.btn-wrapper {
+	flex-shrink: 0;
+	flex: 1 0 auto;
+	margin-top: 60rpx;
+	.sw-btn {
+		width: 460rpx;
+		margin: 0 auto;
+		display: flex;
+	}
+}
+
+.logo-bottom {
+	flex-shrink: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20rpx 0;
+	width: 100%;
+}

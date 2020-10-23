@@ -1,0 +1,235 @@
+// .sw-scroll-no {
+// 	height: 100%;
+// 	overflow-y: hidden;
+// }
+.send-msg-page {
+	padding-top: 20rpx;
+	.preview-brtn {
+		background: #fff;
+		padding: 10rpx 26rpx;
+		border-radius: 40rpx;
+		font-size: 26rpx;
+		white-space: nowrap;
+		&.active {
+			background-color: #0084f9;
+			color: #ffffff !important;
+		}
+	}
+	.send-explain {
+		width: 364rpx;
+		// height: 160rpx;
+		background-image: url('https://pic.cwyyt.cn/upload/yytApp/customer/bg.png');
+		background-size: 100% 100%;
+		position: fixed;
+		top: 60rpx;
+		right: 20rpx;
+		z-index: 999;
+		padding: 38rpx 30rpx 30rpx;
+		color: #fff;
+		font-size: 24rpx;
+		line-height: 36rpx;
+	}
+	.msg-top {
+		background: #fff;
+		padding: 16rpx 30rpx;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.msg-title {
+			font-size: 32rpx;
+			color: #0d0d0d;
+			font-weight: bold;
+		}
+		.msg-tip {
+			font-size: 26rpx;
+			color: #595959;
+		}
+		.msg-btn {
+			font-size: 26rpx;
+			color: #0183ff;
+			padding: 16rpx 26rpx;
+			border-radius: 28rpx;
+			border: 1px solid #f2f2f2;
+			line-height: 26rpx;
+		}
+	}
+	.msg-sec {
+		//短信模板内容
+		position: relative;
+		margin: 12rpx 0 12rpx;
+		.msg-textarea {
+			width: 100%;
+			height: 212rpx;
+			padding: 30rpx 48rpx 35rpx 30rpx;
+			background: #fff;
+			border-radius: 20rpx;
+			font-size: 28rpx;
+			line-height: 36rpx;
+			// text-indent: 50rpx;
+		}
+		.del-img {
+			width: 30rpx;
+			height: 30rpx;
+			position: absolute;
+			right: 30rpx;
+			bottom: 20rpx;
+		}
+	}
+	//通讯录列表
+	.msg-receive-list {
+		background: #fff;
+		margin: 12rpx 0;
+		font-size: 28rpx;
+		line-height: 24rpx;
+		.del-img {
+			width: 30rpx;
+			height: 30rpx;
+		}
+		.receive-name {
+			color: #262626;
+		}
+		.list-top {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.receive-btn {
+				font-size: 26rpx;
+				color: #0183ff;
+				padding: 6rpx 15rpx;
+				border-radius: 18rpx;
+				line-height: 24rpx;
+				background: #f6f6f6;
+			}
+		}
+		.list-bot {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			.list-bot-item {
+				width: 260rpx;
+				white-space: nowrap;
+			}
+			.bot-label {
+				color: #595959;
+			}
+			.botRed {
+				color: #f00;
+			}
+		}
+	}
+	.bot-btn {
+		position: fixed;
+		left: 0;
+		bottom: 0;
+		padding: 16rpx;
+		background: #fff;
+		width: 100%;
+		.btn {
+			height: 70rpx;
+			width: 260rpx;
+			background: #0183ff;
+			border-radius: 35rpx;
+			color: #fff;
+			font-size: 30rpx;
+			line-height: 70rpx;
+			text-align: center;
+		}
+		.btns {
+			display: flex;
+			justify-content: space-around;
+			align-items: center;
+		}
+		.send-msg {
+			width: 460rpx;
+			margin: 0 auto;
+		}
+	}
+}
+//弹出确认提示框
+.del-popup {
+	.popup-top {
+		text-align: center;
+		color: #0d0d0d;
+		font-size: 36rpx;
+		font-weight: bold;
+		position: relative;
+		.popup-top-img {
+			width: 30rpx;
+			height: 30rpx;
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+	}
+	.popup-mid {
+		color: #404040;
+		font-size: 28rpx;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 60rpx auto 70rpx;
+		// height: 150rpx;
+		.popup-mid-img {
+			width: 50rpx;
+			height: 50rpx;
+			margin-right: 16rpx;
+		}
+		//尊称
+		.msgName-title {
+			color: #595959;
+			font-size: 28rpx;
+		}
+		.msgName-input {
+			color: #262626;
+			font-size: 28rpx;
+			text-align: left;
+		}
+	}
+	.popup-bot {
+		border: 1px solid #0183ff;
+		border-radius: 14rpx;
+		height: 88rpx;
+		display: flex;
+		align-items: center;
+		margin: 0 -30rpx -30rpx;
+		overflow: hidden;
+		.cancel {
+			width: 334rpx;
+			color: #0183ff;
+			text-align: center;
+			font-size: 32rpx;
+			line-height: 88rpx;
+		}
+		.confirm {
+			width: 334rpx;
+			background: #0183ff;
+			text-align: center;
+			font-size: 32rpx;
+			line-height: 88rpx;
+			color: #fff;
+		}
+	}
+}
+.yyt-insert {
+	.insert-btn {
+		background: #fff !important;
+		color: #0183f9 !important;
+		font-weight: normal !important;
+	}
+}
+// 预览
+// .wrapper {
+// 	.pre-list {
+// 		text-indent: 1.2rem;
+// 		padding: 15rpx 0;
+// 		border-bottom: 1px solid #bbb;
+// 		&:last-child {
+// 			border: 0;
+// 		}
+// 	}
+// }
+.constent-msg {
+	//空格问题
+	white-space: pre-wrap;
+	word-break: break-all;
+}

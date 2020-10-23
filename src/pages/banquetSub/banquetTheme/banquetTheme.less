@@ -1,0 +1,88 @@
+.theme {
+	position: relative;
+	background: #fff;
+	.theme-from-type {
+		width: 240rpx;
+		height: 94rpx;
+		color: #262626;
+		font-size: 28rpx;
+		border-top: solid 1px #fff;
+		text-align: center;
+		line-height: 96rpx;
+		background: #f2f2f2;
+	}
+	.themeSel {
+		color: #0183ff;
+		background: #fff;
+	}
+	//右边类型
+	.theme-list {
+		width: 510rpx;
+		// height: 100%;
+		background: #fff;
+		position: absolute;
+		top: 0;
+		left: 240rpx;
+		display: flex;
+		// justify-content: space-between;
+		// align-items: center;
+		flex-wrap: wrap;
+		padding: 0 30rpx 30rpx 30rpx;
+		// margin: auto;
+		.theme-list-item {
+			// width: 120rpx;
+			height: 120rpx;
+			border: 1px solid #0183ff;
+			border-radius: 18rpx;
+			margin: 30rpx 20rpx 0;
+			text-align: center;
+			padding: 20rpx;
+			.theme-img {
+				width: 40rpx;
+				height: 36rpx;
+			}
+			.theme-list-item-text {
+				color: #595959;
+				font-size: 26rpx;
+				line-height: 36rpx;
+			}
+		}
+		.themeItemSel {
+			//选中的状态
+			background: #0183ff;
+			.themeItemTextSel {
+				color: #fff;
+			}
+		}
+	}
+	.no-data {
+		position: absolute;
+		top: 370rpx;
+		right: 100rpx;
+		text-align: center;
+		.img {
+			width: 322rpx;
+			height: 170rpx;
+			margin-bottom: 19rpx;
+		}
+		.text {
+			font-size: 26rpx;
+			color: #040404;
+		}
+	}
+	.no-datas {
+		position: absolute;
+		top: 370rpx;
+		left: 240rpx;
+		text-align: center;
+		.img {
+			width: 322rpx;
+			height: 170rpx;
+			margin-bottom: 19rpx;
+		}
+		.text {
+			font-size: 26rpx;
+			color: #040404;
+		}
+	}
+}

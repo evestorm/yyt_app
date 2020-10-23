@@ -1,0 +1,477 @@
+// 外层容器
+.container {
+	position: relative;
+	width: 100%;
+	top: 44px;
+	left: 0;
+	bottom: 0;
+	position: absolute;
+	box-sizing: border-box;
+	user-select: none;
+}
+
+// 整个表格容器
+#select-table {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	overflow: hidden;
+	background-color: #f5f5f5;
+	// margin-bottom:50px;
+
+	// 滚动容器 scroll-view
+	.scroll-Y {
+		height: 100%;
+	}
+	.bottom {
+		text-align: center;
+		color: #929292;
+	}
+}
+
+// 门店切换文字显示（h5显示右上角，wx悬浮按钮）
+.top-store-wrapper {
+	select {
+		padding-right: 10rpx;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		max-width: 200rpx;
+		color: #fff;
+		/* H5 下右上角门店切换 */
+		direction: rtl;
+		appearance: none;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		/*兼容苹果手机*/
+		-ms-appearance: none;
+		outline: none;
+		-webkit-tap-highlight-color: #fff;
+		/* border: rem(1) solid #EBEBEB; */
+		border: none;
+		width: rem(100);
+		height: rem(50);
+		line-height: rem(50);
+		/*防止紧紧靠在边上*/
+		text-indent: rem(4);
+		background-color: transparent;
+	}
+	option {
+		color: black;
+	}
+}
+
+// 顶部选择bar：时间、餐别、楼层
+.menu {
+	position: fixed;
+	z-index: 800;
+	top: 44px;
+	left: 0;
+	width: 100%;
+	display: flex;
+	height: 84rpx;
+	background-color: #ffffff;
+	.menu-item {
+		flex: 1;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.toLeft,
+		.toRight {
+			display: flex;
+			.yyt-small-img {
+				width: 30rpx;
+				height: 16rpx;
+			}
+		}
+		.toLeft {
+			margin-right: 20rpx;
+			transform: rotate(90deg);
+		}
+		.toRight {
+			margin-left: 20rpx;
+			transform: rotate(270deg);
+		}
+	}
+	.meals-picker {
+		overflow: hidden;
+		.nav .cu-item {
+			height: 84rpx;
+			line-height: 84rpx;
+			margin: 0 5px;
+			padding: 0;
+		}
+	}
+	.floors-picker {
+		position: relative;
+		.cur-floor-name {
+			flex: 1 1 auto;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			max-width: 184rpx;
+			text-align: right;
+			.span {
+				color: red;
+			}
+		}
+		// .floor-list {
+		// 	position: absolute;
+		// 	z-index: 1000;
+		// 	background: linear-gradient(#b5e0ff, #fff);
+		// 	padding: 5px;
+		// 	overflow: hidden;
+		// 	border-radius: 5px;
+		// 	top: 84rpx;
+		// 	right: 5px;
+		// 	min-width: 300rpx;
+		// 	display: flex;
+		// 	flex-direction: column;
+		// 	align-items: center;
+		// 	.span {
+		// 		color: red;
+		// 	}
+		// 	.floor-cell {
+		// 		line-height: 2.2;
+		// 		flex: 1;
+		// 		&.all {
+		// 			width: 100%;
+		// 			text-align: center;
+		// 			border-bottom: 1px solid #f2f2f2;
+		// 		}
+		// 	}
+		// }
+	}
+}
+
+// 包房选择 容器
+.table-wrapper {
+	// position: absolute;
+	z-index: 55;
+	// top: 0rpx;
+	// left: 0;
+	width: 100%;
+	// bottom: 0;
+	// 使用uniapp scroll-view
+	// overflow-y: auto;
+	// -webkit-overflow-scrolling:touch;
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding: 0 30rpx;
+	// 每个包房
+	.table-info {
+		&.lock-bg {
+			background-color: #ef5973;
+			color: white;
+		}
+
+		&:nth-child(3n + 1) {
+			margin-left: 2px;
+		}
+		box-sizing: border-box;
+		float: left;
+		margin-right: -1px;
+		margin-bottom: -1px;
+		background: #ffffff;
+		width: 230rpx;
+		height: 230rpx;
+		border: 1px solid #e6e6e6;
+		text-align: center;
+		.table-name {
+			position: relative;
+			background: #fd642d;
+			width: 100%;
+			height: 70rpx;
+			line-height: 70rpx;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			color: white;
+			&.hiden {
+				background: transparent;
+				color: transparent;
+			}
+		}
+
+		// 客户容器
+		.customer-wrapper {
+			.lock-bg-color {
+				color: white !important;
+			}
+			.table-center {
+				position: absolute;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				top: -10rpx;
+				left: 0;
+				color: #929292;
+				width: 100%;
+				height: 140rpx;
+				line-height: 140rpx;
+				.table-name-center {
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+				}
+				.table-seating-center {
+					overflow: hidden;
+					text-overflow: ellipsis;
+					white-space: nowrap;
+				}
+			}
+			.table-center .lock-bg-color {
+				color: white;
+			}
+
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			height: 160rpx;
+			color: white;
+			overflow: hidden;
+			// 打钩icon
+			.checked {
+				position: relative;
+				display: flex;
+				height: 100%;
+				justify-content: center;
+				align-content: center;
+				font-size: 32px;
+			}
+			// 各种状态的背景颜色
+			.awaitReview {
+				// 待审核
+				background-color: #add8e6;
+				color: #000;
+			}
+			.reserved {
+				// 已预订
+				background-color: #3385ff;
+			}
+			.arrived {
+				// 已到店
+				background-color: #13c5cc;
+			}
+			.leave,
+			.closed {
+				// 已离店, 已关单
+				background-color: #989898;
+			}
+			.check {
+				// 已结账
+				background-color: #56ff6c;
+				.seller > .text-white {
+					color: #000 !important;
+				}
+				color: #000 !important;
+			}
+			// 每个客户信息
+			.customer-info {
+				position: relative;
+				flex: 1;
+				display: flex;
+				flex-direction: column;
+				padding: 4px;
+				// 一个桌台多个订单时，给个上边框做订单之间的视觉区分
+				&:not(:first-child) {
+					border-top: 1px solid white;
+				}
+				.customer-name {
+					flex: 1 0 auto;
+					display: flex;
+					font-size: 24rpx;
+					justify-content: center;
+					align-items: center;
+					.name {
+						overflow: hidden;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+						max-width: 80%;
+						padding-right: 8rpx;
+					}
+					.icon {
+						width: 28rpx;
+						height: 28rpx;
+						margin-top: -4rpx;
+						background-size: cover !important;
+					}
+				}
+				.customer-status {
+					flex: 1 0 auto;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					font-size: 24rpx;
+					.order-status {
+						overflow: hidden;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+						max-width: 80%;
+					}
+					.order-img {
+						width: 24rpx;
+						height: 24rpx;
+						margin-top: -2rpx;
+						margin-left: 4rpx;
+					}
+				}
+				.seller {
+					flex: 1 0 auto;
+					font-size: 24rpx;
+					display: inline-flex;
+					justify-content: flex-end;
+					.time {
+						margin-right: auto;
+					}
+					.seller-name {
+						overflow: hidden;
+						text-overflow: ellipsis;
+						white-space: nowrap;
+						max-width: 90%;
+					}
+				}
+			}
+		}
+	}
+}
+
+// 底部餐别弹出modal
+.meals-bottom-modal {
+	.tag-wrapper {
+		overflow-y: auto;
+		.tag-view {
+			position: relative;
+			display: inline-block;
+			float: left;
+			margin: 20rpx 20rpx;
+		}
+	}
+}
+
+// 确认预订按钮
+.confirm {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	bottom: 0;
+	z-index: 99;
+	padding: 0 20rpx;
+}
+
+// 遮罩
+#sw-mask {
+	// display: none;
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 801;
+	// background-color: rgba(0, 0, 0, .3);
+	/*transition: all .4s linear;*/
+}
+
+.movable-view {
+	width: 100vw;
+	height: auto;
+	min-height: 100%;
+}
+
+.movable-area {
+	height: 100%;
+	width: 100%;
+	// background-color: #D8D8D8;
+	overflow: hidden;
+}
+
+.clearfix {
+	*zoom: 1;
+}
+.clearfix:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.floor-list {
+	position: absolute;
+	z-index: 1000;
+	background: linear-gradient(#b5e0ff, #fff);
+	padding: 5px;
+	overflow: hidden;
+	border-radius: 5px;
+	top: 84rpx;
+	right: 5px;
+	min-width: 300rpx;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	.span {
+		color: red;
+	}
+	.floor-cell {
+		line-height: 2.2;
+		flex: 1;
+		&.all {
+			width: 100%;
+			text-align: center;
+			border-bottom: 1px solid #f2f2f2;
+		}
+	}
+}
+
+// 锁台modal
+.lock-list {
+	margin: -24rpx 0;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	.item {
+		display: flex;
+		align-items: center;
+		padding: 0 30rpx;
+		width: 80vw;
+		height: 80rpx;
+		text-align: left;
+		font-size: 32rpx;
+		color: #313131;
+		border-bottom: 1rpx solid #ccc;
+		&:last-of-type {
+			border-bottom: none;
+		}
+	}
+}
+
+.lock {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 30rpx;
+	position: absolute;
+	top: 20rpx;
+	right: 10rpx;
+	transform: translateY(-20rpx);
+	// color: rgba(255, 0, 0, 0.3);
+	color: rgba(255,255,255,0.5);
+}
+
+.area-name {
+	padding: 10rpx 0;
+	&::before {
+		content: '';
+		border-left: 5rpx solid rgb(7, 130, 255);
+		margin-right: 10rpx;
+	}
+}
+
+
+.container /deep/ .mescroll-totop {
+	display: none;
+}
+.text-lock{
+	color: rgba(255, 255,255, 0.3);
+}

@@ -1,0 +1,11 @@
+/*自定义样式*/
+uni-checkbox-group{}
+uni-checkbox-group uni-label{}
+/*checkbox 选项框大小  */
+uni-checkbox .uni-checkbox-input{}
+/*checkbox选中后样式  */
+uni-checkbox .uni-checkbox-input.uni-checkbox-input-checked{
+	background: #c7e8ff; border-color:#1ab2ec;
+}
+/*checkbox选中后图标样式  */
+uni-checkbox .uni-checkbox-input.uni-checkbox-input-checked::before{}

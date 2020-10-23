@@ -1,0 +1,118 @@
+// 作者:杨亮
+.overview {
+	background: #FEFFFF;
+	box-shadow: 1rpx 16rpx 14rpx 3rpx rgba(0, 0, 0, 0.04);
+	border-radius: 10rpx;
+	padding: 0 10rpx 10rpx 10rpx;
+	
+	// 顶部tab切换
+	.tab-nav {
+		.cu-item {
+			box-sizing: border-box;
+			width: 25%;
+			height: 80rpx;
+			margin: 0;
+			text-align: center;
+			// 短横线的放进了 common.css 中
+			&.cur.short:after {
+				width: 50%;
+				height: 2rpx;
+			}
+		}
+	}
+	
+	// 全店切换
+	.switch-panel {
+		padding: 20rpx 0;
+	}
+	
+	// hero-wrapper
+	.hero-wrapper {
+		position: relative;
+		padding-bottom: 20rpx;
+		&::after {
+			content: "";
+			display: block;
+			box-sizing: border-box;
+			height: 1rpx;
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			width: 90%;
+			transform: translateX(-50%);
+			background-color: #EEEEEE;
+		}
+		.hero-num {
+			padding: 10rpx 0;
+			
+			.hero-num-item {
+				.number {
+					font-size: 34rpx;
+					font-family: PingFang SC;
+					font-weight: 600;
+					color: #333333;
+					line-height: 56rpx;
+				}
+				.info {
+					font-size: 30rpx;
+					font-family: PingFang SC;
+					font-weight: 400;
+					color: #333333;
+					line-height: 36rpx;
+					opacity: 0.7;
+				}
+			}
+		}
+	}
+	
+	// 柱状图
+	.bar-chart {
+		transform: scale(0.8);
+	}
+	
+	// 营销
+	.marketing-wrapper {
+		padding: 30rpx 0;
+		.data-item {
+			.num {
+				font-size: 34rpx;
+				font-family: PingFang SC;
+				font-weight: 400;
+				color: #333333;
+				line-height: 56rpx;
+			}
+			.desc {
+				font-size: 30rpx;
+				font-family: PingFang SC;
+				font-weight: 400;
+				color: #999999;
+				line-height: 36rpx;
+			}
+		}
+	}
+	
+	// 底部
+	.bottom-wrapper {
+		padding: 0 10rpx 10rpx;
+		.date-inner {
+			.icon {
+				
+			}
+			.date {
+				font-size: 24rpx;
+				font-family: PingFang SC;
+				font-weight: 400;
+				color: #777777;
+				line-height: 36rpx;
+			}
+		}
+		.see-more {
+			font-size: 24rpx;
+			font-family: PingFang SC;
+			font-weight: 400;
+			color: #777777;
+			line-height: 36rpx;
+			opacity: 0.8;
+		}
+	}
+}

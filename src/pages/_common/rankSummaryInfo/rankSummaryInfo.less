@@ -1,0 +1,196 @@
+.rank-summary-info {
+	position: relative;
+	width: 100vw;
+	overflow: hidden;
+	box-sizing: border-box;
+	background-color: #f5f5f5;
+}
+
+.mui-table-view {
+    background-color: #f5f5f5;
+	position: relative;
+	margin: 20rpx;
+	padding-left: 0;
+	list-style: none;
+	&:before {
+	    height: 0;
+	}
+	&:after {
+		height: 0;
+	}
+	
+	.mui-table-view-cell {
+		margin-bottom: 30rpx;
+		padding: 0;
+		&:after {
+			height: 0;
+		}
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.customerFocusCard_top {
+	display: flex;
+	
+	.customerFocusCard_top_left {
+		width: 93%;
+		height: auto;
+		background-color: #fff;
+		margin-right: 8rpx;
+		border-radius: 10rpx;
+		display: flex;
+		padding-bottom: 20rpx;
+		padding-top: 20rpx;
+		position: relative;
+		
+		.customerFocusCard_top_left_l {
+			display: flex;
+			flex: 1;
+			justify-content: space-between;
+			flex-direction: column;
+			padding-right: 23rpx;
+			padding-left: 28rpx;
+			/*padding-top: 0.14rpx;*/
+			
+			.customerFocusCard_top_left_l_picArea {
+				position: relative;
+				width: 135rpx;
+				height: 135rpx;
+			}
+			
+			.salespersonPic {
+				width: 135rpx;
+				height: 135rpx;
+				border-radius: 50%;
+				display: block;
+			}
+			
+			.yyt_customerInfo_top_l_Area {
+				display: flex;
+			}
+			
+			.salespersonNamePic {
+				width: 100%;
+				height: 60rpx;
+				position: absolute;
+				bottom: 0;
+				background-image: url("https://pic.cwyyt.cn/upload/yytApp/images/bgMask.png");
+				background-repeat: no-repeat;
+				background-size: 100% 100%;
+				text-align: center;
+				line-height: 60rpx;
+			}
+			
+			.salespersonNamePic text {
+				font-size: 22rpx;
+				color: #fff;
+			}
+			
+			.salespersonInfo {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				padding-top: 12rpx;
+				
+				.salespersonName {
+					font-size: 26rpx;
+					color: #323232;
+					padding-right: 15rpx;
+					width: 110rpx;
+				}
+			}
+			
+			.salesrankPic {
+				width: 36rpx;
+				height: 36rpx;
+			}
+			
+		}
+		
+		.customerFocusCard_top_left_r {
+			width: 100%;
+			padding-right: 22rpx;
+			display: flex;
+			justify-content: space-between;
+			flex-direction: column;
+		}
+		
+		.rankIcon {
+			position: absolute;
+			top: 2rpx;
+			left: 1rpx;
+			font-size: 24rpx;
+			color: #007aff;
+		}
+	}
+	
+	.customerFocusCard_top_right {
+		display: flex;
+		flex-direction: column;
+		width: 154rpx;
+		
+		text {
+			font-size: 26rpx;
+			color: #323232;
+		}
+		
+		.customerFocusCard_top_right_t {
+			width: 154rpx;
+			flex: 2;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			background-color: #fff;
+			margin-bottom: 8rpx;
+			border-radius: 10rpx;
+		}
+		
+		.customerFocusCard_top_right_b {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			flex: 3;
+			width: 154rpx;
+			background-color: #fff;
+			border-radius: 10rpx;
+			
+			.img {
+				width: 52rpx;
+				height: 50rpx;
+				display: block;
+				margin-bottom: 10rpx;
+			}
+		}
+	}
+}
+
+.consumeItem {
+    display: flex;
+    align-items: center;
+	
+	.title {
+	    font-size: 26rpx;
+	    color: #323232;
+	    padding-right: 20rpx;
+	}
+	
+	.desc {
+	    font-size: 28rpx;
+	    color: #323232;
+	}
+}
+
+
+.consume_averageNum {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+	
+	.consumeItem {
+	    margin-bottom: 0;
+	}
+}

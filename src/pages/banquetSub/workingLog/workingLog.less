@@ -1,0 +1,43 @@
+.log {
+	// margin-top: 20rpx;
+	background: #fff;
+	padding: 30rpx;
+	.log-title {
+		font-size: 34rpx;
+		color: #262626;
+		font-weight: bold;
+		padding:0 30rpx 10rpx;
+		background: #fff;
+	}
+	.log-list {
+		// margin: 26rpx 0;
+		background: #fff;
+		padding:0 30rpx 30rpx;
+		display: flex;
+		.log-red {
+			width: 14rpx;
+			min-width: 14rpx;
+			height: 14rpx;
+			background: #f00;
+			border-radius: 50%;
+			// float: left;
+			margin: 19rpx 19rpx 0 0;
+		}
+		.log-info {
+			// float: left;
+			.font12 {
+				font-size: 24rpx;
+				color: #404040;
+			}
+			.font11 {
+				font-size: 22rpx;
+				color: #595959;
+			}
+		}
+		&:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+	}
+}

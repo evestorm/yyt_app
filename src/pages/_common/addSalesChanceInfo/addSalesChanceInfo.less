@@ -1,0 +1,263 @@
+// 主容器
+.add-sales-chance-info {
+	position: relative;
+	height: 100vh;
+	overflow: hidden;
+	background: #f5f5f5;
+	box-sizing: border-box;
+}
+
+// 头部
+.salse_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /*height: 2.89rem;*/
+    height: auto;
+    background-color: #fff;
+    text-align: center;
+    padding: 22rpx 26rpx 30rpx;
+    border-radius: 10rpx;
+    margin: 30rpx 0;
+	.customerFocusCard_top_left_l_picArea {
+	    position: relative;
+	    width: 135rpx;
+	    height: 135rpx;
+	}
+	.salesPersonPicInfo {
+	    display: flex;
+	    justify-content: center;
+	}
+	.salesrankPic {
+	    width: 30rpx;
+	    height: 30rpx;
+	}
+	.salespersonNamePic {
+	    width: 100%;
+	    height: 60rpx;
+	    position: absolute;
+	    bottom: 0;
+	    background-image: url("https://pic.cwyyt.cn/upload/yytApp/images/bgMask.png");
+	    background-repeat: no-repeat;
+	    background-size: 100% 100%;
+	    text-align: center;
+	    line-height: 60rpx;
+	}
+	.salespersonNamePic text {
+	    font-size: 22rpx;
+	    color: #fff;
+	}
+	.salespersonPic {
+	    width: 135rpx;
+	    height: 135rpx;
+	    border-radius: 50%;
+	    display: block;
+	}
+	.salepersonPic {
+	    width: 118rpx;
+	    height: 118rpx;
+	    border-radius: 50%;
+	    vertical-align: middle;
+	}
+	
+	.salepersonName {
+	    padding-top: 22rpx;
+	    padding-bottom: 30rpx;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+		text {
+		    font-size: 32rpx;
+		    color: #323232;
+		    /*line-height: 0.32rem;*/
+		}
+		.sexPic {
+		    width: 26rpx;
+		    height: 26rpx;
+		    vertical-align: middle;
+		    margin-left: 10rpx;
+		}
+	}
+	.salepersonTel {
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+		text {
+		    font-size: 32rpx;
+		    line-height: 32rpx;
+		    color: #9a9a9a;
+		    padding-top: 10rpx;
+		}
+		.telphonePic {
+		    width: 43rpx;
+		    height: 39rpx;
+		    margin-right: 20rpx;
+		    vertical-align: middle;
+		}
+	}
+}
+		
+// 去掉picker的图标
+.cu-form-group {
+	.picker {
+		display: inline-block;
+		height: 100%;
+	}
+	picker::after {
+		display: none;
+	}
+}
+
+// 白块分割
+.add-item {
+	border-radius: 10rpx;
+	margin: 30rpx 30rpx 0 30rpx;
+	background-color: #fff;
+	.cu-form-group {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: transparent;
+		padding: 0;
+		margin: 0 30rpx;
+		picker {
+			padding-right: 0;
+		}
+		.title {
+			font-size: 28rpx;
+			color: #323232;
+		}
+		.desc {
+			font-size: 22rpx;
+			color: #666666;
+			text-align: right;
+			padding-right: 0;
+		}
+		.customer-tag {
+			width: 100%;
+			display: flex;
+			flex-direction: column;
+			.tag-top {
+				width: 100%;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				.editIcon {
+					font-size: 30rpx;
+				}
+			}
+			.tag-bottom {
+				width: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				align-items: center;
+				.tag-item {
+					font-size: 28rpx;
+					border: 1rpx solid #0183ff;
+					padding: 5rpx 10rpx;
+					border-radius: 18rpx;
+					margin-right: 30rpx;
+					margin-bottom: 30rpx;
+				}
+			}
+		}
+		.change-Sex {
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			flex: 1;
+			.sex-name{
+				padding-right:10rpx;
+			}
+			.sex-icon{
+				font-size: 26rpx;
+			}
+		}
+		.set-manager {
+			display: flex;
+			justify-content: flex-end;
+			flex: 1;
+			align-items: center;
+			.picker{
+				.desc {
+					padding-right: 20rpx;
+				}
+				.icon-tools{
+					font-size: 30rpx;
+				}
+			}
+			
+		}
+		
+		.customer-level-wrapper {
+			width: 40%;
+			.customRank_icon {
+				.level-container {
+					display: flex;
+					justify-content: flex-end;
+					.img-wrapper {
+						padding: 0 20rpx;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						.level-img {
+							width: 30rpx;
+							height: 30rpx;
+							&.active {
+								border: 1px solid #00BFFF;
+								transform: scale(1.1);
+							}
+						}
+					}
+					
+				}
+			}
+		}
+	}
+	
+	// 快捷备注
+	.quick-wrapper {
+		margin: 0 30rpx;
+		padding: 20rpx 0;
+		// 标题
+		.quick-title-wrapper {
+			display: flex;
+			justify-content: space-between;
+		}
+		.quick-tag-list {
+			overflow-y: auto;
+			-webkit-overflow-scrolling:touch;
+			max-height: 250rpx;
+			display: flex;
+			flex-wrap: wrap;
+			
+			.quick-tag-item {
+				padding: 10rpx;
+			}
+		}
+	}
+}
+
+// 保存按钮
+.yyt_customerInfo_bottom {
+    background-color: #fff;
+    height: 76rpx;
+    border-radius: 35rpx;
+    border: 1px solid #9a9a9a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30rpx;
+	text {
+	    display: inline-block;
+	    width: 100%;
+	    height: 100%;
+	    font-size: 32rpx;
+	    color: #323232;
+	    line-height: 76rpx;
+	    text-align: center;
+	}
+}

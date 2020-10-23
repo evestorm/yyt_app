@@ -1,0 +1,55 @@
+// 作者:杨亮
+.gridMenu {
+	background: #FFFFFF;
+	box-shadow: 0px 16rpx 14rpx 2rpx rgba(0, 0, 0, 0.04);
+	border-radius: 10rpx;
+}
+
+// 快速导航
+.menu-wrapper {
+	background: white;
+	display: flex;
+	flex-wrap: wrap;
+	height: auto;
+	.item {
+		position: relative;
+		width: 25%;
+		padding-bottom: 26%;
+		.inner {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			.badge {
+				min-width: 32rpx;
+				height: 32rpx;
+				padding: 0 10rpx;
+				background: #F24137;
+				border-radius: 16rpx;
+				color: white;
+				font-size: 20rpx;
+				font-family: PingFang SC;
+				font-weight: 400;
+				color: #FFFFFF;
+				line-height: 36rpx;
+				position: absolute;
+				top: 10rpx;
+				left: 50%;
+				transform: translateX(-50% + 100rpx);
+				z-index: 1;
+			}
+			.img {
+				width: 66rpx;
+				height: 66rpx;
+				margin-bottom: 10rpx;
+			}
+			.title {
+			}
+		}
+	}
+}

@@ -1,0 +1,110 @@
+.bg-white {
+	background: #fff;
+}
+.flex {
+	display: flex;
+	align-items: center;
+}
+.card-title {
+	color: #262626;
+	font-size: 32rpx;
+	font-weight: bold;
+	line-height: 1;
+}
+// =======================================顶部日期选择=========================================
+.report-top {
+	margin-top: 20rpx;
+	justify-content: space-between;
+	padding: 0 30rpx;
+	.left {
+		margin: 0 auto;
+		.img {
+			width: 10rpx;
+			height: 18rpx;
+		}
+		.date-text {
+			color: #262626;
+			font-size: 26rpx;
+		}
+		.data-icon {
+			width: 38rpx;
+			height: 36rpx;
+			margin-right: 17rpx;
+		}
+	}
+}
+// ======================================线索概况=========================================
+.report-content {
+	padding: 30rpx;
+	margin-top: 16rpx;
+	.content-info {
+		justify-content: space-between;
+		margin-top: 48rpx;
+		.info-list {
+			text-align: center;
+			padding: 0 35rpx 0 54rpx;
+			.item-title {
+				color: #595959;
+				font-size: 22rpx;
+				line-height: 1;
+				margin-bottom: 19rpx;
+			}
+			.item-sec {
+				color: #0183ff;
+				font-size: 40rpx;
+				font-family: PingFang-SC-Bold;
+				font-weight: bold;
+				line-height: 1;
+				text {
+					font-size: 22rpx;
+					font-weight: normal;
+				}
+			}
+		}
+	}
+}
+// ======================================e-charts图形=========================================
+.report-echars {
+	padding: 30rpx;
+	margin-top: 12rpx;
+	.top-title {
+		justify-content: space-between;
+		.top-btn {
+			justify-content: space-between;
+			width: 59%;
+			flex-wrap: nowrap;
+			.tab-list {
+				width: 110rpx;
+				line-height: 46rpx;
+				text-align: center;
+				border: 1px solid #0183ff;
+				border-radius: 23rpx;
+				font-size: 26rpx;
+				color: #0183ff;
+			}
+			.sel {
+				background: #0183ff;
+				color: #fff;
+				font-weight: bold;
+			}
+		}
+	}
+	.chart-main {
+		width: 100%;
+		margin: 10rpx 0;
+		position: relative;
+		.chart-svg {
+			height: 300rpx;
+			margin: 0px;
+			padding: 0px;
+			// width: calc(100vw);
+			// width: calc(100vw - 60rpx);
+			// width: 100rpx;
+		}
+	}
+}
+// ======================================底部表格=========================================
+.report-bottom {
+	margin-top: 8rpx;
+	padding: 30rpx;
+}

@@ -1,0 +1,47 @@
+// 作者:杨亮
+.smsItem {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100vw;
+	height: 140rpx;
+	box-sizing: border-box;
+	padding: 0 30rpx;
+	background-color: white;
+	margin: 20rpx 0;
+
+	.item-name {
+		font-size: 30rpx;
+		font-family: PingFang SC;
+		font-weight: bold;
+		color: rgba(38, 38, 38, 1);
+	}
+	.item-status {
+		margin-left: auto;
+		margin-right: 30rpx;
+		&.suc {
+			color: #FF4E00;
+		}
+		&.fail {
+			color: #FF0000;
+		}
+	}
+	.send-btn {
+		margin: 0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 180rpx;
+		height: 60rpx;
+		background: #0183ff;
+		color: white;
+		border-radius: 30rpx;
+		font-size: 30rpx;
+		font-family: PingFang SC;
+		font-weight: bold;
+		
+		&.disabled {
+			background-color: #CCCCCC;
+		}
+	}
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+		<!--不进行缓存-->
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="expires" content="0">   
+		<!-- <meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"> -->
+		<title>
+			<%= htmlWebpackPlugin.options.title %>
+		</title>
+		<script>
+			var UA = window.navigator.userAgent.toLowerCase();
+			var isAndroid = UA.indexOf('android') > 0;
+			var isIOS = /iphone|ipad|ipod|ios/.test(UA);
+			if (!(isAndroid || isIOS)&&document.documentElement.clientWidth>420) {
+				// 正式发布的时候使用，开发期间不启用。
+				window.location.pathname = '/static/html/pc.html';
+			}
+		</script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				document.documentElement.style.fontSize = document.documentElement.clientWidth / 20 + 'px'
+			})
+		</script>
+		<link rel="stylesheet" href="<%= BASE_URL %>static/index.css" />
+	</head>
+	<body>
+		<!-- 该文件为 H5 平台的模板 HTML，并非应用入口。 -->
+		<!-- 请勿在此文件编写页面代码或直接运行此文件。 -->
+		<!-- 详见文档：https://uniapp.dcloud.io/collocation/manifest?id=h5-template -->
+		<noscript>
+			<strong>Please enable JavaScript to continue.</strong>
+		</noscript>
+		<div id="app"></div>
+		<!-- built files will be auto injected -->
+		<script>
+		var _hmt = _hmt || [];
+		(function() {
+		  var hm = document.createElement("script");
+		  hm.src = "https://hm.baidu.com/hm.js?6e499418495097fcf7a57608d3613872";
+		  var s = document.getElementsByTagName("script")[0]; 
+		  s.parentNode.insertBefore(hm, s);
+		})();
+		
+		// 控制上传的条件 https://tongji.baidu.com/web/help/article?id=324&type=0
+		_hmt.push(['_requirePlugin', 'UrlChangeTracker', {
+		  shouldTrackUrlChange: function (newPath, oldPath) {
+			  return false;
+		  }}
+		]);
+		</script>
+		<script src="https://cdn.bootcss.com/exif-js/2.3.0/exif.min.js"></script>
+	</body>
+</html>

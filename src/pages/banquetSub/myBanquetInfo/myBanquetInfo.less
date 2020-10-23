@@ -1,0 +1,521 @@
+// top
+[v-cloak] {
+	display: none;
+}
+.my-bq-top {
+	display: flex;
+	justify-content: space-between;
+	align-items: top;
+	background: #fff;
+	border-radius: 20rpx;
+	padding: 30rpx;
+	margin-top: 20rpx;
+	position: relative;
+	.my-bq-top-left-info {
+		display: flex;
+		justify-content: left;
+		align-items: flex-start;
+		.touxiang {
+			width: 120rpx;
+			height: 120rpx;
+			border-radius: 50%;
+		}
+		.my-bq-top-left1-info {
+			margin-left: 18rpx;
+			max-width:400rpx;
+			.name {
+				font-size: 36rpx;
+				color: #0d0d0d;
+				margin-right: 29rpx;
+			}
+			.handle {
+				font-size: 24rpx;
+				color: #0183ff;
+				white-space: nowrap;
+			}
+			.phone {
+				// margin-top: 19rpx;
+				font-size: 34rpx;
+				color: #262626;
+			}
+			.my-bq-top-left1-img {
+				width: 30rpx;
+				height: 30rpx;
+			}
+		}
+	}
+	.my-bq-top-left2 {
+		margin-top: 10rpx;
+		.com-img {
+			width: 22rpx;
+			height: 20rpx;
+			margin-right: 11rpx;
+		}
+		.com-text {
+			font-size: 26rpx;
+			color: #404040;
+		}
+	}
+	.my-bq-top-right {
+		.my-bq-top-right-top {
+			margin-top: 20rpx;
+			.do-duanxin {
+				width: 40rpx;
+				height: 32rpx;
+				margin-right: 40rpx;
+			}
+			.do-tel {
+				width: 36rpx;
+				height: 36rpx;
+			}
+		}
+		.suc-type {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			width: 120rpx;
+			height: 120rpx;
+		}
+		.suc-text {
+			font-size: 26rpx;
+			color: #fff;
+			position: absolute;
+			right: 28rpx;
+			bottom: 28rpx;
+		}
+	}
+}
+// 中间信息部分
+.my-bq-mid {
+	margin-top: 10rpx;
+	background: #fff;
+	border-radius: 20rpx;
+	font-size: 28rpx;
+	.my-bq-mid1-info {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		border-bottom: 1rpx solid #f2f2f2;
+		padding: 36rpx 30rpx;
+		.title {
+			color: #595959;
+		}
+		.des {
+			color: #262626;
+		}
+	}
+	.my-bq-mid1-info-remark {
+		padding: 36rpx 30rpx;
+		.title {
+			color: #595959;
+		}
+		.des {
+			color: #262626;
+			margin-left: 20rpx;
+		}
+	}
+}
+// 底部记录
+.my-bq-bot {
+	margin-top: 10rpx;
+	background: #fff;
+	border-radius: 18rpx;
+	padding: 30rpx;
+	position: relative;
+	&:after {
+		content: ' ';
+		display: block;
+		clear: both;
+	}
+	.my-bq-bot-nav {
+		font-size: 34rpx;
+		color: #bfbfbf;
+		.title {
+			margin: 0 50rpx 44rpx 0;
+		}
+		.isSelect {
+			color: #262626;
+		}
+	}
+	// 历史纪录
+	.history-list {
+		// position:absolute;
+		// top:108rpx;
+		// left:0;
+		background: #fff;
+		display: none;
+		// width: 750rpx;
+		// padding:0 30rpx;
+		.history-list-item {
+			margin-top: 36rpx;
+			// display: flex;
+			// justify-content: flex-start;
+			// align-items: top;
+		}
+		.red-icon {
+			display: inline-block;
+			float: left;
+			width: 14rpx;
+			height: 14rpx;
+			background: #f00;
+			border-radius: 50%;
+			margin: 19rpx 19rpx 5rpx 0;
+		}
+		.item {
+			// float: left;
+			padding-left: 20rpx;
+			.item2 {
+				// width: 640rpx;
+			}
+			.item3 {
+				display: flex;
+				vertical-align: flex-start;
+				align-items: top;
+			}
+			.item-title {
+				font-size: 24rpx;
+				color: #404040;
+				line-height: 24rpx;
+				margin-right: 30rpx;
+			}
+			.item-info {
+				font-size: 22rpx;
+				color: #595959;
+			}
+			.img {
+				width: 140rpx;
+				height: 140rpx;
+				margin-right: 30rpx;
+			}
+			.imgs {
+				margin-right: 10rpx;
+			}
+		}
+	}
+
+	//跟踪记录
+	.track-list {
+		// position: absolute;
+		// top: 108rpx;
+		// left: 0;
+		// background: #fff;
+		display: none;
+		// width: 100%;
+		// padding: 0 30rpx;
+		.track-list-item {
+			// width: 750rpx;
+			margin: 36rpx 0 28rpx 0;
+			.red-icon {
+				display: inline-block;
+				width: 14rpx;
+				height: 14rpx;
+				background: #f00;
+				border-radius: 50%;
+				margin: 10rpx 19rpx 5rpx 0;
+			}
+			.img {
+				width: 22rpx;
+				height: 22rpx;
+				margin-right: 12rpx;
+			}
+			.item-title {
+				font-size: 24rpx;
+				color: #404040;
+				line-height: 24rpx;
+				margin-right: 30rpx;
+			}
+			.float-left {
+				font-size: 22rpx;
+				color: #595959;
+			}
+			.item-info {
+				margin-right: 40rpx;
+			}
+		}
+	}
+	.isShow {
+		display: block;
+	}
+}
+.bot-fiex {
+	width: 100%;
+	height: 100rpx;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	padding: 14rpx 31rpx;
+	z-index: 999;
+	text-align: center;
+	background: #fff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	.btn {
+		width: 200rpx;
+		height: 70rpx;
+		border-radius: 35rpx;
+		color: #fff;
+		line-height: 70rpx;
+	}
+	.info {
+		background: #d9d9d9;
+	}
+	.doing {
+		background: #fda51b;
+	}
+	.suc {
+		background: #0183ff;
+	}
+	.jihuo {
+		width: 460rpx;
+		height: 70rpx;
+		border-radius: 35rpx;
+		color: #fff;
+		line-height: 70rpx;
+		margin: 0 144rpx;
+	}
+}
+
+// 底部logo
+.logoPic {
+	padding: 40rpx 184rpx 110rpx;
+	.bot-logo {
+		width: 316rpx;
+		height: 40rpx;
+	}
+}
+//确认弹窗
+.isChangCustomer {
+	width: 670rpx;
+	height: 362rpx;
+	border-radius: 18rpx;
+	position: relative;
+	.top-title {
+		font-size: 38rpx;
+		color: #0d0d0d;
+		.top-msg {
+			position: absolute;
+			left: 240rpx;
+		}
+		.top-img {
+			width: 30rpx;
+			height: 30rpx;
+			position: absolute;
+			top: 0;
+			left: 520rpx;
+		}
+	}
+	.con {
+		position: absolute;
+		top: 134rpx;
+		left: 51rpx;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		.con-img {
+			width: 50rpx;
+			height: 50rpx;
+			margin-right: 17rpx;
+		}
+		.text {
+			font-size: 28rpx;
+			color: #404040;
+			// vertical-align: 50rpx;
+		}
+	}
+	.bot {
+		position: absolute;
+		left: -30rpx;
+		bottom: -30rpx;
+		display: flex;
+		border-radius: 8rpx;
+		border: 1px solid #0183ff;
+		text-align: center;
+		.btn {
+			width: 302rpx;
+			height: 88rpx;
+			font-size: 38rpx;
+			line-height: 88rpx;
+		}
+		.qx {
+			color: #0183ff;
+		}
+		.qd {
+			background: #0183ff;
+			color: #fff;
+		}
+	}
+}
+
+// 发送短信modal
+.send-msg {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	// z-index: 6;
+	background-color: #fff;
+	width: 690rpx;
+	height: auto;
+	border: 1rpx solid #e8e8e8;
+	padding: 0 30rpx 0 30rpx;
+	border-radius: 10rpx;
+	box-sizing: border-box;
+
+	// 标题
+	.modal-content_message_title {
+		font-size: 32rpx;
+		width: 100%;
+		height: 106rpx;
+		line-height: 106rpx;
+
+		.modal-content_message_title_tip {
+			width: 100%;
+			height: 106rpx;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 32rpx;
+			color: #323232;
+			position: relative;
+		}
+		.closeBtn {
+			width: 33rpx;
+			height: 32rpx;
+			position: absolute;
+			right: 32rpx;
+			top: 32rpx;
+			cursor: pointer;
+		}
+	}
+	// 正文
+	.modal-content_message_Info {
+		width: 100%;
+		// 姓名电话
+		.modal-content_message_Info_title {
+			width: 100%;
+			padding: 30rpx 0;
+			display: flex;
+			align-items: center;
+			position: relative;
+			&:after {
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				height: 1px;
+				content: '';
+				-webkit-transform: scaleY(0.5);
+				transform: scaleY(0.5);
+				background-color: #c8c7cc;
+			}
+			.modal-content_message_Info_title_l {
+				display: flex;
+				flex: 3;
+				align-items: center;
+				justify-content: space-between;
+				.customerPic {
+					width: 35rpx;
+					height: 34rpx;
+				}
+				.customerName {
+					width: 100rpx;
+					font-size: 32rpx;
+					color: #323232;
+					display: flex;
+					justify-content: center;
+				}
+				.rankPic {
+					width: 30rpx;
+					height: 30rpx;
+					// margin-right: 0.24rem;
+				}
+			}
+			.flagline {
+				display: flex;
+				justify-content: center;
+				flex: 1;
+				width: 1px;
+				color: #e8e8e8;
+			}
+			.modal-content_message_Info_title_r {
+				display: flex;
+				flex: 3;
+				align-items: center;
+				justify-content: space-between;
+				.telphonePic {
+					width: 38rpx;
+					height: 34rpx;
+				}
+				text {
+					font-size: 32rpx;
+					color: #323232;
+				}
+			}
+		}
+		// 模板列表
+		.search_list {
+			margin-top: 0;
+			padding: 0;
+			height: 264rpx;
+			overflow: auto;
+			.ul {
+				width: 100%;
+				.li {
+					text-align: left;
+					line-height: 3;
+					width: 100%;
+					position: relative;
+					&:after {
+						position: absolute;
+						right: 0;
+						bottom: 0;
+						left: 0;
+						height: 1px;
+						content: '';
+						-webkit-transform: scaleY(0.5);
+						transform: scaleY(0.5);
+						background-color: #c8c7cc;
+					}
+				}
+			}
+		}
+		// 短信编辑区
+		.modal-content_message_Info_contentEdit {
+			.textarea {
+				width: 100%;
+				text-align: left;
+				padding: 1rpx 12rpx;
+				margin-bottom: 0;
+				// height: auto;
+				height: 135rpx;
+				font-size: 26rpx;
+				color: #9a9a9a;
+				border-radius: 10rpx;
+				text-indent: 2em;
+				margin-top: -1px;
+				box-sizing: border-box;
+				border: 1px solid rgba(0, 0, 0, 0.2);
+			}
+		}
+		// 按钮区
+		.sendMessageInfo {
+			.message_footer {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding: 20rpx 0;
+				.sendMessage {
+					width: 300rpx;
+					border-radius: 10rpx;
+					display: flex;
+					height: 80rpx;
+					align-items: center;
+					justify-content: center;
+					font-size: 32rpx;
+					color: #323232;
+					// margin-bottom: 0.1rem;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,1607 @@
+/* 颜色(字体,背景) */
+.yyt-error {
+	// 错误
+	color: #ff0000 !important;
+}
+.yyt-warning {
+	// 警告
+	color: #ff4e00 !important;
+}
+.yyt-orange {
+	// 提醒
+	color: #ffae00 !important;
+}
+.yyt-grey {
+	// 标签
+	color: #ebf5ff !important;
+}
+.yyt-dark-grey {
+	// 提示文字
+	color: #999999 !important;
+}
+.yyt-black {
+	// 字体黑色
+	color: black !important;
+}
+.yyt-error-bg {
+	background-color: #ff0000 !important;
+}
+.yyt-warning-bg {
+	background-color: #ff4e00 !important;
+}
+.yyt-orange-bg {
+	background-color: #ffae00 !important;
+}
+.yyt-grey-bg {
+	background-color: rgba(234, 245, 255, 1) !important;
+}
+.yyt-lightgrey-bg {
+	background-color: rgba(246, 246, 246, 1) !important;
+}
+
+// 字体加粗
+.yyt-font-weight {
+	font-weight: 800 !important;
+}
+
+/* flex 相关 */
+.yyt-flex-center {
+	justify-content: center;
+	align-items: center;
+}
+
+.yyt-list {
+	margin: 20rpx 0;
+	background: white;
+}
+
+/* flex list相关 */
+.yyt-list-item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30rpx 0;
+	margin: 0 30rpx;
+	border-bottom: 1rpx solid rgba(242, 242, 242, 1);
+
+	&:last-of-type {
+		border-bottom: none;
+	}
+
+	.title {
+		font-size: 28rpx;
+		font-family: PingFang SC;
+		color: #595959;
+	}
+
+	.title-wrapper {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.content {
+		font-size: 28rpx;
+		font-family: PingFang SC;
+		color: #262626;
+		margin-left: auto;
+	}
+
+	.btn {
+		height: 48rpx;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border: 2rpx solid #0183ff;
+		border-radius: 24rpx;
+		color: #0183ff;
+		font-size: 26rpx;
+		font-family: PingFang SC;
+		padding: 0 20rpx;
+	}
+
+	.sw-input {
+		font-size: 22rpx;
+		font-family: PingFang SC;
+		text-align: right;
+		color: #999999;
+		width: 70%;
+	}
+
+	.tip {
+		margin-left: 5px;
+		font-size: 28rpx;
+		font-family: PingFang SC;
+		color: rgb(153, 153, 153);
+	}
+
+	.tip-row {
+		margin-left: auto;
+		font-size: 28rpx;
+		font-family: PingFang SC;
+		color: rgb(153, 153, 153);
+	}
+
+	.arrow-wrapper {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.yyt-list-item-column {
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+.yyt-list-column {
+	flex-direction: column;
+	align-items: flex-start;
+}
+
+/* 清除底部bottom线 */
+.yyt-border-none {
+	border: none;
+}
+
+/* uniapp scroll-view 相关 */
+.scroll-view_H {
+	white-space: nowrap;
+	width: 100%;
+}
+.scroll-view-item {
+	height: 300upx;
+	line-height: 300upx;
+	text-align: center;
+	font-size: 36upx;
+}
+.scroll-view-item_H {
+	display: inline-block;
+	width: 100%;
+	height: 300upx;
+	line-height: 300upx;
+	text-align: center;
+	font-size: 36upx;
+}
+
+/* 顶部filter相关 */
+.nav.nav-filter {
+	height: 90rpx;
+	justify-content: space-around;
+	.cu-item {
+		margin: 0;
+		padding: 0 10rpx;
+		// 时间选择picker
+		& > .date-wrapper {
+			height: 90rpx;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.picker {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+
+				.dateSelectIcon {
+					margin-left: 10rpx;
+				}
+			}
+		}
+		// 侧边栏筛选icon
+		.filter-icon {
+			position: relative;
+			top: 2px;
+			width: 26rpx;
+			height: 26rpx;
+		}
+		.img {
+			display: inline-block;
+			margin-left: 3px;
+			width: 20rpx;
+			height: 16rpx;
+		}
+	}
+	.dropdown-panel {
+		position: fixed;
+		left: 0;
+		right: 0;
+		padding: 30rpx 30rpx 0 30rpx;
+		overflow: hidden;
+		border-top: 1px solid #f2f2f2;
+		background: #fff;
+		z-index: 101;
+		text-align: left;
+
+		.dropdown-item {
+			margin-bottom: 30rpx;
+			font-size: 28rpx;
+			color: #323232;
+			line-height: 40rpx;
+		}
+
+		.dropdown-item-sel {
+			color: #0373fc;
+		}
+
+		.dropdown-mask {
+			position: fixed;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.3);
+			z-index: 100;
+		}
+	}
+}
+
+/* colorui tab导航 */
+
+/* 短横线高亮 */
+.cu-item.cur.short {
+	border: none;
+	position: relative; /* 给当前元素添加相对定位 也就是after的父级 */
+}
+
+.cu-item.cur.short:after {
+	content: '';
+	width: 30%;
+	height: 2px;
+	background: #0081ff;
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+/* 客户卡片 */
+.yyt-customer-card {
+	flex-direction: column;
+	align-items: flex-end;
+	background: white;
+	box-sizing: border-box;
+	margin: 10rpx 0;
+	padding: 20rpx;
+	border-radius: 10rpx;
+
+	// 主要内容区
+	.customer-main-wrapper {
+		width: 100%;
+		align-items: flex-start;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		// 头像
+		.avatar-wrapper {
+			position: relative;
+			width: 20%;
+			display: flex;
+			justify-content: flex-start;
+			align-items: flex-start;
+			
+			.jiazhi { // 价值客户（有客户池经理的）
+				width: 120rpx;
+				height: 37rpx;
+				position: absolute;
+				top: 135rpx;
+				left: 5rpx;
+			}
+
+			.cs-pool-wrapper {
+				width: 120rpx;
+				position: absolute;
+				top: 140rpx;
+				left: 0;
+				display: flex;
+				justify-content: center;
+				align-items: flex-start;
+				.img {
+					top: 10rpx;
+					width: 20rpx;
+					min-width: 20rpx;
+					height: 20rpx;
+					margin-right: 10rpx;
+				}
+				.txt {
+					font-size: 24rpx;
+					font-family: PingFang SC;
+					font-weight: 500;
+					color: rgba(64, 64, 64, 1);
+				}
+			}
+		}
+		// 资料
+		.customer-info-wrapper {
+			width: 80%;
+			// 名称一栏
+			.customer-name-wrapper {
+				flex-wrap: wrap;
+				align-items: center;
+				min-height: 56rpx;
+
+				// 客户姓名
+				.name {
+					font-size: 32rpx;
+					font-family: PingFang SC;
+					font-weight: bold;
+					color: rgba(13, 13, 13, 1);
+					max-width: 60%;
+				}
+				// 客户尊称
+				.sub-name {
+					font-size: 22rpx;
+					font-family: PingFang SC;
+					color: #6b6b6b;
+					vertical-align: bottom;
+				}
+				// 客户等级
+				.level {
+					width: 30rpx;
+					height: 30rpx;
+					max-width: 30rpx;
+					margin: 0 10rpx;
+					// background-color: #0d7dff;
+					// border-radius: 50%;
+					// font-size: 20rpx;
+					// color: white;
+					// display: flex;
+					// align-items: center;
+					// justify-content: center;
+				}
+				// 状态图片
+				.status-img {
+					width: 80rpx;
+					height: 30rpx;
+				}
+				// 已发短信
+				.msg-status {
+					margin-left: 10rpx;
+					image{
+						width: 128rpx;
+						height: 30rpx;
+					}
+				}
+				// 客户经理容器
+				.cs-name-wrapper {
+					margin-left: auto;
+					.cs-name {
+						margin-left: 10rpx;
+						font-size: 24rpx;
+						font-family: PingFang SC;
+						color: rgba(64, 64, 64, 1);
+					}
+				}
+			}
+			// 电话一栏
+			.phone-wrapper {
+				position: relative;
+				align-items: center;
+				min-height: 50rpx;
+				flex-wrap: wrap;
+				.phone {
+				}
+				// 状态图片
+				.status-img {
+					width: 80rpx;
+					height: 30rpx;
+					top: -14rpx;
+				}
+				// 单位
+				.company-wrapper {
+					align-items: center;
+					min-height: 28rpx;
+					border-radius: 4rpx;
+					.bg {
+						background: rgba(253, 247, 233, 1);
+						padding: 0 10rpx;
+					}
+					.company-name {
+						font-size: 20rpx;
+						font-family: PingFang SC;
+						font-weight: 400;
+						color: rgba(85, 85, 85, 1);
+						line-height: 24rpx;
+					}
+				}
+			}
+			// 详情页的电话
+			.phone-wrapper.detail {
+				align-items: center;
+				min-height: 50rpx;
+				.phone {
+					font-size: 34rpx;
+					font-weight: bold !important;
+				}
+				// 状态图片
+				.status-img {
+					width: 80rpx;
+					height: 30rpx;
+				}
+			}
+			// 标签一栏
+			.tags-wrapper {
+				position: relative;
+				align-items: center;
+				// 列表页标签不需要折行
+				flex-wrap: nowrap;
+				overflow: hidden;
+				.cu-tag {
+					color: #404040;
+					margin: 10rpx 10rpx;
+					height: 40rpx;
+					border-radius: 8rpx;
+				}
+				// 详情页需要折行显示全部标签
+				&.detail {
+					flex-wrap: wrap;
+					overflow: auto;
+				}
+
+				.arrow {
+					position: absolute;
+					top: 50%;
+					right: 0;
+					// width: 10px;
+					background: white;
+					transform: translate(0, -50%);
+				}
+			}
+		}
+	}
+	// 次要内容区
+	.customer-sub-wrapper {
+		width: 80%;
+		// 最近消费 / 最近跟踪
+		.recent-consumption,
+		.recent-tracking {
+			position: relative;
+			padding-left: 20rpx;
+			align-items: center;
+			justify-content: flex-start;
+			flex-wrap: wrap;
+
+			font-size: 24rpx;
+			font-family: PingFang SC;
+			color: rgba(64, 64, 64, 1);
+			
+			.yyt-small-img {
+				position: absolute;
+				top: 12rpx;
+				left: 0;
+			}
+
+			.cs-name {
+				// overflow: hidden;
+				// text-overflow: ellipsis;
+				// white-space: nowrap;
+				// flex: 1;
+			}
+		}
+		// 备注
+		.remark-info {
+			flex-wrap: wrap;
+			font-size: 26rpx;
+			font-family: PingFang SC;
+			color: rgba(255, 0, 0, 1);
+		}
+		// 订单描述
+		.order-desc {
+			.text-grey {
+				color: #746f75;
+			}
+			
+			.table-join {
+				height: 40rpx;
+				line-height: 40rpx;
+				max-width: 55%;
+				display: inline-block;
+				overflow: hidden;
+			}
+			
+			.order-new-book {
+				& /deep/ .wrapper {
+					position: relative;
+					z-index: 1;
+				}
+				background-color: #fef7f2;
+				position: relative;
+				&:after {
+					font-family: "iconfont" !important;
+					font-size: 120rpx;
+					font-style: normal;
+					-webkit-font-smoothing: antialiased;
+					-moz-osx-font-smoothing: grayscale;
+					content: "\e61b";
+					position: absolute;
+					left: 0;
+					right: 0;
+					top: 0;
+					bottom: 0;
+					display: flex;
+					align-items: center;
+					justify-content: flex-end;
+					color: #fff1e7;
+				}
+			}
+		}
+	}
+	// 工具区
+	.customer-tools-wrapper {
+		justify-content: flex-end;
+		align-items: center;
+		width: 100%;
+		.customer-checkbox {
+			transform: scale(0.7);
+			margin-right: auto;
+		}
+		.cu-btn {
+			transform: scale(0.8);
+			&:after {
+				border: 2px solid #e0e0e0;
+			}
+		}
+	}
+}
+
+// 列表底部操作按钮容器
+.yyt-batch-container {
+	position: fixed;
+	bottom: 50px; //calc(var(--window-bottom));
+	left: 0;
+	right: 0;
+	z-index: 97;
+	display: flex;
+	justify-content: space-between;
+	padding: 30rpx;
+	box-shadow: #cacaca 0 0 15px -5px;
+	font-size: 28rpx;
+	color: #0185fe;
+	background: #fff;
+
+	.left-wrapper {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.customer-checkbox {
+		transform: scale(0.7);
+	}
+
+	.text {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.p {
+		margin: 0;
+		color: #0185fe;
+		line-height: 30rpx;
+
+		&:last-child {
+			margin-top: 3px;
+			font-size: 24rpx;
+		}
+	}
+
+	.batch_list {
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: center;
+
+		& > .span {
+			margin-right: 18rpx;
+			padding: 0 18rpx;
+			border-radius: 50rpx;
+			font-size: 24rpx;
+			line-height: 54rpx;
+			height: 54rpx;
+			display: inline-block;
+			color: white;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+// ================ 批量更改客户经理 ==================
+.customPool_popup {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 98;
+	background: rgba(0, 0, 0, 0.5);
+}
+.customPool_popup .rule_list {
+	position: absolute;
+	left: 0;
+	right: 0;
+	// bottom: calc(var(--window-bottom));
+	bottom: 50px;
+	background: #fff;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	list-style: none;
+}
+.rule_list > .li:first-child {
+	font-size: 30rpx;
+	font-weight: bold;
+}
+.rule_list > .li {
+	padding: 24rpx 0;
+	border-bottom: 1px solid #e8e8e8;
+	font-size: 26rpx;
+	color: #323232;
+}
+.rule_list > .li:last-child {
+	font-size: 30rpx;
+	font-weight: bold;
+	color: #0185fe;
+}
+// 弹窗内容提示
+.change_makert_content {
+	margin: 50rpx 0;
+	text-align: center;
+}
+.change_makert_text .p {
+	margin: 0;
+	font-size: 32rpx;
+	color: #323232;
+	line-height: 50rpx;
+}
+// 批量更改客服后的确认弹窗
+.change_makert_foot {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	word-spacing: -10px;
+	width: 690rpx;
+	margin-left: -32rpx;
+	margin-right: -30rpx;
+	margin-bottom: -5px;
+}
+.change_makert_foot > button {
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+.sendMessageInfo button {
+	border-radius: 10rpx;
+}
+.customPool_cancel,
+.customPool_confirm {
+	width: 50%;
+	border: 1px solid #0185fe;
+	line-height: 88rpx;
+	font-size: 32rpx;
+	color: #0183ff;
+	text-align: center;
+	background: #fff;
+	padding: 0;
+}
+.customPool_confirm {
+	background: #0185fe;
+	color: #fff;
+}
+
+// ========== 移入跟踪 =============
+.track_box {
+	position: absolute;
+	left: 0;
+	right: 0;
+	// bottom: calc(var(--window-bottom));
+	bottom: 50px;
+	background: #fff;
+}
+.track_box > .p {
+	margin: 0;
+	padding: 30rpx 0;
+	font-size: 30rpx;
+	font-weight: bold;
+	color: #323232;
+	text-align: center;
+}
+.track_content {
+	padding: 0 30rpx;
+}
+.track_content > .div {
+	display: flex;
+	align-items: center;
+	margin: 40rpx 0;
+}
+.track_content label {
+	display: inline-block;
+	width: 210rpx;
+	flex-basis: 210rpx;
+	font-size: 26rpx;
+	color: #4d4d4d;
+}
+.track_content .desc {
+	flex-grow: 1;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid #cacaca;
+	font-size: 24rpx;
+	text-align: right;
+	line-height: 1;
+	width: auto;
+	height: auto;
+	margin-bottom: 0;
+	padding: 5px 15px;
+	// -webkit-appearance: none;
+}
+.track_content input {
+	flex-grow: 1;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid #cacaca;
+	font-size: 24rpx;
+	text-align: right;
+	line-height: 1;
+	width: auto;
+	height: auto;
+	margin-bottom: 0;
+	padding: 5px 15px;
+	-webkit-appearance: none;
+}
+.track_footer {
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	word-spacing: -10px;
+}
+.track_footer > button {
+	flex-grow: 1;
+	flex-shrink: 1;
+}
+
+// -------------------------------- 抽屉 -------------------------------------
+// 让只要设置了此class的都高100%
+.scroll-view-wrapper {
+	height: 100%;
+}
+.yyt-sidebar-wrapper {
+	position: relative;
+	// 滑动区域
+	.scroll-view-wrapper {
+		height: 100%;
+		// 主内容区
+		.scroll-inner-wrapper {
+			height: 100%;
+			padding: 0 25rpx;
+			padding-bottom: 130rpx;
+			// 单个条件
+			.conditions-item {
+				padding: 10rpx 0;
+				// 标题
+				.title-wrapper {
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+					.title {
+						font-size: 34rpx;
+						font-family: PingFang SC;
+						font-weight: bold;
+						color: rgba(38, 38, 38, 1);
+						font-weight: 500;
+						display: flex;
+					}
+					.desc {
+						max-width: 75%;
+						margin-right: auto;
+						margin-left: 10rpx;
+						overflow: hidden;
+						white-space: nowrap;
+						text-overflow: ellipsis;
+						padding-right: 25rpx;
+						float: right;
+						font-weight: normal;
+						align-self: flex-end;
+					}
+					.arrow-wrapper {
+						display: flex;
+						align-items: center;
+					}
+				}
+				// 条件内容区
+				.content {
+					padding: 20rpx;
+
+					// 每个条件以镂空标签形式展示
+					.cu-tag {
+						min-width: 90rpx;
+						margin: 10rpx;
+						&:after {
+							border-width: 4rpx;
+						}
+					}
+					// 真【标签】筛选
+					.tag-select-wrapper {
+						width: 100%;
+						border: 1rpx solid rgba(242, 242, 242, 1);
+						border-radius: 20rpx;
+						padding: 20rpx;
+
+						// 已选
+						.title {
+							font-size: 22rpx;
+							font-family: PingFang SC;
+							color: rgba(153, 153, 153, 1);
+							line-height: 36rpx;
+						}
+						// 选中标签展示
+						.tags-content {
+							font-size: 26rpx;
+							font-family: PingFang SC;
+							color: rgba(38, 38, 38, 1);
+							line-height: 36rpx;
+						}
+					}
+
+					// 实现范围选择
+					.date-range {
+						color: #808080;
+						text-align: center;
+						margin-bottom: 30rpx;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+
+						.span {
+							display: inline-block;
+							padding: 0 10rpx;
+						}
+
+						.input {
+							width: 40%;
+							display: inline-block;
+							/*padding: 0 5px;*/
+							border: 1px solid #e8e8e8;
+							border-radius: 2px;
+							font-size: 20rpx;
+							height: 21px;
+							line-height: 21px;
+							text-align: center;
+							margin: 0;
+							padding: 0;
+							color: #666666;
+						}
+					}
+					// 人均消费范围
+					.consume-range {
+						margin-bottom: 15px;
+						.sub-title {
+							margin-bottom: 5px;
+							font-weight: 500;
+						}
+
+						/* 滑块样式重置 */
+						.moveContent {
+							position: relative;
+							padding: 0;
+							/*margin-top: -0.4rem;*/
+						}
+					}
+					// 消费频次
+					.count-range {
+						margin-bottom: 10px;
+						.sub-title {
+							margin-bottom: 5px;
+							font-weight: 500;
+						}
+
+						/* 滑块样式重置 */
+						.moveContent {
+							position: relative;
+							padding: 0;
+							/*margin-top: -0.4rem;*/
+						}
+					}
+				}
+			}
+		}
+	}
+
+	// 底部【重置】【完成】按钮
+	.sidebar-btn-fixed {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		height: 130rpx;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		background: rgba(255, 255, 255, 1);
+		box-shadow: 0 -1px 1px #f1f1f1;
+		z-index: 30;
+		.cu-btn {
+			width: 40%;
+		}
+	}
+
+	// 通用
+	input[type='date']:before {
+		content: attr(placeholder);
+		color: #666666;
+	}
+	// 新小圆点（此处改动无效，改动详情见 slider-range/index.vue 插件内部，搜索改动关键词 "sw"）
+	.slider-handle-block::before {
+		content: '';
+		position: absolute;
+		top: -20px;
+		right: -20px;
+		bottom: -20px;
+		left: -20px;
+	}
+}
+
+// ================= 弹窗样式 ==================
+
+// 发送短信modal
+.yyt-popup-wrapper {
+	.send-msg {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		// z-index: 6;
+		background-color: #fff;
+		width: 690rpx;
+		height: auto;
+		border: 1rpx solid #e8e8e8;
+		padding: 0 30rpx 0 30rpx;
+		border-radius: 10rpx;
+		box-sizing: border-box;
+
+		// 标题
+		.modal-content_message_title {
+			font-size: 32rpx;
+			width: 100%;
+			height: 106rpx;
+			line-height: 106rpx;
+
+			.modal-content_message_title_tip {
+				width: 100%;
+				height: 106rpx;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-size: 32rpx;
+				color: #323232;
+				position: relative;
+			}
+			.closeBtn {
+				width: 33rpx;
+				height: 32rpx;
+				position: absolute;
+				right: 32rpx;
+				top: 32rpx;
+				cursor: pointer;
+			}
+		}
+		// 正文
+		.modal-content_message_Info {
+			width: 100%;
+			// 姓名电话
+			.modal-content_message_Info_title {
+				width: 100%;
+				padding: 30rpx 0;
+				display: flex;
+				align-items: center;
+				position: relative;
+				&:after {
+					position: absolute;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					height: 1px;
+					content: '';
+					-webkit-transform: scaleY(0.5);
+					transform: scaleY(0.5);
+					background-color: #c8c7cc;
+				}
+				.modal-content_message_Info_title_l {
+					display: flex;
+					flex: 3;
+					align-items: center;
+					justify-content: space-between;
+					.customerPic {
+						width: 35rpx;
+						height: 34rpx;
+					}
+					.customerName {
+						width: 100rpx;
+						font-size: 32rpx;
+						color: #323232;
+						display: flex;
+						justify-content: center;
+					}
+					.rankPic {
+						width: 30rpx;
+						height: 30rpx;
+						// margin-right: 0.24rem;
+					}
+				}
+				.flagline {
+					display: flex;
+					justify-content: center;
+					flex: 1;
+					width: 1px;
+					color: #e8e8e8;
+				}
+				.modal-content_message_Info_title_r {
+					display: flex;
+					flex: 3;
+					align-items: center;
+					justify-content: space-between;
+					.telphonePic {
+						width: 38rpx;
+						height: 34rpx;
+					}
+					text {
+						font-size: 32rpx;
+						color: #323232;
+					}
+				}
+			}
+			// 模板列表
+			.search_list {
+				margin-top: 0;
+				padding: 0;
+				height: 264rpx;
+				overflow: auto;
+				.ul {
+					width: 100%;
+					.li {
+						text-align: left;
+						line-height: 3;
+						width: 100%;
+						position: relative;
+						&:after {
+							position: absolute;
+							right: 0;
+							bottom: 0;
+							left: 0;
+							height: 1px;
+							content: '';
+							-webkit-transform: scaleY(0.5);
+							transform: scaleY(0.5);
+							background-color: #c8c7cc;
+						}
+					}
+				}
+			}
+			// 短信编辑区
+			.modal-content_message_Info_contentEdit {
+				.textarea {
+					width: 100%;
+					text-align: left;
+					padding: 1rpx 12rpx;
+					margin-bottom: 0;
+					// height: auto;
+					height: 135rpx;
+					font-size: 26rpx;
+					color: #9a9a9a;
+					border-radius: 10rpx;
+					text-indent: 2em;
+					margin-top: -1px;
+					box-sizing: border-box;
+					border: 1px solid rgba(0, 0, 0, 0.2);
+				}
+			}
+			// 按钮区
+			.sendMessageInfo {
+				.message_footer {
+					display: flex;
+					align-items: center;
+					justify-content: space-between;
+					padding: 20rpx 0;
+					.sendMessage {
+						border-radius: 10rpx;
+						display: flex;
+						height: 80rpx;
+						align-items: center;
+						justify-content: center;
+						font-size: 32rpx;
+						color: #323232;
+						// margin-bottom: 0.1rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+// ----------------- z-navbar 导航栏自定义左右按钮 -------------------
+
+// 右上角文字+按钮
+.z-nav-bar {
+	// 中间字体
+	.header .title {
+		font-size: 34rpx !important;
+		margin-bottom: 14rpx !important;
+		font-weight: 500;
+	}
+	.header .title-switch .title-switch-box {
+		font-weight: 500;
+	}
+	// 左边
+	.left-selector,
+	.right-selector {
+		box-sizing: border-box;
+		padding: 0 10rpx;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: flex-end;
+		align-items: center;
+		.tools-icon {
+			width: 30rpx;
+			height: 30rpx;
+		}
+		.tools-text {
+			font-weight: 500;
+		}
+	}
+	.right-selector {
+		.tools-icon {
+			margin-left: 10rpx;
+		}
+	}
+}
+
+// 超小图标
+.yyt-tiny-img {
+	height: 14rpx;
+	width: 14rpx;
+}
+// 小图标
+.yyt-small-img {
+	height: 20rpx;
+	width: 20rpx;
+}
+// 正常图标
+.yyt-normal-img {
+	height: 30rpx;
+	width: 30rpx;
+}
+// 大型图标
+.yyt-big-img {
+	height: 40rpx;
+	width: 40rpx;
+}
+
+// 间距
+.yyt-margin-left-small {
+	margin-left: 10rpx;
+}
+.yyt-margin-left-bg {
+	margin-left: 20rpx;
+}
+.yyt-margin-right-small {
+	margin-right: 10rpx;
+}
+.yyt-margin-right-bg {
+	margin-right: 20rpx;
+}
+.yyt-margin-top-small {
+	margin-top: 10rpx;
+}
+.yyt-margin-top-bg {
+	margin-top: 20rpx;
+}
+.yyt-margin-bottom-small {
+	margin-bottom: 10rpx;
+}
+.yyt-margin-bottom-bg {
+	margin-bottom: 20rpx;
+}
+
+// -------------------------- uniapp popup各种弹窗 ------------------------
+
+// navbar右上角的菜单
+// 右上角弹窗
+.nav-popup {
+	.wrapper {
+		width: 300rpx;
+		// height: auto;
+		// max-height: 300rpx;
+		position: relative;
+		background: white;
+		border-radius: 10rpx;
+		// overflow-y: auto;
+		// border: 1px solid #e1e1e1;
+		box-sizing: border-box;
+		padding: 0 20rpx;
+		.item {
+			display: flex;
+			justify-content: flex-start;
+			align-items: center;
+			height: 92rpx;
+			border-bottom: 1rpx solid #f2f2f2;
+			&:last-of-type {
+				border-bottom: none;
+			}
+			.img {
+				width: 36rpx;
+				height: 36rpx;
+			}
+			.title {
+				padding-left: 20rpx;
+				font-size: 26rpx;
+				color: #404040;
+				&.active {
+					color: #0183ff;
+				}
+			}
+		}
+	}
+}
+
+// 中间的提示窗
+.tip-popup {
+	// .uni-popup__wrapper.uni-custom.center .uni-popup__wrapper-box[data-v-85ce3f14] {
+	// 	border-radius: 20rpx !important;
+	// }
+	.wrapper {
+		background: white;
+		border-radius: 10rpx;
+		overflow: hidden;
+		box-sizing: border-box;
+		padding: 30rpx;
+		width: 670rpx;
+		margin: 0 auto;
+
+		.popup-top {
+			text-align: center;
+			color: #0d0d0d;
+			font-size: 36rpx;
+			font-weight: bold;
+			position: relative;
+			.popup-top-img {
+				width: 30rpx;
+				height: 30rpx;
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+		}
+		.popup-mid {
+			color: #404040;
+			font-size: 28rpx;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin: 60rpx auto 70rpx;
+			.popup-mid-img {
+				width: 50rpx;
+				min-width: 50rpx;
+				height: 50rpx;
+				margin-right: 16rpx;
+			}
+			.popup-mid-text {
+				flex: 1;
+				text-align: left;
+			}
+		}
+		.popup-bot {
+			border: 1px solid #0183ff;
+			height: 88rpx;
+			display: flex;
+			align-items: center;
+			margin: 0 -30rpx -30rpx;
+			border-radius: 10rpx;
+			overflow: hidden;
+			.cancel {
+				width: 334rpx;
+				color: #0183ff;
+				text-align: center;
+				font-size: 32rpx;
+				line-height: 88rpx;
+			}
+			.confirm {
+				width: 334rpx;
+				background: #0183ff;
+				text-align: center;
+				font-size: 32rpx;
+				line-height: 88rpx;
+				color: #fff;
+			}
+		}
+	}
+}
+
+// 底部popup弹窗
+.bottom-popup {
+	.wrapper {
+		width: 100%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		// 分组
+		.pop-group {
+			box-sizing: border-box;
+			margin: 0 20rpx 20rpx 20rpx;
+			background: white;
+			border-radius: 20rpx;
+			font-size: 40rpx;
+			font-family: PingFang SC;
+			color: rgba(1, 131, 255, 1);
+			overflow: hidden;
+			// 每组里面单独的项
+			.item {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100rpx;
+				border-bottom: 1rpx solid rgba(242, 242, 242, 1);
+
+				&:last-of-type {
+					border-bottom: none;
+				}
+			}
+		}
+	}
+}
+
+// 高度
+.yyt-h-100 {
+	height: 100%;
+}
+
+// icon-元素
+.yyt-down-arrow-icon {
+	width: 28rpx;
+	height: 16rpx;
+	margin-left: 10rpx;
+	top: -2rpx;
+}
+
+// 搜索栏
+.uni-searchbar {
+	background-color: rgba(242, 242, 242, 1) !important;
+	padding: 30rpx !important;
+	.uni-searchbar__box {
+		border: none !important;
+		height: 60rpx !important;
+
+		.uni-searchbar__text-placeholder {
+			font-size: 28rpx;
+			font-family: PingFang SC;
+			color: rgba(153, 153, 153, 1);
+			margin-left: 0;
+		}
+	}
+}
+
+// 左边icon + 右边箭头
+.yyt-list-row {
+	width: 100%;
+	height: 90rpx;
+	box-sizing: border-box;
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10rpx 20rpx;
+
+	.left {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		.icon {
+			width: 36rpx;
+			height: 36rpx;
+			margin-right: 10rpx;
+		}
+		.title {
+			font-size: 26rpx;
+			font-family: PingFang SC;
+			color: rgba(64, 64, 64, 1);
+		}
+	}
+
+	.right {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+
+		.content {
+		}
+		.icon {
+			width: 16rpx;
+			height: 28rpx;
+		}
+	}
+}
+
+// 圆角
+.yyt-radius-10 {
+	overflow: hidden;
+	border-radius: 10rpx;
+}
+.yyt-radius-20 {
+	overflow: hidden;
+	border-radius: 20rpx;
+}
+//页面内容长度不足100vh时，底部logo在页面底部；内容超过100vh时在内容底端
+.logo-absolute-bottom-page {
+	height: calc(100vh - 44px);
+	display: flex;
+	flex-direction: column;
+	// 页面内容
+	.content {
+		flex-shrink: 0;
+		flex: 1 0 auto;
+	}
+	// 底部logo
+	.logoPic {
+		flex-shrink: 0;
+		margin: 40rpx 216rpx 40rpx;
+		.bot-logo {
+			width: 316rpx;
+			height: 40rpx;
+		}
+	}
+}
+
+//页面内容长度不足100vh时，底部logo在页面底部；内容超过100vh时在内容底端
+.logo-absolute-bottom-page-custom-navbar {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	// 页面内容
+	.content {
+		flex-shrink: 0;
+		flex: 1 0 auto;
+	}
+	// 底部logo
+	.logoPic {
+		flex-shrink: 0;
+		margin: 40rpx 216rpx 40rpx;
+		.bot-logo {
+			width: 316rpx;
+			height: 40rpx;
+		}
+	}
+}
+
+.check-box-styl {
+	transform: scale(0.7);
+}
+
+//单行省略号
+.ellips-1 {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+//多行文本省略号 (2行省略)
+.ellips-2 {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2; //行数
+	overflow: hidden;
+}
+
+.yyt-extend-area {
+	position: relative;
+}
+
+.yyt-extend-area::after {
+	content: '' !important;
+	position: absolute !important;
+	top: -40rpx !important;
+	right: -40rpx !important;
+	bottom: -40rpx !important;
+	left: -40rpx !important;
+}
+
+// css3实现禁止ios端长按复制选中文字的方法
+.preventEvent {
+	// -webkit-touch-callout: none; /*系统默认菜单被禁用*/
+	// -webkit-user-select: none; /*webkit浏览器*/
+	// -khtml-user-select: none; /*早期浏览器*/
+	// -moz-user-select: none; /*火狐*/
+	// -ms-user-select: none; /*IE10*/
+	// user-select: none;
+}
+
+.skt-basic {
+	position: relative;
+	overflow: hidden;
+	border: none !important;
+	background-color: transparent !important;
+	background-image: none !important;
+	transform: scale(1, 0.9);
+	transform-origin: left top;
+}
+
+.skt-main {
+	/* 默认深色背景 */
+	&::after {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: 9;
+		width: 100%;
+		height: 100%;
+		background-color: #e6e6e6;
+		display: block;
+	}
+
+	/* 想要圆角加 yyt-sk-round */
+	&.yyt-sk-round::after {
+		border-radius: 4rpx;
+	}
+	/* 不想要动画加 yyt-sk-not-ani */
+	&:not(.yyt-sk-not-ani)::before {
+		position: absolute;
+		top: 0;
+		width: 30%;
+		height: 100%;
+		content: '';
+		background: linear-gradient(to right, rgba(255, 255, 255, 0) 0, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0) 100%);
+		transform: skewX(-45deg);
+		z-index: 99;
+		animation: skeleton-ani 1s ease infinite;
+		display: block;
+	}
+	/* 浅色背景 */
+	&.yyt-light {
+		&::after {
+			background-color: #f8fafc;
+		}
+	}
+}
+
+// 骨架屏
+.skt-loading {
+	pointer-events: none; /* 加载中阻止事件 */
+	.skeleton,
+	.skeleton-25,
+	.skeleton-50,
+	.skeleton-75 {
+		.skt-basic();
+		.skt-main();
+	}
+	.skeleton-25 {
+		transform: scale(0.25, 0.9);
+	}
+	.skeleton-50 {
+		transform: scale(0.5, 0.9);
+	}
+	.skeleton-75 {
+		transform: scale(0.75, 0.9);
+	}
+}
+
+@keyframes skeleton-ani {
+	/* 骨架屏动画 */
+	from {
+		left: -100%;
+	}
+	to {
+		left: 150%;
+	}
+}
+.yyt-logo-bottom {
+	flex-shrink: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20rpx 0;
+	width: 100%;
+}
+
+.yyt-noScroll {
+	height: 100vh;
+	overflow: hidden;
+}

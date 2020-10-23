@@ -1,0 +1,70 @@
+//选项卡标题
+.tabs {
+	width: 100%;
+	padding: 30rpx 30rpx 0;
+	background: #fff;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	.tab {
+		color: #bfbfbf;
+		font-size: 32rpx;
+		line-height: 24rpx;
+		margin-right: 50rpx;
+		&:after {
+			content: '';
+			display: block;
+			width: 60rpx;
+			height: 4rpx;
+			margin: 16rpx auto;
+		}
+	}
+	.tabSel {
+		color: #0183ff;
+		&:after {
+			content: '';
+			display: block;
+			width: 60rpx;
+			height: 4rpx;
+			background: #0183ff;
+			margin: 16rpx auto;
+		}
+	}
+}
+//模板内容
+.content {
+	margin-top: 4rpx;
+	.content-list {
+		margin: 24rpx 0;
+		.content-title {
+			color: #262626;
+			font-size: 30rpx;
+			line-height: 24rpx;
+			font-weight: bold;
+			margin-left: 30rpx;
+		}
+		.content-info {
+			width: 100%;
+			padding: 31rpx;
+			background: #fff;
+			color: #262626;
+			font-size: 28rpx;
+			line-height: 36rpx;
+			// text-indent: 50rpx;
+			margin-top: 12rpx;
+			border-radius: 20rpx;
+			white-space: pre-wrap;
+			.mark {
+				color: #0183ff;
+			}
+		}
+	}
+}
+// 底部logo
+.logoPic {
+	margin: 40rpx 216rpx 40rpx;
+	.bot-logo {
+		width: 316rpx;
+		height: 40rpx;
+	}
+}

@@ -1,0 +1,71 @@
+// 作者:覃彬
+
+.list-title {
+	//标题
+	font-size: 32rpx;
+	color: #262626;
+}
+
+// 头部样式
+.page-header {
+	padding-top: 42rpx;
+	.img{
+		width: 30rpx;
+		height: 36rpx;
+	}
+	.img1 {
+		width: 30rpx;
+		height: 36rpx;
+		margin-right: 16rpx;
+	}
+
+	.img2 {
+		width: 36rpx;
+		height: 26rpx;
+		margin-right: 16rpx;
+	}
+
+	.img3 {
+		width: 36rpx;
+		height: 28rpx;
+		margin-right: 16rpx;
+	}
+
+	.title {
+		color: #595959;
+	}
+}
+
+.tab-bg {
+	background: #fcfcfc;
+	color: #bfbfbf;
+
+	view {
+		height: 56rpx;
+	}
+
+	.sel {
+		color: #0183ff;
+		font-weight: bold;
+
+		&::after {
+			content: '';
+			display: block;
+			width: 30rpx;
+			height: 4rpx;
+			background-color: #0183ff;
+			margin: 0 auto;
+		}
+	}
+}
+
+// 内容样式
+.page-content {
+	.table-mid {
+		margin-top: 16rpx;
+	}
+}
+
+.page-bottom {
+	margin-top: 8rpx;
+}

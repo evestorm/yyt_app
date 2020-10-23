@@ -1,0 +1,116 @@
+.my {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+// 客户头像资料
+.title-wrapper {
+	flex-shrink: 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 24rpx 30rpx;
+	margin: 25rpx 0 20rpx;
+	box-sizing: border-box;
+	height: 180rpx;
+	background-color: #fff;
+	.customer-content {
+		font-size: 32rpx;
+		font-weight: 600;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		
+		image {
+			width: 120rpx;
+			height: 120rpx;
+			border-radius: 60rpx;
+			overflow: hidden;
+		}
+		text {
+			margin-left: 15rpx;
+		}
+	}
+}
+.list-wrapper {
+	flex-shrink: 0;
+	flex: 1 0 auto;
+	background-color: transparent !important;
+	.item {
+		background-color: white;
+	}
+	&::after {
+		background-color: transparent !important;
+	}
+	.item:last-of-type {
+		.uni-list-item__container {
+			background-color: pink;
+			&::after {
+				background-color: transparent !important;
+			}
+		}
+	}
+}
+
+.bottom-wrapper {
+	flex-shrink: 0;
+}
+// 退出按钮
+.logOut {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 66rpx 0 40rpx;
+	button {
+		background-color: #0782ff;
+		width: 460rpx;
+		border-radius: 50rpx;
+		height: 90rpx;
+		line-height: 100rpx;
+		font-size: 31rpx;
+		// color:#fff;
+	}
+}
+
+.logo {
+	margin: 0 auto 60px;
+}
+.my-list{
+	/deep/.uni-list-item__content-title{
+			font-size: 26rpx;
+		}
+	/deep/.uni-list-item__icon-img{
+		width: 42rpx;
+		height: 42rpx;
+	}
+}
+
+// ============== 右上角门店切换 ================
+
+// 右上角文字+按钮
+.right-selector {
+	box-sizing: border-box;
+	padding: 0 10rpx;
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content: flex-end;
+	align-items: center;
+	.storeName {
+		margin-right: 10rpx;
+	}
+	.tools-icon {
+		width: 30rpx;
+		height: 30rpx;
+	}
+}
+
+.app-version{
+	text-align: center;
+	color:gray;
+}
+
+.uni-list-item {
+	box-sizing: border-box !important;
+	height: 100rpx !important;
+}

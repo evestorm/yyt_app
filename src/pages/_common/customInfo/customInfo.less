@@ -1,0 +1,245 @@
+.customer-info {
+	position: relative;
+	height: 100vh;
+}
+.scroll-view-wrapper {
+	position: absolute;
+	top: 40px;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+}
+.yyt-customer-card {
+	border-radius: 0;
+	margin: 20rpx 0;
+
+	// 基本信息
+	.customer-main-wrapper {
+		.customer-info-wrapper {
+			.customer-name-wrapper {
+				.cs-name-wrapper {
+					margin-left: 20rpx;
+				}
+				.change-cs-btn {
+					font-size: 24rpx;
+					font-family: PingFang SC;
+					color: rgba(1, 131, 255, 1);
+				}
+			}
+			.tags-wrapper.title {
+				justify-content: space-between;
+				.customer-tag-text {
+					font-size: 26rpx;
+					font-family: PingFang SC;
+					color: rgba(89, 89, 89, 1);
+				}
+			}
+		}
+	}
+
+	// tab导航切换
+	.tab-info-wrapper {
+		margin-top: 20rpx;
+		box-shadow: 0px 2px 4px #f1f1f1;
+		.cu-item {
+			box-sizing: border-box;
+			width: 25%;
+			margin: 0;
+			text-align: center;
+			// 短横线的放进了 common.css 中
+		}
+	}
+}
+
+// tab导航
+.customer-detail-wrapper {
+	.tab-info-wrapper {
+		.cu-item {
+			font-size: 32rpx;
+			margin: 0;
+		}
+	}
+}
+
+// 列表信息
+.yyt-list {
+	.yyt-list-item {
+		.checkStatus-radio {
+			width: auto;
+			margin-left: 20rpx;
+			display: flex;
+			align-items: center;
+			label {
+				display: flex;
+				align-items: center;
+			}
+			radio {
+				transform: scale(0.7);
+			}
+		}
+	}
+}
+
+// 跟踪消费记录 / 月统计
+.list-view-wrapper {
+	background-color: #f2f2f2;
+}
+.sales-record-item,
+.rank-summary-info-item {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: center;
+	background: white;
+	border-radius: 10rpx;
+	padding: 20rpx;
+	margin: 10rpx 0;
+	font-size: 28rpx;
+	font-family: PingFang SC;
+	color: rgba(38, 38, 38, 1);
+	position: relative;
+	// 推荐、主动跟踪
+	.tui-gen {
+		position: absolute;
+		top: 10rpx;
+		right: 180rpx;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.left-wrapper {
+		flex: 1;
+
+		.consumeItem {
+			// 第三行，最底部
+			&.bottom {
+				justify-content: space-between;
+				align-items: center;
+			}
+		}
+	}
+	.right-wrapper {
+		position: relative;
+		width: 152rpx;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding-left: 20rpx;
+		&:after {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translate(0, -50%);
+			content: '';
+			background: rgba(242, 242, 242, 1);
+			height: 100%;
+			width: 1px;
+		}
+	}
+}
+//消费统计
+.all-data {
+	font-family: PingFang-SC-Medium;
+	.all-data-title {
+		color: #262626;
+	}
+	.all-data-info {
+		.list-left {
+			width: 55%;
+		}
+		.list-right {
+			width: 45%;
+		}
+		.item {
+			color: #595959;
+			.num {
+				color: #262626;
+			}
+		}
+	}
+}
+// echarts图表
+.yyt-customerInfo-chart {
+	background-color: #fff;
+	border-radius: 10rpx;
+	margin: 20rpx 0;
+	.chart-headLine {
+		font-size: 28rpx;
+		color: #323232;
+		padding: 30rpx 26rpx;
+		border-bottom: 1px solid #e8e8e8;
+	}
+}
+
+.chart-content {
+	padding: 30rpx 26rpx;
+	.chart-top {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+	.chart-main {
+		margin: 10rpx 0;
+		.chart-svg {
+			height: 600rpx;
+			margin: 0px;
+			padding: 0px;
+		}
+	}
+	.chart-bottom {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+	}
+}
+
+.tabArea {
+	border: 1px solid rgba(1, 133, 254, 1);
+	border-radius: 40rpx;
+}
+
+.fatherTab view {
+	display: inline-block;
+	padding: 14rpx 20rpx;
+	font-size: 26rpx;
+	box-sizing: content-box;
+}
+
+.childTab view {
+	display: inline-block;
+	padding: 14rpx 22rpx;
+	font-size: 22rpx;
+}
+
+.tabArea {
+	& view {
+		display: inline-block;
+		display: inline-block;
+		color: #323232;
+		margin-right: -10rpx;
+	}
+	& view:last-child {
+		display: inline-block;
+		margin-right: 0;
+	}
+}
+
+.tabItem-left {
+	border-top-left-radius: 40rpx;
+	border-bottom-left-radius: 40rpx;
+	border-right: 1px solid rgba(1, 133, 254, 1);
+}
+
+.tabItem-right {
+	border-top-right-radius: 40rpx;
+	border-bottom-right-radius: 40rpx;
+	border-left: 1px solid rgba(1, 133, 254, 1);
+}
+
+.tabItem-active {
+	background-color: rgba(1, 133, 254, 1);
+	color: #fff !important;
+}

@@ -1,0 +1,135 @@
+.order {
+	// input 筛选搜索栏
+	.order-top {
+		position: fixed;
+		top: 88rpx;
+		left: 0;
+		width: 100%;
+		background: #f2f2f2;
+		z-index: 888;
+		.order-input {
+			background-color: #fff;
+			border-radius: 50rpx;
+			width: 90%;
+			margin: 20rpx auto 16rpx;
+			padding: 10rpx 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			input {
+				font-size: 30rpx;
+				width: 45%;
+				margin-left: 10rpx;
+			}
+		}
+		.order-screen {
+			background-color: #fff;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 10rpx 25rpx 10rpx;
+			box-sizing: border-box;
+			position: relative;
+			.order-screen-view {
+				flex: 1;
+				text-align: center;
+			}
+			.order-screen-img {
+				margin-left: 6rpx;
+			}
+		}
+		.orderNone {
+			display: none;
+		}
+		.order-picker {
+			width: 100%;
+			background: #fff;
+			position: absolute;
+			left: 0;
+			top: 186rpx;
+			z-index: 889;
+			.order-picker-list {
+				padding: 0 62rpx;
+				.order-list-item {
+					color: #404040;
+					font-size: 28rpx;
+					margin: 28rpx 0 50rpx;
+				}
+				.orderSel {
+					color: #0183ff !important;
+				}
+			}
+		}
+		// type-picker
+		.typeNone {
+			display: none;
+		}
+		.type-picker {
+			width: 100%;
+			background: #fff;
+			position: absolute;
+			left: 0;
+			top: 186rpx;
+			z-index: 889;
+			.type-picker-list {
+				height: 500rpx;
+				padding-left: 300rpx;
+				.type-list-item {
+					color: #404040;
+					font-size: 28rpx;
+					margin: 28rpx 0 50rpx;
+				}
+				.typeSel {
+					color: #0183ff !important;
+				}
+			}
+		}
+		//state-picker
+		.stateNone {
+			display: none;
+		}
+		.state-picker {
+			width: 100%;
+			background: #fff;
+			position: absolute;
+			left: 0;
+			top: 186rpx;
+			z-index: 889;
+			.state-picker-list {
+				padding-right: 132rpx;
+				text-align: right;
+				.state-list-item {
+					color: #404040;
+					font-size: 28rpx;
+					margin: 28rpx 0 50rpx;
+				}
+				.stateSel {
+					color: #0183ff !important;
+				}
+			}
+		}
+
+		.mengban {
+			display: block;
+			position: fixed;
+			top: 274rpx;
+			// left:0;
+			z-index: 888;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.4);
+		}
+		.mengbanNone {
+			display: none;
+		}
+		.page-num {
+		    padding: 22rpx 28rpx 0 28px;
+		    background: #fff;
+		    margin: 6rpx 0;
+		}
+	}
+	// 宴会主体
+	.order-section {
+		margin-top: 184rpx;
+	}
+}

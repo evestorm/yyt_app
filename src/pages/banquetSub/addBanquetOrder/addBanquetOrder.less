@@ -1,0 +1,154 @@
+
+.add-form {
+	width: 750rpx;
+	.search-company{
+		background:#f2f2f2;
+		.search-texe{
+			font-size: 32rpx;
+			font-weight: bold;
+			color: #262626;
+			padding: 30rpx 30rpx 1rpx 31rpx;
+		}
+		.search-group-company{
+			padding: 30rpx 31rpx;
+			font-size: 28rpx;
+			color: #262626;
+			border-bottom: 1rpx solid #e6e6e6;
+		}
+	}
+	.bq-form-group {
+		//input样式
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: #fff;
+		border-bottom: 1px solid #f2f2f2;
+		padding: 36rpx 31rpx;
+
+		.title {
+			font-size: 28rpx;
+			// width: 228rpx;
+			
+		}
+		.desc {
+			font-size: 28rpx;
+			color: #262626;
+			text-align: right;
+			padding-right: 0;
+			width: 75%;
+			.uni-input-placeholder{
+				color: #999999;
+			}
+			.text-date {
+				color: grey;
+			}
+			.arrowRight {
+				width: 16rpx;
+				height: 28rpx;
+				margin-left: 18rpx;
+			}
+		}
+	}
+	.bq-form-group-textarea {
+		//多行文本框样式
+		background-color: #fff;
+		border-bottom: 1px solid #f2f2f2;
+		padding: 36rpx 31rpx;
+		.title {
+			font-size: 28rpx;
+		}
+		.desc {
+			font-size: 28rpx;
+			color: #262626;
+			text-align: right;
+			padding-right: 0;
+			.text-date {
+				color: #999999;
+			}
+		}
+	}
+	.bot {
+		margin-top: 16rpx;
+	}
+}
+.edit-profile{
+	padding-right: 5rpx;
+}
+.modalDlg {
+	//选择桌数弹出层样式
+	.modalDlg_top {
+		display: flex;
+		align-items: center;
+		padding: 20rpx 84rpx 40rpx;
+		box-sizing: border-box;
+		position: relative;
+		.modalDlg_top_raedonly{
+			position: absolute;
+			top:0;
+			left: 0;
+			width: 100%;
+			height: 96rpx;
+			z-index: 999;
+		}
+		.modalDlg_top_text {
+			font-size: 32rpx;
+			color: #323232;
+		}
+		.modalDlg_top_icon {
+			font-size: 30rpx;
+			color: #9a9a9a;
+		}
+		input {
+			border: 1rpx solid #9a9a9a;
+			border-radius: 10rpx;
+			width: 136rpx;
+			height: 45rpx;
+			line-height: 45rpx;
+			font-size: 32rpx;
+			color: #323232;
+			text-align: center;
+			margin-left: 62rpx;
+			margin-right: 34rpx;
+		}
+	}
+	.modalDlg_content {
+		width: 100%;
+		box-sizing: border-box;
+		.modalDlg_content_item {
+			width: 33.33%;
+			display: inline-block;
+			text-align: center;
+			margin-bottom: 65rpx;
+			font-size: #323232;
+			.is_checked {
+				background-color: #0183ff !important;
+				border-radius: 50%;
+				padding: 5rpx 20rpx;
+				box-sizing: border-box;
+				color: #fff !important;
+			}
+
+			.is_checked1 {
+				background-color: #0183ff !important;
+				border-radius: 50%;
+				padding: 5rpx 20rpx;
+				box-sizing: border-box;
+				color: #fff !important;
+			}
+		}
+	}
+	.modalDlg_bottom {
+		width: 80%;
+		height: 60rpx;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		margin: 0 58rpx;
+		box-sizing: border-box;
+		text {
+			font-size: 32rpx;
+			color: #323232;
+			display: inline-block;
+		}
+	}
+}

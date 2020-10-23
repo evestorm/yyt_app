@@ -1,0 +1,96 @@
+.add-task-top {
+	//顶部搜索框+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20rpx 30rpx;
+	.order-input {
+		background-color: #fff;
+		border-radius: 50rpx;
+		width: 89%;
+		height: 60rpx;
+		// margin: 25rpx auto;
+		padding: 10rpx 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		input {
+			font-size: 30rpx;
+			// width: 65%;
+			margin-left: 10rpx;
+		}
+	}
+	.saixuan-img {
+		width: 30rpx;
+		height: 30rpx;
+	}
+}
+//所属项目
+.title {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 14rpx 30rpx;
+	.title-name {
+		font-size: 32rpx;
+		color: #999;
+		font-weight: bold;
+	}
+	.title-name-text {
+		font-size: 32rpx;
+		color: #0d0d0d;
+		font-weight: bold;
+	}
+	.title-check-num {
+		font-size: 28rpx;
+		color: #595959;
+	}
+}
+.add-proect {
+	background: #fff;
+	padding: 0 22rpx;
+	.task-list-item {
+		background: #fff;
+		.checkbox-label {
+			margin-left: 10rpx;
+			font-size: 28rpx;
+			color: #262626;
+		}
+
+		.uni-list-cell::after {
+			display: none;
+		}
+	}
+}
+.right-popup {
+	padding: 30rpx;
+	.popup-title {
+		width: 570rpx;
+		font-size: 34rpx;
+		color: #262626;
+	}
+	.popup-list {
+		margin: 20rpx 0;
+		display: flex;
+		flex-wrap: wrap;
+		.popup-list-item {
+			// width: 132rpx;
+			// height: 46rpx;
+			text-align: center;
+			line-height: 36rpx;
+			border: 1px solid #0183ff;
+			border-radius: 24rpx;
+			color: #0183ff;
+			margin: 20rpx;
+			padding: 10rpx 36rpx;
+		}
+		.popup-list-unsel {
+			color: #0183ff;
+			background: #fff;
+		}
+		.popupListSel {
+			color: #fff;
+			background: #0183ff;
+		}
+	}
+}

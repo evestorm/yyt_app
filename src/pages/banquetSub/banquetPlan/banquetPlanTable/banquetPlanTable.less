@@ -1,0 +1,98 @@
+// 作者:覃彬
+// 头部样式
+.page-header {
+	.list {
+		margin-right: 69rpx;
+		&:last-child {
+			margin-right: 0;
+		}
+		.lib {
+			width: 10rpx;
+			height: 10rpx;
+			margin-right: 16rpx;
+		}
+		.text {
+			color: #999;
+			font-size: 22rpx;
+		}
+	}
+}
+
+// 内容样式
+.page-content {
+	margin-top: 2rpx;
+	width: 100%;
+	overflow: scroll;
+	color: #262626;
+	position: relative;
+	.date-meal {
+		position: sticky;
+		position: -webkit-sticky;
+		top: 0;
+		// left: 0;
+		z-index: 999;
+		padding-left: 124rpx;
+		.dining-name {
+			padding: 30rpx 16rpx;
+		}
+	}
+	.table-con-data {
+		position: sticky;
+		position: -webkit-sticky;
+		top: 0;
+		left: 0;
+		z-index: 998;
+		.left-date1 {
+			height: 184rpx;
+			line-height: 1 !important;
+			width: 116rpx;
+			min-width: 116rpx;
+			margin-right: 8rpx;
+		}
+	}
+	.left-date {
+		// border: 1rpx solid #f00;
+		// position: sticky;
+		// position: -webkit-sticky;
+		position: fixed;
+		top:310rpx;
+		left: 0;
+		display: block;
+		width: 116rpx;
+		min-width: 116rpx;
+		margin-right: 8rpx;
+	}
+	.item {
+		padding: 0 8rpx;
+		line-height: 34rpx;
+	}
+	.info {
+		padding: 0 16rpx;
+		.area-state {
+			padding: 6rpx 8rpx;
+			//table单元格
+			.cell {
+				// width: 180rpx;
+				.cell-item {
+					width: 83rpx;
+					height: 173rpx;
+					margin-right: 4rpx;
+					margin-bottom: 12rpx;
+					// border: 1px solid #f00;
+					&:last-child {
+						margin-right: 0;
+						margin-bottom: 0;
+					}
+					.title {
+						height: 63rpx;
+						border-top-left-radius: 8rpx;
+						border-top-right-radius: 8rpx;
+						font-size: 26rpx;
+						color: #262626;
+						background-color: #f4f1f2;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,121 @@
+// 容器
+.call-records {
+	width: 100vw;
+	height: calc(100vh - 44px);
+	background: rgba(242, 242, 242, 1);
+	display: flex;
+	flex-direction: column;
+}
+
+// 搜索栏（yyt-common.less, key:uni-searchbar）
+
+// 列表页
+.records-list {
+	// flex-shrink: 0;
+	// flex: 1 0 auto;
+	margin: 20rpx 0 0;
+	.card {
+		box-sizing: border-box;
+		padding: 20rpx;
+		background-color: white;
+		border-bottom: solid 1rpx #f9f9f9;
+
+		.basic {
+			display: flex;
+			flex-direction: row;
+			.aside {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				width: 40rpx;
+			}
+			.content {
+				flex: 1;
+				.customer-info {
+					display: flex;
+					justify-content: flex-start;
+					align-items: center;
+					.nickname {
+						font-size: 32rpx;
+						font-family: PingFang SC;
+						font-weight: bold;
+						color: rgba(13, 13, 13, 1);
+					}
+					.name {
+						font-size: 24rpx;
+						font-family: PingFang SC;
+						color: rgba(64, 64, 64, 1);
+					}
+					.level {
+						width: 30rpx;
+						height: 30rpx;
+					}
+					.cs-manager-wrapper {
+						margin-left: 60rpx;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+
+						.name {
+							margin-left: 10rpx;
+							font-size: 24rpx;
+							font-family: PingFang SC;
+							color: rgba(64, 64, 64, 1);
+						}
+					}
+				}
+
+				.simple-info {
+					.phone {
+						font-size: 32rpx;
+						font-family: PingFang SC;
+						font-weight: bold;
+						color: rgba(13, 13, 13, 1);
+					}
+				}
+			}
+		}
+		.details {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			.time {
+				margin-left: 60rpx;
+				font-size: 26rpx;
+				font-family: PingFang SC;
+				color: rgba(64, 64, 64, 1);
+			}
+
+			.tools {
+				width: 35%;
+				display: flex;
+				align-items: center;
+				.item {
+					display: inline-flex;
+					justify-content: center;
+					align-items: center;
+					width: 33.3%;
+					.icon {
+						width: 50rpx;
+						height: 38rpx;
+					}
+				}
+			}
+		}
+
+		&:last-of-type {
+			border: none;
+		}
+	}
+}
+
+// 底部logo
+.logo-bottom {
+	flex-shrink: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 20rpx 0;
+	width: 100%;
+}

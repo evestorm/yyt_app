@@ -1,0 +1,80 @@
+// 作者:{Author}
+
+// 自定义导航栏下高度不减44px
+.logo-absolute-bottom-page {
+	height: 100vh;
+}
+
+// 正文
+.content {
+	// 选项卡
+	.tab-wrapper {
+		.tab-item {
+			border-radius: 30rpx;
+		}
+	}
+	// 时间选择
+	.date-picker-wrapper {
+		.cu-item {
+			box-sizing: border-box;
+			width: 20%;
+			margin: 0;
+			text-align: center;
+			line-height: normal;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			white-space: initial;
+			// 短横线的放进了 common.css 中
+			&.cur.short:after {
+				bottom: 10rpx;
+				width: 30rpx;
+			}
+		}
+	}
+	// 列表
+	.list-wrapper {
+		.list-header {
+			box-sizing: border-box;
+			padding: 20rpx 0 0 20rpx;
+			font-size: 22rpx;
+			font-family: PingFang SC;
+			font-weight: 500;
+			color: rgba(153, 153, 153, 1);
+			text {
+				font-size: 30rpx;
+			}
+		}
+		.list-item {
+			.list-item-header {
+				.date {
+					width: 40%;
+					text-align: right;
+				}
+			}
+			.list-item-content {
+				flex-wrap: nowrap;
+				.desc {
+					font-size: 26rpx;
+					font-family: PingFang SC;
+					color: rgba(153, 153, 153, 1);
+					line-height: 42rpx;
+					flex: 1;
+				}
+			}
+			.list-item-footer {
+				.read-count {
+					.yyt-small-img {
+					}
+				}
+			}
+		}
+	}
+	// 数据详情
+	.data-details {
+		.data-details-echarts-type {
+			width: 80%;
+			margin: 0 auto;
+		}
+	}
+}

@@ -1,0 +1,189 @@
+// 主体
+.main-wrapper {
+	.action-wrapper {
+		margin: 0 0 20rpx 0;
+		// 顶部时间tab切换
+		.time-tab {
+			// margin-top: 20rpx;
+			box-shadow: 0px 2px 4px #f1f1f1;
+			.cu-item {
+				box-sizing: border-box;
+				width: 20%;
+				margin: 0;
+				text-align: center;
+				line-height: normal;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				white-space: initial;
+				// 短横线的放进了 common.css 中
+				&.cur.short:after {
+					bottom: 20rpx;
+				}
+			}
+			.cu-item:last-of-type {
+				width: 20%;
+			}
+		}
+	}
+	.operation-info-wrapper,
+	.conversion-info-wrapper {
+		.total {
+			color: #999999;
+			.item {
+				width: 341rpx;
+				height: 153rpx;
+				background: rgba(255, 255, 255, 1);
+				border-radius: 20px;
+				&:first-of-type {
+					margin-right: 20rpx;
+				}
+
+				// 转化的卡片高一些
+				&.conversion {
+					width: 341rpx;
+					height: 213rpx;
+				}
+
+				.title {
+					font-size: 22rpx;
+					font-family: PingFang SC;
+					color: rgba(153, 153, 153, 1);
+
+					& > text {
+						color: #bfbfbf;
+					}
+				}
+				.data {
+					font-size: 40rpx;
+					font-family: PingFang SC;
+					font-weight: bold;
+					color: rgba(1, 131, 255, 1);
+				}
+			}
+		}
+		.detail {
+			color: #999999;
+			// justify-content: space-between;
+			.item {
+				width: 244rpx;
+				height: 196rpx;
+				background: rgba(255, 255, 255, 1);
+				border-radius: 20rpx;
+
+				.title {
+					font-size: 22rpx;
+					font-family: PingFang SC;
+					color: rgba(153, 153, 153, 1);
+
+					& > text {
+						color: #bfbfbf;
+					}
+				}
+
+				.data {
+					font-size: 30rpx;
+					font-family: PingFang SC;
+					font-weight: bold;
+					color: rgba(1, 131, 255, 1);
+				}
+			}
+		}
+
+		// 客户经理数据
+		.CS-wrapper {
+			margin: 20rpx 0;
+			.title {
+				font-size: 30rpx;
+				font-family: PingFang SC;
+				color: rgba(89, 89, 89, 1);
+			}
+			.table {
+				background: rgba(255, 255, 255, 1);
+				border-radius: 20rpx;
+				padding: 0 30rpx;
+				margin-top: 20rpx;
+				// 标题
+				.table-title {
+					font-weight: bold;
+					display: flex;
+					align-items: center;
+					height: 80rpx;
+					border-bottom: 1rpx solid rgba(242, 242, 242, 1);
+					.item {
+						flex: 1;
+						text-align: center;
+						font-size: 22rpx;
+						font-family: PingFang SC;
+						font-weight: 500;
+						color: rgba(153, 153, 153, 1);
+
+						display: flex;
+						align-items: center;
+						justify-content: center;
+
+						& > text {
+							font-weight: normal;
+							color: #bfbfbf;
+						}
+
+						& > image {
+							margin-left: 10rpx;
+							width: 32rpx;
+							height: 22rpx;
+						}
+					}
+				}
+				// 表格数据
+				.table-row {
+					font-size: 28rpx;
+					font-family: PingFang SC;
+					font-weight: 350;
+					color: #525252;
+					border-bottom: 1rpx solid rgba(242, 242, 242, 1);
+					&:last-of-type {
+						border-bottom: none;
+					}
+
+					display: flex;
+					align-items: center;
+					justify-content: space-around;
+					.item {
+						flex: 1;
+						text-align: center;
+						display: flex;
+						flex-direction: column;
+
+						&.conversion {
+							line-height: 80rpx;
+						}
+						
+						& > text.active {
+							font-weight: bold;
+							color: #0183ff;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+//给时间额外添加的样式
+.time-tab-box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	.timecss {
+		color: #0081ff;
+		vertical-align: middle;
+		width: 30% !important;
+		text {
+			display: block;
+		}
+	}
+}
+
+// 去掉 color-ui 默认给按钮添加的点击动画
+.cu-btn.button-hover {
+	transform: translate(0, 0);
+}

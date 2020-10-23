@@ -1,0 +1,27 @@
+// 作者:杨亮
+.label-management {
+	.label-group {
+		.label-list {
+			.label-list-item {
+				position: relative;
+				&::after {
+					position: absolute;
+					left: 50%;
+					bottom: 0;
+					content: "";
+					width: 90%;
+					height: 1rpx;
+					transform: translateX(-50%);
+					background-color: #F2F2F2;
+				}
+				&:last-of-type::after {
+					height: 0;
+				}
+			}
+		}
+	}
+}
+
+.label-left {
+	color: #0183ff;
+}

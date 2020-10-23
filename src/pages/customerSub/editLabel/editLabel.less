@@ -1,0 +1,33 @@
+// 作者:杨亮
+.edit-label {
+	box-sizing: border-box;
+
+	// switch未选中
+	/deep/ uni-switch .uni-switch-input {
+		background: #bebebe !important;
+	}
+	/deep/ uni-switch::before {
+		content: '';
+	}
+
+	// switch已选中
+	/deep/ uni-switch .uni-switch-input-checked {
+		background: #0183ff !important;
+	}
+
+	.tips-wrapper {
+		margin: 20rpx auto 0;
+		width: 644rpx;
+		height: 59rpx;
+		font-size: 22rpx;
+		font-family: PingFang SC;
+		font-weight: 500;
+		color: rgba(153, 153, 153, 1);
+		line-height: 36rpx;
+	}
+}
+
+.place-style {
+	font-size: 22rpx;
+	color: #999;
+}

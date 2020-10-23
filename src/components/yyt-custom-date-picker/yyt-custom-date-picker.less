@@ -1,0 +1,19 @@
+// 时间选择
+.date-picker-wrapper {
+	.cu-item {
+		box-sizing: border-box;
+		width: 20%;
+		margin: 0;
+		text-align: center;
+		line-height: normal;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		white-space: initial;
+		// 短横线的放进了 common.css 中
+		&.cur.short:after {
+			bottom: 10rpx;
+			width: 30rpx;
+		}
+	}
+}

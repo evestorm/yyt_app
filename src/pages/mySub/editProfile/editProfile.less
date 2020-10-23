@@ -1,0 +1,76 @@
+// 表单
+.wrapper {
+	background: white;
+	margin-top: 10rpx;
+
+	.item {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 30rpx 0;
+		margin: 0 30rpx;
+		border-bottom: 1rpx solid #f6f6f6;
+
+		.title {
+			font-size: 28rpx;
+			font-family: PingFang SC;
+			color: rgba(89, 89, 89, 1);
+			line-height: 28rpx;
+		}
+		.email{
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+		}
+
+		.head-img {
+			width: 120rpx;
+			height: 120rpx;
+			border-radius: 60rpx;
+			overflow: hidden;
+			background: url('https://pic.cwyyt.cn/upload/img/20191218/230032032_avatar-default.png') no-repeat;
+			background-size: 100% 100%;
+		}
+
+		.sw-input {
+			text-align: right;
+			width: 100%;
+		}
+
+		.arrow-wrapper {
+			display: flex;
+			align-items: center;
+			margin-left: 18rpx;
+		}
+
+		&.signature {
+			flex-direction: column;
+			align-items: flex-start;
+			position:relative;
+			.tip{
+				position: absolute;
+				right: 0;
+				bottom: 0;
+				font-size: 22rpx;
+				color: #999;
+			}
+		}
+		.uni-textarea{
+			padding: 0;
+			margin: 18rpx 3%;
+		}
+		.uni-textarea uni-textarea{
+			padding: 0;
+		}
+	}
+}
+	// 底部logo
+	.logoPic {
+		margin: 30rpx 216rpx 30rpx;
+		position: fixed;
+		bottom: 0;
+		.bot-logo {
+			width: 316rpx;
+			height: 40rpx;
+		}
+	}

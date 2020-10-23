@@ -1,0 +1,256 @@
+/* SW:右上角弹窗列表 */
+.mui-table-view-cell:after {
+	background-color: transparent !important;
+}
+
+.customer-wrapper {
+	height: 100vh;
+	// overflow: hidden;
+}
+
+
+// =========== 抽屉样式 ================
+.scroll-Y {
+	height: 100%;
+}
+/* 侧边栏内部滚动容器 */
+.sw-scroll {
+    // overflow-y: auto;
+    height: 100%;
+    padding: 0 25rpx;
+	padding-bottom: 60px;
+    // padding-bottom: calc(var(--window-bottom) + 50px);
+}
+#sidebar-wrapper .item {
+    padding: 10rpx 0;
+}
+/* 条件标题 */
+#sidebar-wrapper .item .title {
+    // font-size: 25rpx;
+    font-weight: bold;
+	display: flex;
+	justify-content: space-between;
+}
+/* 客户标签 */
+#sidebar-wrapper .item .content.customer-tags {
+    padding-top: 20rpx;
+}
+
+#sidebar-wrapper .item .customer-tags .coustom_tag {
+    display: inline-block;
+    font-size: 24rpx;
+    color: #0193F8;
+    padding: 2rpx 19rpx;
+    border: 1px solid #0193F8;
+    border-radius: 18rpx;
+    margin-left: 20rpx;
+    margin-bottom: 20rpx;
+}
+
+#sidebar-wrapper .item .customer-tags .coustom_tag.active {
+    background-color: rgba(1,133,254,1);
+    color: white;
+}
+
+/* 客户经理 */
+#sidebar-wrapper .item .content.customer-tags.seller {
+    overflow-y: auto;
+    max-height: 300rpx;
+}
+
+/* 挖掘条件 */
+#sidebar-wrapper .item .content.customer-tags.wajue {
+    overflow-y: auto;
+    max-height: 300rpx;
+}
+
+/* 标签 */
+#sidebar-wrapper .item .content.tags-wrapper {
+    padding-left: 50rpx;
+}
+
+#sidebar-wrapper .item .content.tags-wrapper .yixuan {
+    color: #232323;
+    font-size: 20rpx;
+}
+
+#sidebar-wrapper .item .content.tags-wrapper .tags {
+    font-size: 25rpx;
+}
+
+/* 消费情况 */
+#sidebar-wrapper .item .content.consume-wrapper {
+    font-size: 25rpx;
+}
+
+/*         时间范围 */
+#sidebar-wrapper .item .content.consume-wrapper .date-range {
+    color: #808080;
+    text-align: center;
+	margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#sidebar-wrapper .item .content.consume-wrapper .date-range .span {
+	display: inline-block;
+	padding: 0 5px;
+}
+
+input[type="date"]:before{
+    content: attr(placeholder);
+    color: #666666;
+}
+
+#sidebar-wrapper .item .content.consume-wrapper .date-range .input {
+    width: 40%;
+    display: inline-block;
+    /*padding: 0 5px;*/
+    border: 1px solid #E8E8E8;
+    border-radius: 2px;
+    font-size: 20rpx;
+	height: 21px;
+	line-height: 21px;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+	color: #666666;
+}
+
+/* 时间选择的 placeholder 颜色 */
+// #sidebar-wrapper .item .content.consume-wrapper .date-range input::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+// 	color: #666666;
+// }
+    
+// #sidebar-wrapper .item .content.consume-wrapper .date-range input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+//     color: #666666;
+// }
+// #sidebar-wrapper .item .content.consume-wrapper .date-range input::-ms-input-placeholder { /* Microsoft Edge */
+//     color: #666666;
+// }
+
+/*         人均消费范围 */
+#sidebar-wrapper .item .content.consume-wrapper .consume-range {
+    margin-bottom: 15px;
+}
+
+#sidebar-wrapper .item .content.consume-wrapper .consume-range .sub-title {
+    margin-bottom: 5px;
+}
+/*         消费频次范围 */
+#sidebar-wrapper .item .content.consume-wrapper .count-range {
+    margin-bottom: 10px;
+}
+
+#sidebar-wrapper .item .content.consume-wrapper .count-range .sub-title {
+    margin-bottom: 5px;
+}
+
+/* 滑块样式重置 */
+.moveContent {
+	position: relative;
+    padding: 0;
+	/*margin-top: -0.4rem;*/
+}
+
+/* 滑块范围高度 */
+.irs--round.irs-with-grid {
+	height: 55px;
+}
+/*阴影/高亮横条相对高度*/ /* 小圆点高度的在下方 .irs--round .irs-handle 中单独设置 */
+.irs--round .irs-line, .irs--round .irs-bar {
+	top: 26px;
+}
+/* 顶部左右两侧 固定 min max 值 */
+.irs--round .irs-min, .irs--round .irs-max {
+	visibility: hidden !important;
+}
+
+/* 横条，顶部数字背景，垂直竖线 */
+.irs-bar, .irs-from, .irs-to, .irs--flat .irs-handle>i:first-child {
+    background-color: #0094ff !important;
+}
+
+/* 顶部数字向下小三角 */
+.irs-from:before, .irs-to:before {
+	border-top-color: #0094ff !important;
+}
+
+/* 顶部左右两边+滑块上方数字大小样式更改 */
+.irs--round .irs-from, .irs--round .irs-to, .irs--round .irs-single {
+	font-size: 12px;
+}
+.irs--round .irs-min, .irs--round .irs-max {
+	font-size: 12px;
+}
+
+// 新小圆点（此处改动无效，改动详情见 slider-range/index.vue 插件内部，搜索改动关键词 "sw"）
+.slider-handle-block::before {
+	content: '';
+	position: absolute;
+	top: -20px;
+	right: -20px;
+	bottom: -20px;
+	left: -20px;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/* 单位 */
+#sidebar-wrapper .item .title .company-name {
+    max-width: 75%;
+	margin-right: auto;
+	margin-left: 10rpx;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-right: 25rpx;
+    float: right;
+	font-weight: normal;
+}
+/* 右侧箭头 */
+.mui-navigate-right:after {
+    top: 9px;
+    right: 0;
+}
+
+/* 底部按钮 */
+.bottom-btn {
+    background: white;
+    position: absolute;
+	padding-bottom: 10px;
+    left: 0;
+    right: 0;
+    bottom: 0px;
+    height: 50px;
+    line-height: 50px;
+    vertical-align: middle;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 99;
+}
+
+.bottom-btn button {
+    flex: 1;
+    max-width: 45%;
+}
+
+#sidebar-wrapper-wrapper {
+    padding-bottom: 60px;
+}
+
+/* 遮罩层样式重置 */
+/*.mui-backdrop {
+    background-color: rgba(0,0,0,.3) !important;
+}*/
+.uni-drawer {
+	// z-index: 99;
+}

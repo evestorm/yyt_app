@@ -1,0 +1,190 @@
+.add-task-top {
+	//顶部搜索框+
+	// padding: 20rpx 30rpx;
+	background: #f2f2f2;
+	position: fixed;
+	top: 90rpx;
+	left: 0;
+	width: 100%;
+	.order-input {
+		background-color: #fff;
+		border-radius: 50rpx;
+		// width: 100%;
+		height: 60rpx;
+		padding: 10rpx 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin: 20rpx 30rpx;
+		input {
+			font-size: 30rpx;
+			width: 65%;
+			margin-left: 10rpx;
+		}
+	}
+}
+//全选
+.all-check {
+	padding: 30rpx;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background: #fff;
+	margin-top: 16rpx;
+	.label {
+		display: flex;
+		align-items: center;
+		.all-text {
+			font-size: 34rpx;
+			color: #262626;
+			line-height: 36rpx;
+			font-weight: bold;
+			margin: 0 60rpx 0 17rpx;
+		}
+	}
+
+	.saixuan-img {
+		width: 30rpx;
+		height: 30rpx;
+	}
+}
+//收件人列表
+
+.receive-list {
+	padding: 30rpx;
+	margin-top: 20rpx;
+	background: #fff;
+	.receive-list-item {
+		&:after {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 1rpx;
+			border-bottom: 1px solid #f2f2f2;
+		}
+		.list-top {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 10rpx;
+			.item-name {
+				font-size: 28rpx;
+				color: #262626;
+				line-height: 24rpx;
+				margin-left: 17rpx;
+			}
+			.item-vip-name {
+				font-size: 22rpx;
+				color: #595959;
+				line-height: 24rpx;
+			}
+		}
+		.checkbox-label {
+			font-size: 22rpx;
+			color: #f00;
+			line-height: 24rpx;
+			margin: 0 60rpx 30rpx;
+		}
+	}
+}
+
+.right-popup {
+	padding: 30rpx 30rpx 30rpx 30rpx;
+	height: 100%;
+	.popup-title {
+		width: 570rpx;
+		font-size: 34rpx;
+		color: #262626;
+		font-weight: bold;
+	}
+	.popup-list {
+		margin: 20rpx 0;
+		display: flex;
+		flex-wrap: wrap;
+		.popup-list-item {
+			height: 46rpx;
+			padding: 12rpx 36rpx;
+			text-align: center;
+			line-height: 24rpx;
+			border: 1px solid #0183ff;
+			border-radius: 22rpx;
+			color: #0183ff;
+			margin: 20rpx;
+		}
+		.popup-list-unsel {
+			color: #0183ff;
+			background: #fff;
+		}
+		.popupListSel {
+			color: #fff;
+			background: #0183ff;
+		}
+	}
+	//标签
+	.popup-tags {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 12rpx;
+		.arrowRight {
+			width: 16rpx;
+			height: 28rpx;
+			margin-left: 18rpx;
+		}
+	}
+	.tag-detail {
+		border: 1px solid #f2f2f2;
+		border-radius: 20rpx;
+		padding: 28rpx;
+		.tag-detail-title {
+			font-size: 22rpx;
+			color: #999;
+			line-height: 36rpx;
+			margin-bottom: 28rpx;
+		}
+		.tag-detail-tags {
+			font-size: 26rpx;
+			color: #262626;
+			line-height: 36rpx;
+		}
+	}
+	.not-show-five-day {
+		font-size: 30rpx;
+		color: #262626;
+		margin-top: 30rpx;
+		font-weight: bold;
+	}
+}
+.popup-foot {
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	padding: 20rpx;
+	.foot-btn {
+		width: 240rpx;
+		height: 90rpx;
+		line-height: 90rpx;
+		text-align: center;
+		margin: 14rpx;
+		border-radius: 45rpx;
+		font-size: 16px;
+		border: 1px solid #0183ff;
+		outline: 0;
+	}
+	.w-bg {
+		color: #0183ff;
+		background: #fff;
+	}
+	.b-bg {
+		color: #fff;
+		background: #0183ff;
+	}
+}
+uni-button:after {
+	//ios会有边框
+	border: 0 !important;
+}

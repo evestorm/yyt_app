@@ -1,0 +1,28 @@
+{
+	"cardData": {
+		"count": 2,
+		"carditem": [{
+				"id": "GK100107900000193",
+				"name": "测试表单填写限制",
+				"describe": null,
+				"time": "2020-03-13 16:13:02",
+				"visitCount": 11,
+				"conversionCount": 0,
+				"conversionRatio": 0
+			},
+			{
+				"id": "GK105645500000191",
+				"name": "2.25营销",
+				"describe": "2月24日0—24时，31个省（自治区、直辖市）和新疆生产建设兵团报告新增确诊病例508例，新增死亡病例71例（湖北68例，山东2例，广东1例），新增疑似病例530例",
+				"time": "2020-02-25 13:41:26",
+				"visitCount": 21,
+				"conversionCount": 0,
+				"conversionRatio": 0
+			}
+		]
+	},
+	"generalData": null,
+	"sendPeopleData": null,
+	"detailData": null,
+	"id": null
+}

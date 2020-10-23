@@ -1,0 +1,50 @@
+// 页面容器
+#cancel-reason {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background-color: #F5F5F5;
+}
+
+// 快速选择区域
+.quick-select-wrapper {
+	
+}
+
+/* 多行文本域 */
+.textarea-wrapper {
+	position: relative;
+	background: transparent !important;
+	.cu-item {
+		padding: 20rpx;
+		padding-bottom: 20px;
+	}
+	// uni-textrea 针对 h5，textarea 针对小程序
+	uni-textarea, textarea {
+		width: auto;
+	}
+	.tip {
+		position: absolute;
+		right: 40rpx;
+		bottom: 30rpx;
+		font-size: 12px;
+		color: #BEBEBE;
+		&.warning {
+			color: red;
+		}
+	}
+	&.cu-form-group {
+		padding: 0;
+	}
+}
+
+/* 确认按钮 */
+.confirm-btn {
+	.cu-btn {
+		margin-top: 0;
+	}
+	&.padding {
+		padding-top: 0;
+	}
+}

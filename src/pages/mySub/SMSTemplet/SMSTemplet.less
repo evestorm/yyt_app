@@ -1,0 +1,67 @@
+// 列表容器
+.list-wrapper {
+	background-color: #f2f2f2;
+	// 卡片
+	.msg-card {
+		background-color: white;
+		margin: 10rpx 0;
+		border-radius: 20rpx;
+		display: flex;
+		flex-direction: column;
+
+		.header {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+
+			.title {
+				font-size: 30rpx;
+				font-family: PingFang SC;
+				font-weight: bold;
+				color: rgba(13, 13, 13, 1);
+			}
+
+			.enable-state {
+				font-size: 26rpx;
+				font-family: PingFang SC;
+				color: rgba(89, 89, 89, 1);
+			}
+		}
+
+		.main {
+			.sub-title {
+				font-size: 28rpx;
+				font-family: PingFang SC;
+				font-weight: bold;
+				color: rgba(64, 64, 64, 1);
+			}
+			.content {
+				font-size: 26rpx;
+				font-family: PingFang SC;
+				color: rgba(89, 89, 89, 1);
+				line-height: 42rpx;
+				white-space: pre-wrap;
+			}
+		}
+
+		.footer {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			line-height: 42rpx;
+
+			.date-wrapper {
+				display: flex;
+				align-items: center;
+				.date {
+					font-size: 22rpx;
+					font-family: PingFang SC;
+					color: rgba(153, 153, 153, 1);
+				}
+			}
+
+			.tools-wrapper {
+			}
+		}
+	}
+}
